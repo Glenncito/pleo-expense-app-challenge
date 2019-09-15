@@ -15,12 +15,18 @@ export const Header = styled.View`
 
 export const Date = styled.Text``;
 
-export const Price = styled.Text``;
+export const Category = styled.Text``;
+
+export const Amount = styled.Text``;
 
 export const Body = styled.View`
   padding: 8px;
+  flex-direction: row;
 `;
 
+export const ExpenseInfo = styled.View`
+  flex: 3;
+`;
 export const InfoRow = styled.View`
   width: 100%;
   flex-direction: row;
@@ -29,3 +35,7 @@ export const InfoRow = styled.View`
 `;
 
 export const InfoText = styled.Text``;
+
+export const Reciept = styled.View`
+  flex: 1;
+`;

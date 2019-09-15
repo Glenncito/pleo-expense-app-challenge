@@ -1,27 +1,44 @@
 import React from "react";
+import { TextInput, Button } from "react-native";
 import {
   Wrapper,
   Header,
   Body,
   Date,
-  Price,
+  Amount,
   InfoRow,
-  InfoText
+  InfoText,
+  Category,
+  ExpenseInfo,
+  Reciept
 } from "./styles";
 
 const ExpenseCard = props => (
   <Wrapper>
     <Header>
-      <Date>12 Feb</Date>
-      <Price>ZAR 19.99</Price>
+      <Date>{props.date}</Date>
+      <Category>{props.category}</Category>
+      <Amount>{props.amount}</Amount>
     </Header>
     <Body>
-      <InfoRow>
-        <InfoText>Burger King</InfoText>
-      </InfoRow>
-      <InfoRow>
-        <InfoText>Burger King</InfoText>
-      </InfoRow>
+      <ExpenseInfo>
+        <InfoRow>
+          <InfoText>{props.merchant}</InfoText>
+        </InfoRow>
+        <InfoRow>
+          <InfoText>{props.user}</InfoText>
+        </InfoRow>
+        <TextInput
+          style={{ height: 40 }}
+          multiline={true}
+          placeholder="add a comment?"
+          placeholderTextColor="#abbabb"
+          onChangeText={value => console.log(value)}
+        />
+      </ExpenseInfo>
+      <Reciept>
+        <Button title="Press me" onPress={() => console.log("pressed")} />
+      </Reciept>
     </Body>
   </Wrapper>
 );
