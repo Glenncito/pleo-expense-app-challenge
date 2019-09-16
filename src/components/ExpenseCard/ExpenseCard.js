@@ -12,6 +12,18 @@ import {
   ExpenseInfo,
   Reciept
 } from "./styles";
+import { NativeModules } from "react-native";
+
+const CameraApplication = NativeModules.KotlinCameraModule;
+const fetchData = async () => {
+  CameraApplication.sayHi
+    .then(message => {
+      console.log(message);
+    })
+    .catch(error => {
+      throw error;
+    });
+};
 
 const ExpenseCard = props => (
   <Wrapper>
@@ -37,7 +49,7 @@ const ExpenseCard = props => (
         />
       </ExpenseInfo>
       <Reciept>
-        <Button title="Press me" onPress={() => console.log("pressed")} />
+        <Button title="Press me" onPress={() => fetchData()} />
       </Reciept>
     </Body>
   </Wrapper>

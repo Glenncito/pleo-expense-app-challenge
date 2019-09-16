@@ -1,12 +1,15 @@
 import { View, ScrollView, FlatList } from "react-native";
 import ExpenseCard from "components/ExpenseCard/ExpenseCard";
 import React from "react";
-import { KeyboardAwareFlatList } from "react-native-keyboard-aware-scroll-view";
+import { NativeModules } from "react-native";
+
 export default function App() {
+  const CameraApplication = NativeModules.KotlinCameraModule;
+
   return (
     <View>
       <ScrollView>
-        <KeyboardAwareFlatList
+        <FlatList
           data={expenseItems}
           showsVerticalScrollIndicator={false}
           renderItem={({ item }) => (
@@ -77,7 +80,7 @@ const expenseItems = [
     user: {
       first: "Peter",
       last: "Scott",
-      email: "Peter@pleo.io"
+      email: "Ptteter@pleo.io"
     }
   },
   {
@@ -90,7 +93,7 @@ const expenseItems = [
     user: {
       first: "Peter",
       last: "Scott",
-      email: "Peter@pleo.io"
+      email: "Petter@pleo.io"
     }
   }
 ];
