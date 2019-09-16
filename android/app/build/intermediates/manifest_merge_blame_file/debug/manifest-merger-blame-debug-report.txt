@@ -1,0 +1,1175 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.pleo.expenseapp"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml
+10
+11    <permission
+11-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:7:3-9:42
+12        android:name="com.pleo.expenseapp.permission.C2D_MESSAGE"
+12-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:8:5-62
+13        android:protectionLevel="signature" />
+13-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:9:5-40
+14
+15    <!-- These are required permissions to make the app run -->
+16    <uses-permission android:name="com.pleo.expenseapp.permission.C2D_MESSAGE" />
+16-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:12:3-80
+16-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:12:20-77
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:13:3-80
+17-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:13:20-77
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:14:3-77
+18-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:14:20-74
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:15:3-65
+19-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:15:20-62
+20    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+20-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:16:3-76
+20-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:16:20-73
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:17:3-66
+21-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:17:20-63
+22
+23    <!-- ADD PERMISSIONS HERE -->
+24    <!-- BEGIN OPTIONAL PERMISSIONS -->
+25    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+25-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:21:3-73
+25-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:21:20-70
+26    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+26-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:22:3-78
+26-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:22:20-75
+27    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+27-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:23:3-73
+27-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:23:20-70
+28    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+28-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:24:3-72
+28-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:24:20-69
+29    <uses-permission android:name="android.permission.VIBRATE" />
+29-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:25:3-64
+29-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:25:20-61
+30    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+30-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:26:3-86
+30-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:26:20-83
+31    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+31-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:27:3-78
+31-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:27:20-75
+32
+33    <!-- These require runtime permissions on M -->
+34    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+34-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:30:3-79
+34-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:30:20-76
+35    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+35-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:31:3-77
+35-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:31:20-74
+36    <uses-permission android:name="android.permission.CAMERA" />
+36-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:32:3-63
+36-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:32:20-60
+37    <uses-permission android:name="android.permission.READ_CONTACTS" />
+37-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:33:3-70
+37-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:33:20-67
+38    <uses-permission android:name="android.permission.READ_CALENDAR" />
+38-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:34:3-70
+38-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:34:20-67
+39    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+39-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:35:3-71
+39-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:35:20-68
+40    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+40-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:36:3-78
+40-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:36:20-75
+41    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+41-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:37:3-69
+41-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:37:20-66
+42    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+42-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:38:3-79
+42-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:38:20-76
+43    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+43-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:39:3-71
+43-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:39:20-68
+44    <!-- END OPTIONAL PERMISSIONS -->
+45
+46
+47    <!-- ADD TEST PERMISSIONS HERE -->
+48
+49    <uses-feature
+49-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:44:3-77
+50        android:glEsVersion="0x00020000"
+50-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:44:17-49
+51        android:required="true" />
+51-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:44:50-74
+52    <uses-feature
+52-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:45:3-85
+53        android:name="android.software.leanback"
+53-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:45:17-57
+54        android:required="false" />
+54-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:45:58-82
+55    <uses-feature
+55-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:46:3-88
+56        android:name="android.hardware.touchscreen"
+56-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:46:17-60
+57        android:required="false" />
+57-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:46:61-85
+58
+59    <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
+60    <supports-screens
+60-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:12:5-18:24
+61        android:anyDensity="true"
+61-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:13:9-34
+62        android:largeScreens="true"
+62-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:14:9-36
+63        android:normalScreens="true"
+63-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:15:9-37
+64        android:smallScreens="true"
+64-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:16:9-36
+65        android:xlargeScreens="true" >
+65-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:17:9-37
+66    </supports-screens>
+67
+68    <uses-permission android:name="host.exp.exponent.permission.C2D_MESSAGE" />
+68-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:25:5-80
+68-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:25:22-77
+69
+70    <uses-feature
+70-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:43:5-45:36
+71        android:name="android.hardware.camera"
+71-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:44:9-47
+72        android:required="false" />
+72-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:45:9-33
+73    <uses-feature
+73-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:46:5-48:36
+74        android:name="android.hardware.camera.autofocus"
+74-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:47:9-57
+75        android:required="false" />
+75-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:48:9-33
+76    <uses-feature
+76-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:49:5-51:36
+77        android:name="android.hardware.location"
+77-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:50:9-49
+78        android:required="false" />
+78-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:51:9-33
+79    <uses-feature
+79-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:52:5-54:36
+80        android:name="android.hardware.location.gps"
+80-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:53:9-53
+81        android:required="false" />
+81-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:54:9-33
+82    <uses-feature
+82-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:55:5-57:36
+83        android:name="android.hardware.location.network"
+83-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:56:9-57
+84        android:required="false" />
+84-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:57:9-33
+85    <uses-feature
+85-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:58:5-60:36
+86        android:name="android.hardware.wifi"
+86-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:59:9-45
+87        android:required="false" />
+87-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:60:9-33
+88    <uses-feature
+88-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:61:5-63:36
+89        android:name="android.hardware.microphone"
+89-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:62:9-51
+90        android:required="false" />
+90-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:63:9-33
+91    <uses-feature
+91-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:64:5-66:36
+92        android:name="android.hardware.telephony"
+92-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:65:9-50
+93        android:required="false" />
+93-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:66:9-33
+94    <uses-feature
+94-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:67:5-69:36
+95        android:name="android.hardware.bluetooth"
+95-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:68:9-50
+96        android:required="false" />
+96-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:69:9-33
+97
+98    <uses-permission android:name="android.permission.STORAGE" />
+98-->[:expo-file-system] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-66
+98-->[:expo-file-system] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-63
+99    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- for android -->
+99-->[:expo-location] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-77
+99-->[:expo-location] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-74
+100    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+101    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+102    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+103    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+104    <!-- for Samsung -->
+105    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+105-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:19:5-86
+105-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:19:22-83
+106    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+106-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:20:5-87
+106-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:20:22-84
+107    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+107-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:23:5-81
+107-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:23:22-78
+108    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+108-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:24:5-83
+108-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:24:22-80
+109    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" /> <!-- for apex -->
+109-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:27:5-88
+109-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:27:22-85
+110    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+110-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:30:5-84
+110-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:30:22-81
+111    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+111-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:33:5-83
+111-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:33:22-80
+112    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+112-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:15:5-98
+112-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:15:22-95
+113    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+113-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:16:5-94
+113-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:16:22-91
+114    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+114-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:26:5-110
+114-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:26:22-107
+115
+116    <application
+116-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:48:3-367:17
+117        android:name="host.exp.exponent.MainApplication"
+117-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:49:5-36
+118        android:allowBackup="true"
+118-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:50:5-31
+119        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+119-->[com.android.support:support-compat:28.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f4b3cb114176662d0f2f4b98641d5d49/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+120        android:debuggable="true"
+121        android:icon="@mipmap/ic_launcher"
+121-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:51:5-39
+122        android:label="@string/app_name"
+122-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:52:5-37
+123        android:largeHeap="true"
+123-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:53:5-29
+124        android:supportsRtl="true"
+124-->[com.facebook.android:facebook-android-sdk:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/aba8c10fad78ee94d4a8a48d4989e5b5/facebook-android-sdk-5.0.1/AndroidManifest.xml:28:18-44
+125        android:usesCleartextTraffic="true" >
+125-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:54:5-40
+126        <activity
+126-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:56:5-61:16
+127            android:name="host.exp.exponent.LauncherActivity"
+127-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:57:7-39
+128            android:exported="true"
+128-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:58:7-30
+129            android:launchMode="singleTask"
+129-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:59:7-38
+130            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+130-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:60:7-66
+131        </activity>
+132        <activity
+132-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:63:5-68:16
+133            android:name="host.exp.exponent.experience.ExperienceActivity"
+133-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:64:7-52
+134            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+134-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:65:7-77
+135            android:theme="@style/Theme.Exponent.Light"
+135-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:66:7-50
+136            android:windowSoftInputMode="adjustResize" >
+136-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:67:7-49
+137        </activity>
+138        <activity
+138-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:70:5-90:16
+139            android:name="host.exp.exponent.MainActivity"
+139-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:71:7-35
+140            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+140-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:73:7-77
+141            android:launchMode="singleTask"
+141-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:72:7-38
+142            android:theme="@style/Theme.Exponent.Splash"
+142-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:74:7-51
+143            android:windowSoftInputMode="adjustResize" >
+143-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:75:7-49
+144            <intent-filter>
+144-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:76:7-83:23
+145                <data android:scheme="expef8ad74c1b274315b78bc9e54d989b5f" />
+145-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:77:9-69
+145-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:77:15-67
+146
+147                <action android:name="android.intent.action.VIEW" />
+147-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:79:9-60
+147-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:79:17-58
+148
+149                <category android:name="android.intent.category.DEFAULT" />
+149-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:81:9-67
+149-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:81:19-65
+150                <category android:name="android.intent.category.BROWSABLE" />
+150-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:82:9-69
+150-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:82:19-67
+151            </intent-filter>
+152            <intent-filter>
+152-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:84:7-88:23
+153                <action android:name="android.intent.action.MAIN" />
+153-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:85:9-60
+153-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:85:17-58
+154
+155                <category android:name="android.intent.category.LAUNCHER" />
+155-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:87:9-68
+155-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:87:19-66
+156            </intent-filter>
+157            <!-- ADD DETACH APP SPECIFIC INTENT FILTERS -->
+158        </activity>
+159        <activity
+159-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:92:5-98:16
+160            android:name="host.exp.exponent.experience.HomeActivity"
+160-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:93:7-46
+161            android:label="@string/app_name"
+161-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:94:7-39
+162            android:launchMode="singleTask"
+162-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:95:7-38
+163            android:screenOrientation="portrait"
+163-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:96:7-43
+164            android:theme="@style/Theme.Exponent.Light" >
+164-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:97:7-50
+165        </activity>
+166        <activity
+166-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:100:5-109:15
+167            android:name="host.exp.exponent.experience.TvActivity"
+167-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:101:7-44
+168            android:label="@string/app_name"
+168-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:102:7-39
+169            android:screenOrientation="landscape"
+169-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:104:7-44
+170            android:theme="@style/Theme.Exponent.Light" >
+170-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:103:7-50
+171            <intent-filter>
+171-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:105:6-108:22
+172                <action android:name="android.intent.action.MAIN" />
+172-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:85:9-60
+172-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:85:17-58
+173
+174                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+174-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:107:8-77
+174-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:107:18-74
+175            </intent-filter>
+176        </activity>
+177        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+177-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:113:5-81
+177-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:113:15-79
+178        <!-- WHEN_PREPARING_SHELL_REMOVE_FROM_HERE -->
+179        <!-- ADD DEV SETTINGS HERE -->
+180        <!-- BEGIN_SDK_34 -->
+181        <activity android:name="abi34_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+181-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:117:5-91
+181-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:117:15-89
+182        <!-- END_SDK_34 -->
+183        <!-- BEGIN_SDK_33 -->
+184        <activity android:name="abi33_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+184-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:120:5-91
+184-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:120:15-89
+185        <!-- END_SDK_33 -->
+186        <!-- BEGIN_SDK_32 -->
+187        <activity android:name="abi32_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+187-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:123:5-91
+187-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:123:15-89
+188        <!-- END_SDK_32 -->
+189        <!-- BEGIN_SDK_31 -->
+190        <activity android:name="abi31_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+190-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:126:5-91
+190-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:126:15-89
+191        <!-- END_SDK_31 -->
+192        <!-- WHEN_PREPARING_SHELL_REMOVE_TO_HERE -->
+193
+194        <activity
+194-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:130:5-137:16
+195            android:name="host.exp.exponent.ExponentDevActivity"
+195-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:131:7-42
+196            android:exported="true"
+196-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:132:7-30
+197            android:label="@string/dev_activity_name"
+197-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:133:7-48
+198            android:screenOrientation="portrait"
+198-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:134:7-43
+199            android:theme="@style/Theme.Exponent.Dark"
+199-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:135:7-49
+200            android:windowSoftInputMode="adjustPan" >
+200-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:136:7-46
+201        </activity>
+202        <activity
+202-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:139:5-143:16
+203            android:name="host.exp.exponent.oauth.OAuthWebViewActivity"
+203-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:140:7-49
+204            android:screenOrientation="portrait"
+204-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:141:7-43
+205            android:theme="@style/Theme.Exponent.Light" >
+205-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:142:7-50
+206        </activity>
+207        <activity android:name="net.openid.appauth.RedirectUriReceiverActivity" >
+207-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:145:5-154:16
+207-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:146:9-70
+208            <intent-filter>
+208-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:148:7-153:23
+209                <action android:name="android.intent.action.VIEW" />
+209-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:79:9-60
+209-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:79:17-58
+210
+211                <category android:name="android.intent.category.DEFAULT" />
+211-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:81:9-67
+211-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:81:19-65
+212                <category android:name="android.intent.category.BROWSABLE" />
+212-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:82:9-69
+212-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:82:19-67
+213
+214                <data
+214-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:77:9-69
+215                    android:path="oauthredirect"
+215-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:152:52-80
+216                    android:scheme="com.pleo.expenseapp" />
+216-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:77:15-67
+217            </intent-filter>
+218        </activity>
+219        <activity android:name="host.exp.exponent.oauth.OAuthResultActivity" >
+219-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:156:5-158:16
+219-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:157:7-48
+220        </activity>
+221        <activity android:name="abi32_0_0.expo.modules.appauth.AppAuthBrowserActivity" >
+221-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:160:5-162:16
+221-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:161:7-75
+222        </activity>
+223
+224        <!-- START OF STRIPE SCHEMES -->
+225        <activity
+225-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:165:5-176:16
+226            android:name="expo.modules.payments.stripe.RedirectUriReceiver"
+226-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:168:9-72
+227            android:exported="true"
+227-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:166:9-32
+228            android:launchMode="singleTask"
+228-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:167:9-40
+229            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+229-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:169:9-79
+230            <intent-filter>
+230-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:170:9-175:25
+231                <action android:name="android.intent.action.VIEW" />
+231-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:79:9-60
+231-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:79:17-58
+232
+233                <category android:name="android.intent.category.DEFAULT" />
+233-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:81:9-67
+233-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:81:19-65
+234                <category android:name="android.intent.category.BROWSABLE" />
+234-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:82:9-69
+234-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:82:19-67
+235
+236                <data android:scheme="expo.modules.payments.stripe.0fd3f5f2-91f5-4872-b924-851303281858" />
+236-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:77:9-69
+236-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:77:15-67
+237            </intent-filter>
+238        </activity>
+239        <!-- Versioned Activity for Stripe -->
+240        <activity
+240-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:178:2-189:13
+241            android:name="abi34_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+241-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:181:3-76
+242            android:exported="true"
+242-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:179:3-26
+243            android:launchMode="singleTask"
+243-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:180:3-34
+244            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+244-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:182:3-73
+245            <intent-filter>
+245-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:183:3-188:19
+246                <action android:name="android.intent.action.VIEW" />
+246-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:79:9-60
+246-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:79:17-58
+247
+248                <category android:name="android.intent.category.DEFAULT" />
+248-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:81:9-67
+248-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:81:19-65
+249                <category android:name="android.intent.category.BROWSABLE" />
+249-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:82:9-69
+249-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:82:19-67
+250
+251                <data android:scheme="abi34_0_0.expo.modules.payments.stripe" />
+251-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:77:9-69
+251-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:77:15-67
+252            </intent-filter>
+253        </activity>
+254        <activity
+254-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:190:2-201:13
+255            android:name="abi33_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+255-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:193:3-76
+256            android:exported="true"
+256-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:191:3-26
+257            android:launchMode="singleTask"
+257-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:192:3-34
+258            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+258-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:194:3-73
+259            <intent-filter>
+259-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:195:3-200:19
+260                <action android:name="android.intent.action.VIEW" />
+260-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:79:9-60
+260-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:79:17-58
+261
+262                <category android:name="android.intent.category.DEFAULT" />
+262-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:81:9-67
+262-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:81:19-65
+263                <category android:name="android.intent.category.BROWSABLE" />
+263-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:82:9-69
+263-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:82:19-67
+264
+265                <data android:scheme="abi33_0_0.expo.modules.payments.stripe" />
+265-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:77:9-69
+265-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:77:15-67
+266            </intent-filter>
+267        </activity>
+268        <activity
+268-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:202:2-213:13
+269            android:name="abi32_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+269-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:205:3-76
+270            android:exported="true"
+270-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:203:3-26
+271            android:launchMode="singleTask"
+271-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:204:3-34
+272            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+272-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:206:3-73
+273            <intent-filter>
+273-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:207:3-212:19
+274                <action android:name="android.intent.action.VIEW" />
+274-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:79:9-60
+274-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:79:17-58
+275
+276                <category android:name="android.intent.category.DEFAULT" />
+276-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:81:9-67
+276-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:81:19-65
+277                <category android:name="android.intent.category.BROWSABLE" />
+277-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:82:9-69
+277-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:82:19-67
+278
+279                <data android:scheme="abi32_0_0.expo.modules.payments.stripe" />
+279-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:77:9-69
+279-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:77:15-67
+280            </intent-filter>
+281        </activity>
+282        <activity
+282-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:214:5-225:16
+283            android:name="abi31_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+283-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:217:9-82
+284            android:exported="true"
+284-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:215:9-32
+285            android:launchMode="singleTask"
+285-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:216:9-40
+286            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+286-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:218:9-79
+287            <intent-filter>
+287-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:219:9-224:25
+288                <action android:name="android.intent.action.VIEW" />
+288-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:79:9-60
+288-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:79:17-58
+289
+290                <category android:name="android.intent.category.DEFAULT" />
+290-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:81:9-67
+290-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:81:19-65
+291                <category android:name="android.intent.category.BROWSABLE" />
+291-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:82:9-69
+291-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:82:19-67
+292
+293                <data android:scheme="abi31_0_0.expo.modules.payments.stripe" />
+293-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:77:9-69
+293-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:77:15-67
+294            </intent-filter>
+295        </activity>
+296
+297        <!-- END OF STRIPE SCHEMES -->
+298
+299        <activity android:name="host.exp.exponent.chrometabs.ChromeTabsManagerActivity" >
+299-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:229:5-231:16
+299-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:230:7-59
+300        </activity>
+301        <activity
+301-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:233:5-237:16
+302            android:name="host.exp.exponent.experience.ErrorActivity"
+302-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:234:7-47
+303            android:screenOrientation="portrait"
+303-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:236:7-43
+304            android:theme="@style/Theme.Exponent.Dark" >
+304-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:235:7-49
+305        </activity>
+306        <activity
+306-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:239:5-243:16
+307            android:name="host.exp.exponent.experience.InfoActivity"
+307-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:240:7-46
+308            android:screenOrientation="portrait"
+308-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:241:7-43
+309            android:theme="@style/Theme.Exponent.Light" >
+309-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:242:7-50
+310        </activity>
+311        <activity
+311-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:245:5-250:39
+312            android:name="com.facebook.FacebookActivity"
+312-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:246:7-51
+313            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+313-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:247:7-90
+314            android:label="@string/app_name"
+314-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:248:7-39
+315            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+315-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:249:7-66
+316        <activity
+316-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:252:5-256:69
+317            android:name="com.facebook.ads.InterstitialAdActivity"
+317-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:253:7-61
+318            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+318-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:254:7-90
+319            android:label="@string/app_name"
+319-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:255:7-39
+320            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+320-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:256:7-66
+321
+322        <service
+322-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:258:5-260:34
+323            android:name="host.exp.exponent.ExponentIntentService"
+323-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:259:7-44
+324            android:exported="false" />
+324-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:260:7-31
+325
+326        <!-- Analytics -->
+327        <receiver
+327-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:263:5-269:16
+328            android:name="host.exp.exponent.referrer.InstallReferrerReceiver"
+328-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:264:7-72
+329            android:exported="true" >
+329-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:265:7-30
+330            <intent-filter>
+330-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:266:7-268:23
+331                <action android:name="com.android.vending.INSTALL_REFERRER" />
+331-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:267:9-71
+331-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:267:17-68
+332            </intent-filter>
+333        </receiver>
+334
+335        <!--
+336    This crashes: https://code.google.com/p/analytics-issues/issues/detail?id=667
+337    TODO: turn it back on when it's fixed
+338    <service
+339      android:name="com.google.android.gms.analytics.CampaignTrackingService"
+340      android:enabled="true"
+341      android:exported="false" />
+342        -->
+343
+344        <receiver
+344-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:279:5-284:16
+345            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+345-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:279:15-80
+346            android:enabled="true"
+346-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:280:15-37
+347            android:exported="false" >
+347-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/07e5eb53ebc60110417f48486fbcb98b/play-services-analytics-16.0.8/AndroidManifest.xml:33:13-37
+348            <intent-filter>
+348-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:281:7-283:23
+349                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+349-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:282:9-86
+349-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:282:17-83
+350            </intent-filter>
+351        </receiver>
+352
+353        <service
+353-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:286:5-288:40
+354            android:name="com.google.android.gms.analytics.AnalyticsService"
+354-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:286:14-78
+355            android:enabled="true"
+355-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:287:14-36
+356            android:exported="false" />
+356-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:288:14-38
+357
+358        <!-- GCM -->
+359        <receiver
+359-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:291:5-301:16
+360            android:name="com.google.android.gms.gcm.GcmReceiver"
+360-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:292:7-60
+361            android:exported="true"
+361-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:293:7-30
+362            android:permission="com.google.android.c2dm.permission.SEND" >
+362-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:294:7-67
+363            <intent-filter>
+363-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:295:7-300:23
+364                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+364-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:296:9-72
+364-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:296:17-70
+365                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+365-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:297:9-77
+365-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:297:17-75
+366
+367                <category android:name="com.pleo.expenseapp" />
+367-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:299:9-55
+367-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:299:19-53
+368            </intent-filter>
+369        </receiver>
+370
+371        <service
+371-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:303:5-309:15
+372            android:name="host.exp.exponent.gcm.ExponentGcmListenerService"
+372-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:304:7-53
+373            android:exported="false" >
+373-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:305:7-31
+374            <intent-filter>
+374-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:306:7-308:23
+375                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+375-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:296:9-72
+375-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:296:17-70
+376            </intent-filter>
+377        </service>
+378        <service
+378-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:310:5-316:15
+379            android:name="host.exp.exponent.gcm.ExponentInstanceIDListenerService"
+379-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:311:7-60
+380            android:exported="false" >
+380-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:312:7-31
+381            <intent-filter>
+381-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:313:7-315:23
+382                <action android:name="com.google.android.gms.iid.InstanceID" />
+382-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:314:9-71
+382-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:314:17-69
+383            </intent-filter>
+384        </service>
+385        <service
+385-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:317:5-320:15
+386            android:name="host.exp.exponent.gcm.GcmRegistrationIntentService"
+386-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:318:7-55
+387            android:exported="false" >
+387-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:319:7-31
+388        </service>
+389
+390        <!-- FCM -->
+391        <service android:name="host.exp.exponent.fcm.ExpoFcmMessagingService" >
+391-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:323:5-328:15
+391-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:324:7-50
+392            <intent-filter>
+392-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:325:7-327:23
+393                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+393-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:326:9-69
+393-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:326:17-67
+394            </intent-filter>
+395        </service>
+396
+397        <meta-data
+397-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:329:5-331:62
+398            android:name="com.google.firebase.messaging.default_notification_icon"
+398-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:330:7-77
+399            android:resource="@drawable/shell_notification_icon" />
+399-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:331:7-59
+400        <meta-data
+400-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:332:5-334:47
+401            android:name="com.google.firebase.messaging.default_notification_color"
+401-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:333:7-78
+402            android:resource="@color/colorAccent" />
+402-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:334:7-44
+403
+404        <service
+404-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:335:5-338:15
+405            android:name="host.exp.exponent.fcm.FcmRegistrationIntentService"
+405-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:336:7-55
+406            android:exported="false" >
+406-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:337:7-31
+407        </service>
+408
+409        <!-- ImagePicker native module -->
+410        <activity
+410-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:341:5-344:16
+411            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+411-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:342:7-70
+412            android:theme="@style/Base.Theme.AppCompat" >
+412-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:343:7-50
+413        </activity>
+414
+415        <!-- ADD FABRIC CONFIG HERE -->
+416        <!-- BEGIN FABRIC CONFIG -->
+417        <meta-data
+417-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:349:5-351:65
+418            android:name="io.fabric.ApiKey"
+418-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:350:7-38
+419            android:value="a25fafe9f9edee11a9882b32e0cd7a26df6e2c42" />
+419-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:351:7-63
+420        <!-- END FABRIC CONFIG -->
+421
+422
+423        <!-- ADD GOOGLE MAPS CONFIG HERE -->
+424        <!-- BEGIN GOOGLE MAPS CONFIG -->
+425        <meta-data
+425-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:356:5-358:64
+426            android:name="com.google.android.geo.API_KEY"
+426-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:357:7-52
+427            android:value="AIzaSyDh7eDB9snEFSYtf-k0gfxA45HFoR0L--I" />
+427-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:358:7-62
+428        <!-- END GOOGLE MAPS CONFIG -->
+429
+430
+431        <!-- ADD BRANCH CONFIG HERE -->
+432
+433
+434        <!-- The Facebook SDK runs FacebookInitProvider on startup and crashes if there isn't an ID here -->
+435        <meta-data
+435-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:364:5-83
+436            android:name="com.facebook.sdk.ApplicationId"
+436-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:364:16-61
+437            android:value="fb0" />
+437-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:364:62-81
+438        <meta-data
+438-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:366:5-109
+439            android:name="standaloneStripeScheme"
+439-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:366:16-53
+440            android:value="0fd3f5f2-91f5-4872-b924-851303281858" />
+440-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:366:54-106
+441        <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
+442        <!-- Scheduled notifications -->
+443        <receiver
+443-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:75:9-77:40
+444            android:name="host.exp.exponent.notifications.ScheduledNotificationReceiver"
+444-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:76:13-89
+445            android:exported="false" /> <!-- WHEN_VERSIONING_REMOVE_TO_HERE -->
+445-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:77:13-37
+446        <provider
+446-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:80:9-88:20
+447            android:name="android.support.v4.content.FileProvider"
+447-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:81:13-67
+448            android:authorities="com.pleo.expenseapp.provider"
+448-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:82:13-60
+449            android:exported="false"
+449-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:83:13-37
+450            android:grantUriPermissions="true" >
+450-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:84:13-47
+451            <meta-data
+451-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:85:13-87:58
+452                android:name="android.support.FILE_PROVIDER_PATHS"
+452-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:86:17-67
+453                android:resource="@xml/provider_paths" />
+453-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:87:17-55
+454        </provider>
+455        <provider
+455-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:89:9-97:20
+456            android:name="versioned.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider"
+456-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:90:13-109
+457            android:authorities="com.pleo.expenseapp.fileprovider"
+457-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:91:13-64
+458            android:exported="false"
+458-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:92:13-37
+459            android:grantUriPermissions="true" >
+459-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:93:13-47
+460            <meta-data
+460-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:85:13-87:58
+461                android:name="android.support.FILE_PROVIDER_PATHS"
+461-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:86:17-67
+462                android:resource="@xml/provider_paths" />
+462-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:87:17-55
+463        </provider>
+464        <provider
+464-->[:expo-file-system] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-27:20
+465            android:name="expo.modules.filesystem.FileSystemFileProvider"
+465-->[:expo-file-system] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-74
+466            android:authorities="com.pleo.expenseapp.FileSystemFileProvider"
+466-->[:expo-file-system] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-74
+467            android:exported="false"
+467-->[:expo-file-system] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-37
+468            android:grantUriPermissions="true" >
+468-->[:expo-file-system] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-47
+469            <meta-data
+469-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:85:13-87:58
+470                android:name="android.support.FILE_PROVIDER_PATHS"
+470-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:86:17-67
+471                android:resource="@xml/file_system_provider_paths" />
+471-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:87:17-55
+472        </provider>
+473
+474        <service
+474-->[:expo-location] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+475            android:name="expo.modules.location.services.LocationTaskService"
+475-->[:expo-location] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-78
+476            android:exported="false" />
+476-->[:expo-location] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+477
+478        <activity android:name="com.facebook.CustomTabMainActivity" />
+478-->[com.facebook.android:facebook-common:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/819e2612a8ab85a817e83cfc44bcb767/facebook-common-5.0.1/AndroidManifest.xml:33:9-71
+478-->[com.facebook.android:facebook-common:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/819e2612a8ab85a817e83cfc44bcb767/facebook-common-5.0.1/AndroidManifest.xml:33:19-68
+479        <activity android:name="com.facebook.CustomTabActivity" />
+479-->[com.facebook.android:facebook-common:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/819e2612a8ab85a817e83cfc44bcb767/facebook-common-5.0.1/AndroidManifest.xml:34:9-67
+479-->[com.facebook.android:facebook-common:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/819e2612a8ab85a817e83cfc44bcb767/facebook-common-5.0.1/AndroidManifest.xml:34:19-64
+480        <activity
+480-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:15:9-18:40
+481            android:name="com.facebook.ads.AudienceNetworkActivity"
+481-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:16:13-68
+482            android:configChanges="keyboardHidden|orientation|screenSize"
+482-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:17:13-74
+483            android:exported="false" />
+483-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:18:13-37
+484        <activity
+484-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:19:9-23:39
+485            android:name="com.facebook.ads.internal.ipc.RemoteANActivity"
+485-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:20:13-74
+486            android:configChanges="keyboardHidden|orientation|screenSize"
+486-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:21:13-74
+487            android:exported="false"
+487-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:22:13-37
+488            android:process=":adnw" />
+488-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:23:13-36
+489
+490        <service
+490-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:25:9-27:40
+491            android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService"
+491-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:26:13-83
+492            android:exported="false" />
+492-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:27:13-37
+493        <service
+493-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:28:9-31:39
+494            android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
+494-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:29:13-77
+495            android:exported="false"
+495-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:30:13-37
+496            android:process=":adnw" />
+496-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:31:13-36
+497        <service
+497-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/07e5eb53ebc60110417f48486fbcb98b/play-services-analytics-16.0.8/AndroidManifest.xml:40:9-44:72
+498            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+498-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/07e5eb53ebc60110417f48486fbcb98b/play-services-analytics-16.0.8/AndroidManifest.xml:41:13-80
+499            android:enabled="true"
+499-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/07e5eb53ebc60110417f48486fbcb98b/play-services-analytics-16.0.8/AndroidManifest.xml:42:13-35
+500            android:exported="false"
+500-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/07e5eb53ebc60110417f48486fbcb98b/play-services-analytics-16.0.8/AndroidManifest.xml:43:13-37
+501            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
+501-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/07e5eb53ebc60110417f48486fbcb98b/play-services-analytics-16.0.8/AndroidManifest.xml:44:13-69
+502        <uses-library
+502-->[com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2ce5f574fa060036cc7069c7015f17e6/play-services-maps-16.1.0/AndroidManifest.xml:33:9-35:40
+503            android:name="org.apache.http.legacy"
+503-->[com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2ce5f574fa060036cc7069c7015f17e6/play-services-maps-16.1.0/AndroidManifest.xml:34:13-50
+504            android:required="false" />
+504-->[com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2ce5f574fa060036cc7069c7015f17e6/play-services-maps-16.1.0/AndroidManifest.xml:35:13-37
+505
+506        <activity
+506-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+507            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+507-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+508            android:excludeFromRecents="true"
+508-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+509            android:exported="false"
+509-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+510            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+510-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+511        <!--
+512            Service handling Google Sign-In user revocation. For apps that do not integrate with
+513            Google Sign-In, this service will never be started.
+514        -->
+515        <service
+515-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+516            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+516-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+517            android:exported="true"
+517-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+518            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+518-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+519
+520        <activity
+520-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/01c1eacc026dcb0442dd540f81c2ea2a/appauth-0.7.1/AndroidManifest.xml:27:9-31:75
+521            android:name="net.openid.appauth.AuthorizationManagementActivity"
+521-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/01c1eacc026dcb0442dd540f81c2ea2a/appauth-0.7.1/AndroidManifest.xml:28:13-78
+522            android:exported="false"
+522-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/01c1eacc026dcb0442dd540f81c2ea2a/appauth-0.7.1/AndroidManifest.xml:29:13-37
+523            android:launchMode="singleTask"
+523-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/01c1eacc026dcb0442dd540f81c2ea2a/appauth-0.7.1/AndroidManifest.xml:30:13-44
+524            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+524-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/01c1eacc026dcb0442dd540f81c2ea2a/appauth-0.7.1/AndroidManifest.xml:31:13-72
+525
+526        <service
+526-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:19:9-21:40
+527            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+527-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:20:13-132
+528            android:exported="false" />
+528-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:21:13-37
+529        <service
+529-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:22:9-24:40
+530            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+530-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:23:13-127
+531            android:exported="false" />
+531-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:24:13-37
+532        <service
+532-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:25:9-27:40
+533            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+533-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:26:13-120
+534            android:exported="false" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+534-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:27:13-37
+535        <activity
+535-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f79e610447d6726a97d44d035f5db47d/play-services-ads-lite-15.0.1/AndroidManifest.xml:29:9-33:64
+536            android:name="com.google.android.gms.ads.AdActivity"
+536-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f79e610447d6726a97d44d035f5db47d/play-services-ads-lite-15.0.1/AndroidManifest.xml:30:13-65
+537            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+537-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f79e610447d6726a97d44d035f5db47d/play-services-ads-lite-15.0.1/AndroidManifest.xml:31:13-122
+538            android:exported="false"
+538-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f79e610447d6726a97d44d035f5db47d/play-services-ads-lite-15.0.1/AndroidManifest.xml:32:13-37
+539            android:theme="@android:style/Theme.Translucent" />
+539-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f79e610447d6726a97d44d035f5db47d/play-services-ads-lite-15.0.1/AndroidManifest.xml:33:13-61
+540        <!--
+541             FirebaseMessagingService performs security checks at runtime,
+542             but set to not exported to explicitly avoid allowing another app to call it.
+543        -->
+544        <service
+544-->[com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/90391d7b61864e6bc80fe89d189a0151/firebase-messaging-18.0.0/AndroidManifest.xml:28:9-34:19
+545            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+545-->[com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/90391d7b61864e6bc80fe89d189a0151/firebase-messaging-18.0.0/AndroidManifest.xml:29:13-82
+546            android:exported="false" >
+546-->[com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/90391d7b61864e6bc80fe89d189a0151/firebase-messaging-18.0.0/AndroidManifest.xml:30:13-37
+547            <intent-filter android:priority="-500" >
+547-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:325:7-327:23
+548                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+548-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:326:9-69
+548-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:326:17-67
+549            </intent-filter>
+550        </service>
+551        <service
+551-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/fe5d1b348453526102721576ff8d5984/play-services-measurement-api-16.5.0/AndroidManifest.xml:27:9-33:19
+552            android:name="com.google.firebase.components.ComponentDiscoveryService"
+552-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/fe5d1b348453526102721576ff8d5984/play-services-measurement-api-16.5.0/AndroidManifest.xml:28:13-84
+553            android:exported="false" >
+553-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/fe5d1b348453526102721576ff8d5984/play-services-measurement-api-16.5.0/AndroidManifest.xml:29:13-37
+554            <meta-data
+554-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/fe5d1b348453526102721576ff8d5984/play-services-measurement-api-16.5.0/AndroidManifest.xml:30:13-32:85
+555                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+555-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/fe5d1b348453526102721576ff8d5984/play-services-measurement-api-16.5.0/AndroidManifest.xml:31:17-139
+556                android:value="com.google.firebase.components.ComponentRegistrar" />
+556-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/fe5d1b348453526102721576ff8d5984/play-services-measurement-api-16.5.0/AndroidManifest.xml:32:17-82
+557            <meta-data
+557-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2d1f4bd654a9cc13de7d7bb6d91385e7/firebase-iid-18.0.0/AndroidManifest.xml:32:13-34:85
+558                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+558-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2d1f4bd654a9cc13de7d7bb6d91385e7/firebase-iid-18.0.0/AndroidManifest.xml:33:17-96
+559                android:value="com.google.firebase.components.ComponentRegistrar" />
+559-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2d1f4bd654a9cc13de7d7bb6d91385e7/firebase-iid-18.0.0/AndroidManifest.xml:34:17-82
+560        </service>
+561
+562        <receiver
+562-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2d1f4bd654a9cc13de7d7bb6d91385e7/firebase-iid-18.0.0/AndroidManifest.xml:37:9-44:20
+563            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+563-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2d1f4bd654a9cc13de7d7bb6d91385e7/firebase-iid-18.0.0/AndroidManifest.xml:38:13-78
+564            android:exported="true"
+564-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2d1f4bd654a9cc13de7d7bb6d91385e7/firebase-iid-18.0.0/AndroidManifest.xml:39:13-36
+565            android:permission="com.google.android.c2dm.permission.SEND" >
+565-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2d1f4bd654a9cc13de7d7bb6d91385e7/firebase-iid-18.0.0/AndroidManifest.xml:40:13-73
+566            <intent-filter>
+566-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:306:7-308:23
+567                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+567-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:296:9-72
+567-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:296:17-70
+568            </intent-filter>
+569        </receiver>
+570
+571        <activity
+571-->[com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f5596ae72533b295b7885947aec1dd58/play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+572            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+572-->[com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f5596ae72533b295b7885947aec1dd58/play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+573            android:exported="false"
+573-->[com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f5596ae72533b295b7885947aec1dd58/play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+574            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+574-->[com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f5596ae72533b295b7885947aec1dd58/play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+575
+576        <provider
+576-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/04b0cb4640c9657d1fcf8eae4059fc1e/firebase-common-17.0.0/AndroidManifest.xml:12:9-16:39
+577            android:name="com.google.firebase.provider.FirebaseInitProvider"
+577-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/04b0cb4640c9657d1fcf8eae4059fc1e/firebase-common-17.0.0/AndroidManifest.xml:13:13-77
+578            android:authorities="com.pleo.expenseapp.firebaseinitprovider"
+578-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/04b0cb4640c9657d1fcf8eae4059fc1e/firebase-common-17.0.0/AndroidManifest.xml:14:13-72
+579            android:exported="false"
+579-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/04b0cb4640c9657d1fcf8eae4059fc1e/firebase-common-17.0.0/AndroidManifest.xml:15:13-37
+580            android:initOrder="100" />
+580-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/04b0cb4640c9657d1fcf8eae4059fc1e/firebase-common-17.0.0/AndroidManifest.xml:16:13-36
+581
+582        <receiver
+582-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:29:9-33:20
+583            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+583-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:30:13-85
+584            android:enabled="true"
+584-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:31:13-35
+585            android:exported="false" >
+585-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:32:13-37
+586        </receiver>
+587        <receiver
+587-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:34:9-42:20
+588            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+588-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:35:13-100
+589            android:enabled="true"
+589-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:36:13-35
+590            android:exported="true"
+590-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:37:13-36
+591            android:permission="android.permission.INSTALL_PACKAGES" >
+591-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:38:13-69
+592            <intent-filter>
+592-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:266:7-268:23
+593                <action android:name="com.android.vending.INSTALL_REFERRER" />
+593-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:267:9-71
+593-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:267:17-68
+594            </intent-filter>
+595        </receiver>
+596
+597        <service
+597-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:44:9-47:40
+598            android:name="com.google.android.gms.measurement.AppMeasurementService"
+598-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:45:13-84
+599            android:enabled="true"
+599-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:46:13-35
+600            android:exported="false" />
+600-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:47:13-37
+601        <service
+601-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:48:9-52:72
+602            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+602-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:49:13-87
+603            android:enabled="true"
+603-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:50:13-35
+604            android:exported="false"
+604-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:51:13-37
+605            android:permission="android.permission.BIND_JOB_SERVICE" />
+605-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:52:13-69
+606
+607        <meta-data
+607-->[com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/7b6b11b1cba87baccc7c687cc98cfeec/play-services-basement-16.2.0/AndroidManifest.xml:23:9-25:69
+608            android:name="com.google.android.gms.version"
+608-->[com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/7b6b11b1cba87baccc7c687cc98cfeec/play-services-basement-16.2.0/AndroidManifest.xml:24:13-58
+609            android:value="@integer/google_play_services_version" />
+609-->[com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/7b6b11b1cba87baccc7c687cc98cfeec/play-services-basement-16.2.0/AndroidManifest.xml:25:13-66
+610        <!--
+611         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+612         with the application context. This config is merged in with the host app's manifest,
+613         but there can only be one provider with the same authority activated at any given
+614         point; so if the end user has two or more different apps that use Facebook SDK, only the
+615         first one will be able to use the provider. To work around this problem, we use the
+616         following placeholder in the authority to identify each host application as if it was
+617         a completely different provider.
+618        -->
+619        <provider
+619-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:39:9-42:40
+620            android:name="com.facebook.internal.FacebookInitProvider"
+620-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:40:13-70
+621            android:authorities="com.pleo.expenseapp.FacebookInitProvider"
+621-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:41:13-72
+622            android:exported="false" />
+622-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:42:13-37
+623
+624        <receiver
+624-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:44:9-50:20
+625            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+625-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:45:13-86
+626            android:exported="false" >
+626-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:46:13-37
+627            <intent-filter>
+627-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:47:13-49:29
+628                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+628-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:48:17-95
+628-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:48:25-92
+629            </intent-filter>
+630        </receiver>
+631        <receiver
+631-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:51:9-58:20
+632            android:name="com.facebook.CampaignTrackingReceiver"
+632-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:52:13-65
+633            android:exported="true"
+633-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:53:13-36
+634            android:permission="android.permission.INSTALL_PACKAGES" >
+634-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:54:13-69
+635            <intent-filter>
+635-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:266:7-268:23
+636                <action android:name="com.android.vending.INSTALL_REFERRER" />
+636-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:267:9-71
+636-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:267:17-68
+637            </intent-filter>
+638        </receiver>
+639    </application>
+640
+641</manifest>
