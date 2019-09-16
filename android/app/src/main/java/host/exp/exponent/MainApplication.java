@@ -22,13 +22,12 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
     return BuildConfig.DEBUG;
   }
 
-  // Needed for `react-native link`
+  @Override
   public List<ReactPackage> getPackages() {
     return Arrays.<ReactPackage>asList(
-        // Add your own packages here!
+            new NativeCameraPackage()
         // TODO: add native modules!
-       new NativeCameraPackage(),
-        new MainReactPackage()
+
         // Needed for `react-native link`
         // new MainReactPackage()
     );

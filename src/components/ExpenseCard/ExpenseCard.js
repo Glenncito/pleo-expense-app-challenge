@@ -14,14 +14,14 @@ import {
 } from "./styles";
 import { NativeModules } from "react-native";
 
-const CameraApplication = NativeModules.KotlinCameraModule;
+const CameraApplication = NativeModules.NativeCameraModule;
 const fetchData = async () => {
-  CameraApplication.sayHi
+  CameraApplication.sayHi()
     .then(message => {
       console.log(message);
     })
     .catch(error => {
-      throw error;
+      console.log(error);
     });
 };
 

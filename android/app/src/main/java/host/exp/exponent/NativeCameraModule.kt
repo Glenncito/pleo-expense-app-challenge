@@ -10,6 +10,10 @@ class NativeCameraModule(private val reactContext: ReactApplicationContext) : Re
         return "NativeCameraModule"
     }
 
+    override fun canOverrideExistingModule(): Boolean {
+        return true
+    }
+
     @ReactMethod
     fun sayHi(promise: Promise) {
         try {
