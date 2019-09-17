@@ -1,8 +1,10 @@
 package host.exp.exponent;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.facebook.react.ReactPackage;
+import com.facebook.react.bridge.BaseActivityEventListener;
 
 import org.unimodules.core.interfaces.Package;
 
@@ -11,7 +13,8 @@ import java.util.List;
 import host.exp.exponent.experience.DetachActivity;
 import host.exp.exponent.generated.DetachBuildConstants;
 
-public class MainActivity extends DetachActivity {
+public class MainActivity extends DetachActivity  {
+
 
   @Override
   public String publishedUrl() {
@@ -43,4 +46,5 @@ public class MainActivity extends DetachActivity {
     // Add extra initialProps here
     return expBundle;
   }
+
 }

@@ -1,5 +1,6 @@
 package host.exp.exponent;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 
@@ -26,6 +27,7 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
   public List<ReactPackage> getPackages() {
     return Arrays.<ReactPackage>asList(
             new NativeCameraPackage()
+
         // TODO: add native modules!
 
         // Needed for `react-native link`
@@ -48,4 +50,5 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
     // Customize/override OkHttp client here
     return builder;
   }
+
 }

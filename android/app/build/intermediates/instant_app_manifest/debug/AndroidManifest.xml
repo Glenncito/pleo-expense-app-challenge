@@ -125,6 +125,16 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:usesCleartextTraffic="true" >
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="host.exp.exponent.fileprovider.camera"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
         <activity
             android:name="host.exp.exponent.LauncherActivity"
             android:exported="true"
@@ -137,6 +147,12 @@
             android:theme="@style/Theme.Exponent.Light"
             android:windowSoftInputMode="adjustResize" >
         </activity>
+        <activity
+            android:name="host.exp.exponent.CameraActivity"
+            android:configChanges="orientation"
+            android:label="Camera Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="host.exp.exponent.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
@@ -444,16 +460,8 @@
         <!-- Scheduled notifications -->
         <receiver
             android:name="host.exp.exponent.notifications.ScheduledNotificationReceiver"
-            android:exported="false" /> <!-- WHEN_VERSIONING_REMOVE_TO_HERE -->
-        <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.pleo.expenseapp.provider"
-            android:exported="false"
-            android:grantUriPermissions="true" >
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths" />
-        </provider>
+            android:exported="false" />
+
         <provider
             android:name="versioned.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider"
             android:authorities="com.pleo.expenseapp.fileprovider"
