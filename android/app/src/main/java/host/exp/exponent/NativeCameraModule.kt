@@ -7,6 +7,10 @@ import android.app.Activity
 import android.util.Log
 import com.facebook.react.bridge.BaseActivityEventListener
 import com.facebook.react.bridge.ReactMethod
+import io.realm.Realm
+import io.realm.RealmObject
+import java.util.*
+import io.realm.RealmResults
 
 
 private val IMAGE_PICKER_REQUEST = 467081
@@ -31,9 +35,23 @@ class NativeCameraModule(private val reactContext: ReactApplicationContext) : Re
 
     init {
         reactContext.addActivityEventListener(mActivityEventListener)
+
+        initRealm()
+
+
     }
 
+    private fun initRealm() {
+        Realm.init(reactContext)
 
+// Get a Realm instance for this thread
+        val realm = Realm.getDefaultInstance()
+        success("Realm Init")
+        realm.where(Expense::class.java).findFirst()!!.let {
+            var amount = it.amount
+            Log.d("Amount", "${amount?.value}")
+        }
+    }
 
     override fun getName(): String {
         return "NativeCameraModule"
@@ -44,51 +62,46 @@ class NativeCameraModule(private val reactContext: ReactApplicationContext) : Re
     fun sayHi(promise: Promise) {
         mPromise = promise
         val intent = Intent(reactContext, CameraActivity::class.java) // mContext got from your overriden constructor
-        currentActivity?.startActivityForResult(intent,0)
+        currentActivity?.startActivityForResult(intent, 0)
 
-       /* try {
-            println("Greetings from Java")
-            promise.resolve("Callback : Greetings from Java")
-        } catch (e: IllegalViewOperationException) {
-            promise.resolve(e.toString())
-        }*/
+        /* try {
+             println("Greetings from Java")
+             promise.resolve("Callback : Greetings from Java")
+         } catch (e: IllegalViewOperationException) {
+             promise.resolve(e.toString())
+         }*/
     }
 
     @ReactMethod
-    fun success (message: String){
+    fun success(message: String) {
         try {
             mPromise?.resolve(message)
         } catch (e: IllegalViewOperationException) {
             mPromise?.resolve(e.toString())
         }
     }
+}
 
-    @ReactMethod
-    fun pickImage(promise: Promise) {
-        val currentActivity = currentActivity
-
-        if (currentActivity == null) {
-            promise.reject(E_ACTIVITY_DOES_NOT_EXIST, "Activity doesn't exist")
-            return
-        }
-        // Store the promise to resolve/reject when picker returns data
-        mPromise = promise
-
-        try {
-            val photoIntent = Intent(Intent.ACTION_PICK)
-            val intent = Intent(reactContext, CameraActivity::class.java) // mContext got from your overriden constructor
-
-            photoIntent.type = "image/*"
-
-            val chooserIntent = Intent.createChooser(intent, "Take a photo")
-
-            currentActivity.startActivityForResult(chooserIntent, IMAGE_PICKER_REQUEST)
-        } catch (e: Exception) {
-            mPromise?.reject(E_FAILED_TO_SHOW_PICKER, e)
-            mPromise = null
-        }
-
-    }
+open class Expense(
+    var date: Date = Date(),
+    var merchant: String = "",
+    var amount: Amount? = null,
+    var user: User? = null
+) : RealmObject() {
 
 
+}
+
+open class Amount(
+        var value: String = "",
+        var currency: String = ""
+) : RealmObject() {
+
+}
+
+open class User(
+        var first: String = "",
+        var last: String = "",
+        var email: String = ""
+) : RealmObject() {
 }

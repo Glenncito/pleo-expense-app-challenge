@@ -1,13 +1,73 @@
-import { View, ScrollView, FlatList } from "react-native";
+import { View, ScrollView, FlatList, Button } from "react-native";
 import ExpenseCard from "components/ExpenseCard/ExpenseCard";
 import React from "react";
 import { NativeModules } from "react-native";
+//import {AmountSchema, UserSchema, ExpenseSchema} from "models"; //make it target the alias
 
 export default function App() {
   const CameraApplication = NativeModules.KotlinCameraModule;
 
+  const Realm = require("realm");
+
+  const AmountSchema = {
+    name: "Amount",
+    properties: {
+      value: "string",
+      currency: "string"
+    }
+  };
+
+  const UserSchema = {
+    name: "User",
+    properties: {
+      first: "string",
+      last: "string",
+      email: "string"
+    }
+  };
+  const ExpenseSchema = {
+    name: "Expense",
+    properties: {
+      amount: "Amount",
+      user: "User",
+      date: "date",
+      merchant: "string"
+    }
+  };
+
+  const addRealmDummyData = () => {
+    Realm.open({
+      schema: [ExpenseSchema, UserSchema, AmountSchema]
+    }).then(realm => {
+      realm.write(() => {
+        realm.create("Expense", {
+          id: 3,
+          amount: { value: "113.5", currency: "ZAR" },
+          date: "2018-01-01T02:11:29.184Z",
+          merchant: "KAGE",
+          user: { first: "Glenn", last: "Steing", email: "Glenn@pleo.com" }
+        });
+        realm.create("Expense", {
+          id: 4,
+          amount: { value: "513.5", currency: "USD" },
+          date: "2018-05-05T02:11:29.184Z",
+          merchant: "McD",
+          user: { first: "Peter", last: "Scott", email: "Peter@pleo.com" }
+        });
+        // expense[0].user.push({first: 'Peter', last: 'Scott', email:'Peter@pleo.com'});
+        //expense[0].amount.push({first: 'Peter', last: 'Scott', email:'Peter@pleo.com'});
+
+        //const example = realm.objects('Expense')
+        //console.log(example)
+        //example.name = "Zoe"
+        // console.log(example)
+      });
+    });
+  };
+
   return (
     <View>
+      <Button title="Press me" onPress={() => addRealmDummyData()} />
       <ScrollView>
         <FlatList
           data={expenseItems}

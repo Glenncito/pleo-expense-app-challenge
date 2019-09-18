@@ -10,7 +10,8 @@ module.exports = function(api) {
             components: "./src/components",
             store: "./src/store",
             lib: "./src/lib",
-            pages: "./src/pages"
+            pages: "./src/pages",
+            models: "./src/models"
           }
         }
       ]

@@ -118,77 +118,77 @@
 58
 59    <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
 60    <supports-screens
-60-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:12:5-18:24
+60-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:12:5-18:24
 61        android:anyDensity="true"
-61-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:13:9-34
+61-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:13:9-34
 62        android:largeScreens="true"
-62-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:14:9-36
+62-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:14:9-36
 63        android:normalScreens="true"
-63-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:15:9-37
+63-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:15:9-37
 64        android:smallScreens="true"
-64-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:16:9-36
+64-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:16:9-36
 65        android:xlargeScreens="true" >
-65-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:17:9-37
+65-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:17:9-37
 66    </supports-screens>
 67
 68    <uses-permission android:name="host.exp.exponent.permission.C2D_MESSAGE" />
-68-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:25:5-80
-68-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:25:22-77
+68-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:25:5-80
+68-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:25:22-77
 69
 70    <uses-feature
-70-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:43:5-45:36
+70-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:43:5-45:36
 71        android:name="android.hardware.camera"
-71-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:44:9-47
+71-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:44:9-47
 72        android:required="false" />
-72-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:45:9-33
+72-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:45:9-33
 73    <uses-feature
-73-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:46:5-48:36
+73-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:46:5-48:36
 74        android:name="android.hardware.camera.autofocus"
-74-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:47:9-57
+74-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:47:9-57
 75        android:required="false" />
-75-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:48:9-33
+75-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:48:9-33
 76    <uses-feature
-76-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:49:5-51:36
+76-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:49:5-51:36
 77        android:name="android.hardware.location"
-77-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:50:9-49
+77-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:50:9-49
 78        android:required="false" />
-78-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:51:9-33
+78-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:51:9-33
 79    <uses-feature
-79-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:52:5-54:36
+79-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:52:5-54:36
 80        android:name="android.hardware.location.gps"
-80-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:53:9-53
+80-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:53:9-53
 81        android:required="false" />
-81-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:54:9-33
+81-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:54:9-33
 82    <uses-feature
-82-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:55:5-57:36
+82-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:55:5-57:36
 83        android:name="android.hardware.location.network"
-83-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:56:9-57
+83-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:56:9-57
 84        android:required="false" />
-84-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:57:9-33
+84-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:57:9-33
 85    <uses-feature
-85-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:58:5-60:36
+85-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:58:5-60:36
 86        android:name="android.hardware.wifi"
-86-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:59:9-45
+86-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:59:9-45
 87        android:required="false" />
-87-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:60:9-33
+87-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:60:9-33
 88    <uses-feature
-88-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:61:5-63:36
+88-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:61:5-63:36
 89        android:name="android.hardware.microphone"
-89-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:62:9-51
+89-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:62:9-51
 90        android:required="false" />
-90-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:63:9-33
+90-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:63:9-33
 91    <uses-feature
-91-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:64:5-66:36
+91-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:64:5-66:36
 92        android:name="android.hardware.telephony"
-92-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:65:9-50
+92-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:65:9-50
 93        android:required="false" />
-93-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:66:9-33
+93-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:66:9-33
 94    <uses-feature
-94-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:67:5-69:36
+94-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:67:5-69:36
 95        android:name="android.hardware.bluetooth"
-95-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:68:9-50
+95-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:68:9-50
 96        android:required="false" />
-96-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:69:9-33
+96-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:69:9-33
 97
 98    <uses-permission android:name="android.permission.STORAGE" />
 98-->[:expo-file-system] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-66
@@ -202,35 +202,35 @@
 103    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
 104    <!-- for Samsung -->
 105    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
-105-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:19:5-86
-105-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:19:22-83
+105-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5925a27120bb258774e13cafb4bebdd7/ShortcutBadger-1.1.4/AndroidManifest.xml:19:5-86
+105-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5925a27120bb258774e13cafb4bebdd7/ShortcutBadger-1.1.4/AndroidManifest.xml:19:22-83
 106    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
-106-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:20:5-87
-106-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:20:22-84
+106-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5925a27120bb258774e13cafb4bebdd7/ShortcutBadger-1.1.4/AndroidManifest.xml:20:5-87
+106-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5925a27120bb258774e13cafb4bebdd7/ShortcutBadger-1.1.4/AndroidManifest.xml:20:22-84
 107    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
-107-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:23:5-81
-107-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:23:22-78
+107-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5925a27120bb258774e13cafb4bebdd7/ShortcutBadger-1.1.4/AndroidManifest.xml:23:5-81
+107-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5925a27120bb258774e13cafb4bebdd7/ShortcutBadger-1.1.4/AndroidManifest.xml:23:22-78
 108    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
-108-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:24:5-83
-108-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:24:22-80
+108-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5925a27120bb258774e13cafb4bebdd7/ShortcutBadger-1.1.4/AndroidManifest.xml:24:5-83
+108-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5925a27120bb258774e13cafb4bebdd7/ShortcutBadger-1.1.4/AndroidManifest.xml:24:22-80
 109    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" /> <!-- for apex -->
-109-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:27:5-88
-109-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:27:22-85
+109-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5925a27120bb258774e13cafb4bebdd7/ShortcutBadger-1.1.4/AndroidManifest.xml:27:5-88
+109-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5925a27120bb258774e13cafb4bebdd7/ShortcutBadger-1.1.4/AndroidManifest.xml:27:22-85
 110    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
-110-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:30:5-84
-110-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:30:22-81
+110-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5925a27120bb258774e13cafb4bebdd7/ShortcutBadger-1.1.4/AndroidManifest.xml:30:5-84
+110-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5925a27120bb258774e13cafb4bebdd7/ShortcutBadger-1.1.4/AndroidManifest.xml:30:22-81
 111    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
-111-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:33:5-83
-111-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/1de4e46502442f6a042e07fb9242cb20/ShortcutBadger-1.1.4/AndroidManifest.xml:33:22-80
+111-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5925a27120bb258774e13cafb4bebdd7/ShortcutBadger-1.1.4/AndroidManifest.xml:33:5-83
+111-->[me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5925a27120bb258774e13cafb4bebdd7/ShortcutBadger-1.1.4/AndroidManifest.xml:33:22-80
 112    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-112-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:15:5-98
-112-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:15:22-95
+112-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/9139733f25aa20264ddb6c2965fa344b/library-3.2.11/AndroidManifest.xml:15:5-98
+112-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/9139733f25aa20264ddb6c2965fa344b/library-3.2.11/AndroidManifest.xml:15:22-95
 113    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
-113-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:16:5-94
-113-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:16:22-91
+113-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/9139733f25aa20264ddb6c2965fa344b/library-3.2.11/AndroidManifest.xml:16:5-94
+113-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/9139733f25aa20264ddb6c2965fa344b/library-3.2.11/AndroidManifest.xml:16:22-91
 114    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-114-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:26:5-110
-114-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:26:22-107
+114-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:26:5-110
+114-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:26:22-107
 115
 116    <application
 116-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:48:3-383:17
@@ -239,7 +239,7 @@
 118        android:allowBackup="true"
 118-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:50:5-31
 119        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
-119-->[com.android.support:support-compat:28.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f4b3cb114176662d0f2f4b98641d5d49/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+119-->[com.android.support:support-compat:28.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/663a7dc52ead282ac1c1ae93636e3e9c/support-compat-28.0.0/AndroidManifest.xml:22:18-91
 120        android:debuggable="true"
 121        android:icon="@mipmap/ic_launcher"
 121-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:51:5-39
@@ -248,7 +248,7 @@
 123        android:largeHeap="true"
 123-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:53:5-29
 124        android:supportsRtl="true"
-124-->[com.facebook.android:facebook-android-sdk:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/aba8c10fad78ee94d4a8a48d4989e5b5/facebook-android-sdk-5.0.1/AndroidManifest.xml:28:18-44
+124-->[com.facebook.android:facebook-android-sdk:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/63f290e5092d074be5189dbcb20eb38d/facebook-android-sdk-5.0.1/AndroidManifest.xml:28:18-44
 125        android:testOnly="true"
 126        android:usesCleartextTraffic="true" >
 126-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:54:5-40
@@ -689,7 +689,7 @@
 363            android:enabled="true"
 363-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:296:15-37
 364            android:exported="false" >
-364-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/07e5eb53ebc60110417f48486fbcb98b/play-services-analytics-16.0.8/AndroidManifest.xml:33:13-37
+364-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0de824918f828df52a1c8f38f3c96c75/play-services-analytics-16.0.8/AndroidManifest.xml:33:13-37
 365            <intent-filter>
 365-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:297:7-299:23
 366                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
@@ -848,22 +848,22 @@
 458        <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
 459        <!-- Scheduled notifications -->
 460        <receiver
-460-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:75:9-77:40
+460-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:75:9-77:40
 461            android:name="host.exp.exponent.notifications.ScheduledNotificationReceiver"
-461-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:76:13-89
+461-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:76:13-89
 462            android:exported="false" />
-462-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:77:13-37
+462-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:77:13-37
 463
 464        <provider
-464-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:89:9-97:20
+464-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:89:9-97:20
 465            android:name="versioned.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider"
-465-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:90:13-109
+465-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:90:13-109
 466            android:authorities="com.pleo.expenseapp.fileprovider"
-466-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:91:13-64
+466-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:91:13-64
 467            android:exported="false"
-467-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:92:13-37
+467-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:92:13-37
 468            android:grantUriPermissions="true" >
-468-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/160ef755c89e93faab66d23107119d3f/expoview-34.0.0/AndroidManifest.xml:93:13-47
+468-->[host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/997e14b9ba68ac20d4812765932e671d/expoview-34.0.0/AndroidManifest.xml:93:13-47
 469            <meta-data
 469-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:62:11-64:56
 470                android:name="android.support.FILE_PROVIDER_PATHS"
@@ -897,133 +897,133 @@
 485-->[:expo-location] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
 486
 487        <activity android:name="com.facebook.CustomTabMainActivity" />
-487-->[com.facebook.android:facebook-common:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/819e2612a8ab85a817e83cfc44bcb767/facebook-common-5.0.1/AndroidManifest.xml:33:9-71
-487-->[com.facebook.android:facebook-common:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/819e2612a8ab85a817e83cfc44bcb767/facebook-common-5.0.1/AndroidManifest.xml:33:19-68
+487-->[com.facebook.android:facebook-common:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f26f90cbe5932e36cfea760997509447/facebook-common-5.0.1/AndroidManifest.xml:33:9-71
+487-->[com.facebook.android:facebook-common:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f26f90cbe5932e36cfea760997509447/facebook-common-5.0.1/AndroidManifest.xml:33:19-68
 488        <activity android:name="com.facebook.CustomTabActivity" />
-488-->[com.facebook.android:facebook-common:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/819e2612a8ab85a817e83cfc44bcb767/facebook-common-5.0.1/AndroidManifest.xml:34:9-67
-488-->[com.facebook.android:facebook-common:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/819e2612a8ab85a817e83cfc44bcb767/facebook-common-5.0.1/AndroidManifest.xml:34:19-64
+488-->[com.facebook.android:facebook-common:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f26f90cbe5932e36cfea760997509447/facebook-common-5.0.1/AndroidManifest.xml:34:9-67
+488-->[com.facebook.android:facebook-common:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f26f90cbe5932e36cfea760997509447/facebook-common-5.0.1/AndroidManifest.xml:34:19-64
 489        <activity
-489-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:15:9-18:40
+489-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:15:9-18:40
 490            android:name="com.facebook.ads.AudienceNetworkActivity"
-490-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:16:13-68
+490-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:16:13-68
 491            android:configChanges="keyboardHidden|orientation|screenSize"
-491-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:17:13-74
+491-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:17:13-74
 492            android:exported="false" />
-492-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:18:13-37
+492-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:18:13-37
 493        <activity
-493-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:19:9-23:39
+493-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:19:9-23:39
 494            android:name="com.facebook.ads.internal.ipc.RemoteANActivity"
-494-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:20:13-74
+494-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:20:13-74
 495            android:configChanges="keyboardHidden|orientation|screenSize"
-495-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:21:13-74
+495-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:21:13-74
 496            android:exported="false"
-496-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:22:13-37
+496-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:22:13-37
 497            android:process=":adnw" />
-497-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:23:13-36
+497-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:23:13-36
 498
 499        <service
-499-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:25:9-27:40
+499-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:25:9-27:40
 500            android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService"
-500-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:26:13-83
+500-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:26:13-83
 501            android:exported="false" />
-501-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:27:13-37
+501-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:27:13-37
 502        <service
-502-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:28:9-31:39
+502-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:28:9-31:39
 503            android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
-503-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:29:13-77
+503-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:29:13-77
 504            android:exported="false"
-504-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:30:13-37
+504-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:30:13-37
 505            android:process=":adnw" />
-505-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/612b25bfbe4c17b48dd6657a90b5c4a1/audience-network-sdk-5.1.1/AndroidManifest.xml:31:13-36
+505-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/6096293d337b22f3621ac2bb66f695cf/audience-network-sdk-5.1.1/AndroidManifest.xml:31:13-36
 506        <service
-506-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/07e5eb53ebc60110417f48486fbcb98b/play-services-analytics-16.0.8/AndroidManifest.xml:40:9-44:72
+506-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0de824918f828df52a1c8f38f3c96c75/play-services-analytics-16.0.8/AndroidManifest.xml:40:9-44:72
 507            android:name="com.google.android.gms.analytics.AnalyticsJobService"
-507-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/07e5eb53ebc60110417f48486fbcb98b/play-services-analytics-16.0.8/AndroidManifest.xml:41:13-80
+507-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0de824918f828df52a1c8f38f3c96c75/play-services-analytics-16.0.8/AndroidManifest.xml:41:13-80
 508            android:enabled="true"
-508-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/07e5eb53ebc60110417f48486fbcb98b/play-services-analytics-16.0.8/AndroidManifest.xml:42:13-35
+508-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0de824918f828df52a1c8f38f3c96c75/play-services-analytics-16.0.8/AndroidManifest.xml:42:13-35
 509            android:exported="false"
-509-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/07e5eb53ebc60110417f48486fbcb98b/play-services-analytics-16.0.8/AndroidManifest.xml:43:13-37
+509-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0de824918f828df52a1c8f38f3c96c75/play-services-analytics-16.0.8/AndroidManifest.xml:43:13-37
 510            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
-510-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/07e5eb53ebc60110417f48486fbcb98b/play-services-analytics-16.0.8/AndroidManifest.xml:44:13-69
+510-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0de824918f828df52a1c8f38f3c96c75/play-services-analytics-16.0.8/AndroidManifest.xml:44:13-69
 511        <uses-library
-511-->[com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2ce5f574fa060036cc7069c7015f17e6/play-services-maps-16.1.0/AndroidManifest.xml:33:9-35:40
+511-->[com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/83630c4a2b71391545ebc90703b4615d/play-services-maps-16.1.0/AndroidManifest.xml:33:9-35:40
 512            android:name="org.apache.http.legacy"
-512-->[com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2ce5f574fa060036cc7069c7015f17e6/play-services-maps-16.1.0/AndroidManifest.xml:34:13-50
+512-->[com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/83630c4a2b71391545ebc90703b4615d/play-services-maps-16.1.0/AndroidManifest.xml:34:13-50
 513            android:required="false" />
-513-->[com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2ce5f574fa060036cc7069c7015f17e6/play-services-maps-16.1.0/AndroidManifest.xml:35:13-37
+513-->[com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/83630c4a2b71391545ebc90703b4615d/play-services-maps-16.1.0/AndroidManifest.xml:35:13-37
 514
 515        <activity
-515-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+515-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/c348f53d9cc049faf4b2cb97998bb943/play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
 516            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-516-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+516-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/c348f53d9cc049faf4b2cb97998bb943/play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
 517            android:excludeFromRecents="true"
-517-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+517-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/c348f53d9cc049faf4b2cb97998bb943/play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
 518            android:exported="false"
-518-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+518-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/c348f53d9cc049faf4b2cb97998bb943/play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
 519            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-519-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+519-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/c348f53d9cc049faf4b2cb97998bb943/play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
 520        <!--
 521            Service handling Google Sign-In user revocation. For apps that do not integrate with
 522            Google Sign-In, this service will never be started.
 523        -->
 524        <service
-524-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+524-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/c348f53d9cc049faf4b2cb97998bb943/play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
 525            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-525-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+525-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/c348f53d9cc049faf4b2cb97998bb943/play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
 526            android:exported="true"
-526-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+526-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/c348f53d9cc049faf4b2cb97998bb943/play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
 527            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-527-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0e82e67524e296c6d71f8ff76b69525c/play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+527-->[com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/c348f53d9cc049faf4b2cb97998bb943/play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
 528
 529        <activity
-529-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/01c1eacc026dcb0442dd540f81c2ea2a/appauth-0.7.1/AndroidManifest.xml:27:9-31:75
+529-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5d19c082dad14704a94c3e0e131f2935/appauth-0.7.1/AndroidManifest.xml:27:9-31:75
 530            android:name="net.openid.appauth.AuthorizationManagementActivity"
-530-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/01c1eacc026dcb0442dd540f81c2ea2a/appauth-0.7.1/AndroidManifest.xml:28:13-78
+530-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5d19c082dad14704a94c3e0e131f2935/appauth-0.7.1/AndroidManifest.xml:28:13-78
 531            android:exported="false"
-531-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/01c1eacc026dcb0442dd540f81c2ea2a/appauth-0.7.1/AndroidManifest.xml:29:13-37
+531-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5d19c082dad14704a94c3e0e131f2935/appauth-0.7.1/AndroidManifest.xml:29:13-37
 532            android:launchMode="singleTask"
-532-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/01c1eacc026dcb0442dd540f81c2ea2a/appauth-0.7.1/AndroidManifest.xml:30:13-44
+532-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5d19c082dad14704a94c3e0e131f2935/appauth-0.7.1/AndroidManifest.xml:30:13-44
 533            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-533-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/01c1eacc026dcb0442dd540f81c2ea2a/appauth-0.7.1/AndroidManifest.xml:31:13-72
+533-->[net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5d19c082dad14704a94c3e0e131f2935/appauth-0.7.1/AndroidManifest.xml:31:13-72
 534
 535        <service
-535-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:19:9-21:40
+535-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/9139733f25aa20264ddb6c2965fa344b/library-3.2.11/AndroidManifest.xml:19:9-21:40
 536            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
-536-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:20:13-132
+536-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/9139733f25aa20264ddb6c2965fa344b/library-3.2.11/AndroidManifest.xml:20:13-132
 537            android:exported="false" />
-537-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:21:13-37
+537-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/9139733f25aa20264ddb6c2965fa344b/library-3.2.11/AndroidManifest.xml:21:13-37
 538        <service
-538-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:22:9-24:40
+538-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/9139733f25aa20264ddb6c2965fa344b/library-3.2.11/AndroidManifest.xml:22:9-24:40
 539            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
-539-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:23:13-127
+539-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/9139733f25aa20264ddb6c2965fa344b/library-3.2.11/AndroidManifest.xml:23:13-127
 540            android:exported="false" />
-540-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:24:13-37
+540-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/9139733f25aa20264ddb6c2965fa344b/library-3.2.11/AndroidManifest.xml:24:13-37
 541        <service
-541-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:25:9-27:40
+541-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/9139733f25aa20264ddb6c2965fa344b/library-3.2.11/AndroidManifest.xml:25:9-27:40
 542            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
-542-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:26:13-120
+542-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/9139733f25aa20264ddb6c2965fa344b/library-3.2.11/AndroidManifest.xml:26:13-120
 543            android:exported="false" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
-543-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/395718892777746dfc6a41676d4a9bef/library-3.2.11/AndroidManifest.xml:27:13-37
+543-->[io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/9139733f25aa20264ddb6c2965fa344b/library-3.2.11/AndroidManifest.xml:27:13-37
 544        <activity
-544-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f79e610447d6726a97d44d035f5db47d/play-services-ads-lite-15.0.1/AndroidManifest.xml:29:9-33:64
+544-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/7aaab83616820f8460260bde39b4563d/play-services-ads-lite-15.0.1/AndroidManifest.xml:29:9-33:64
 545            android:name="com.google.android.gms.ads.AdActivity"
-545-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f79e610447d6726a97d44d035f5db47d/play-services-ads-lite-15.0.1/AndroidManifest.xml:30:13-65
+545-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/7aaab83616820f8460260bde39b4563d/play-services-ads-lite-15.0.1/AndroidManifest.xml:30:13-65
 546            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-546-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f79e610447d6726a97d44d035f5db47d/play-services-ads-lite-15.0.1/AndroidManifest.xml:31:13-122
+546-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/7aaab83616820f8460260bde39b4563d/play-services-ads-lite-15.0.1/AndroidManifest.xml:31:13-122
 547            android:exported="false"
-547-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f79e610447d6726a97d44d035f5db47d/play-services-ads-lite-15.0.1/AndroidManifest.xml:32:13-37
+547-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/7aaab83616820f8460260bde39b4563d/play-services-ads-lite-15.0.1/AndroidManifest.xml:32:13-37
 548            android:theme="@android:style/Theme.Translucent" />
-548-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f79e610447d6726a97d44d035f5db47d/play-services-ads-lite-15.0.1/AndroidManifest.xml:33:13-61
+548-->[com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/7aaab83616820f8460260bde39b4563d/play-services-ads-lite-15.0.1/AndroidManifest.xml:33:13-61
 549        <!--
 550             FirebaseMessagingService performs security checks at runtime,
 551             but set to not exported to explicitly avoid allowing another app to call it.
 552        -->
 553        <service
-553-->[com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/90391d7b61864e6bc80fe89d189a0151/firebase-messaging-18.0.0/AndroidManifest.xml:28:9-34:19
+553-->[com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/b110044bcbc2bcc985d484717559a134/firebase-messaging-18.0.0/AndroidManifest.xml:28:9-34:19
 554            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-554-->[com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/90391d7b61864e6bc80fe89d189a0151/firebase-messaging-18.0.0/AndroidManifest.xml:29:13-82
+554-->[com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/b110044bcbc2bcc985d484717559a134/firebase-messaging-18.0.0/AndroidManifest.xml:29:13-82
 555            android:exported="false" >
-555-->[com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/90391d7b61864e6bc80fe89d189a0151/firebase-messaging-18.0.0/AndroidManifest.xml:30:13-37
+555-->[com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/b110044bcbc2bcc985d484717559a134/firebase-messaging-18.0.0/AndroidManifest.xml:30:13-37
 556            <intent-filter android:priority="-500" >
 556-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:341:7-343:23
 557                <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -1032,33 +1032,33 @@
 558            </intent-filter>
 559        </service>
 560        <service
-560-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/fe5d1b348453526102721576ff8d5984/play-services-measurement-api-16.5.0/AndroidManifest.xml:27:9-33:19
+560-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/8426a3c65e6fddaee2dc87f2f0994dc1/play-services-measurement-api-16.5.0/AndroidManifest.xml:27:9-33:19
 561            android:name="com.google.firebase.components.ComponentDiscoveryService"
-561-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/fe5d1b348453526102721576ff8d5984/play-services-measurement-api-16.5.0/AndroidManifest.xml:28:13-84
+561-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/8426a3c65e6fddaee2dc87f2f0994dc1/play-services-measurement-api-16.5.0/AndroidManifest.xml:28:13-84
 562            android:exported="false" >
-562-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/fe5d1b348453526102721576ff8d5984/play-services-measurement-api-16.5.0/AndroidManifest.xml:29:13-37
+562-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/8426a3c65e6fddaee2dc87f2f0994dc1/play-services-measurement-api-16.5.0/AndroidManifest.xml:29:13-37
 563            <meta-data
-563-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/fe5d1b348453526102721576ff8d5984/play-services-measurement-api-16.5.0/AndroidManifest.xml:30:13-32:85
+563-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/8426a3c65e6fddaee2dc87f2f0994dc1/play-services-measurement-api-16.5.0/AndroidManifest.xml:30:13-32:85
 564                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-564-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/fe5d1b348453526102721576ff8d5984/play-services-measurement-api-16.5.0/AndroidManifest.xml:31:17-139
+564-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/8426a3c65e6fddaee2dc87f2f0994dc1/play-services-measurement-api-16.5.0/AndroidManifest.xml:31:17-139
 565                android:value="com.google.firebase.components.ComponentRegistrar" />
-565-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/fe5d1b348453526102721576ff8d5984/play-services-measurement-api-16.5.0/AndroidManifest.xml:32:17-82
+565-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/8426a3c65e6fddaee2dc87f2f0994dc1/play-services-measurement-api-16.5.0/AndroidManifest.xml:32:17-82
 566            <meta-data
-566-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2d1f4bd654a9cc13de7d7bb6d91385e7/firebase-iid-18.0.0/AndroidManifest.xml:32:13-34:85
+566-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5a7db30e7d4a882927bf9ee2113f57c5/firebase-iid-18.0.0/AndroidManifest.xml:32:13-34:85
 567                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-567-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2d1f4bd654a9cc13de7d7bb6d91385e7/firebase-iid-18.0.0/AndroidManifest.xml:33:17-96
+567-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5a7db30e7d4a882927bf9ee2113f57c5/firebase-iid-18.0.0/AndroidManifest.xml:33:17-96
 568                android:value="com.google.firebase.components.ComponentRegistrar" />
-568-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2d1f4bd654a9cc13de7d7bb6d91385e7/firebase-iid-18.0.0/AndroidManifest.xml:34:17-82
+568-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5a7db30e7d4a882927bf9ee2113f57c5/firebase-iid-18.0.0/AndroidManifest.xml:34:17-82
 569        </service>
 570
 571        <receiver
-571-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2d1f4bd654a9cc13de7d7bb6d91385e7/firebase-iid-18.0.0/AndroidManifest.xml:37:9-44:20
+571-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5a7db30e7d4a882927bf9ee2113f57c5/firebase-iid-18.0.0/AndroidManifest.xml:37:9-44:20
 572            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-572-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2d1f4bd654a9cc13de7d7bb6d91385e7/firebase-iid-18.0.0/AndroidManifest.xml:38:13-78
+572-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5a7db30e7d4a882927bf9ee2113f57c5/firebase-iid-18.0.0/AndroidManifest.xml:38:13-78
 573            android:exported="true"
-573-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2d1f4bd654a9cc13de7d7bb6d91385e7/firebase-iid-18.0.0/AndroidManifest.xml:39:13-36
+573-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5a7db30e7d4a882927bf9ee2113f57c5/firebase-iid-18.0.0/AndroidManifest.xml:39:13-36
 574            android:permission="com.google.android.c2dm.permission.SEND" >
-574-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2d1f4bd654a9cc13de7d7bb6d91385e7/firebase-iid-18.0.0/AndroidManifest.xml:40:13-73
+574-->[com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/5a7db30e7d4a882927bf9ee2113f57c5/firebase-iid-18.0.0/AndroidManifest.xml:40:13-73
 575            <intent-filter>
 575-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:322:7-324:23
 576                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
@@ -1068,44 +1068,44 @@
 578        </receiver>
 579
 580        <activity
-580-->[com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f5596ae72533b295b7885947aec1dd58/play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+580-->[com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/eab8a03652264b77170bafcad9ad15bf/play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
 581            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-581-->[com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f5596ae72533b295b7885947aec1dd58/play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+581-->[com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/eab8a03652264b77170bafcad9ad15bf/play-services-base-16.0.1/AndroidManifest.xml:24:13-79
 582            android:exported="false"
-582-->[com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f5596ae72533b295b7885947aec1dd58/play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+582-->[com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/eab8a03652264b77170bafcad9ad15bf/play-services-base-16.0.1/AndroidManifest.xml:25:13-37
 583            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-583-->[com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f5596ae72533b295b7885947aec1dd58/play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+583-->[com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/eab8a03652264b77170bafcad9ad15bf/play-services-base-16.0.1/AndroidManifest.xml:26:13-72
 584
 585        <provider
-585-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/04b0cb4640c9657d1fcf8eae4059fc1e/firebase-common-17.0.0/AndroidManifest.xml:12:9-16:39
+585-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/c483445fcd2ef1efe3fafe861bd92e10/firebase-common-17.0.0/AndroidManifest.xml:12:9-16:39
 586            android:name="com.google.firebase.provider.FirebaseInitProvider"
-586-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/04b0cb4640c9657d1fcf8eae4059fc1e/firebase-common-17.0.0/AndroidManifest.xml:13:13-77
+586-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/c483445fcd2ef1efe3fafe861bd92e10/firebase-common-17.0.0/AndroidManifest.xml:13:13-77
 587            android:authorities="com.pleo.expenseapp.firebaseinitprovider"
-587-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/04b0cb4640c9657d1fcf8eae4059fc1e/firebase-common-17.0.0/AndroidManifest.xml:14:13-72
+587-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/c483445fcd2ef1efe3fafe861bd92e10/firebase-common-17.0.0/AndroidManifest.xml:14:13-72
 588            android:exported="false"
-588-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/04b0cb4640c9657d1fcf8eae4059fc1e/firebase-common-17.0.0/AndroidManifest.xml:15:13-37
+588-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/c483445fcd2ef1efe3fafe861bd92e10/firebase-common-17.0.0/AndroidManifest.xml:15:13-37
 589            android:initOrder="100" />
-589-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/04b0cb4640c9657d1fcf8eae4059fc1e/firebase-common-17.0.0/AndroidManifest.xml:16:13-36
+589-->[com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/c483445fcd2ef1efe3fafe861bd92e10/firebase-common-17.0.0/AndroidManifest.xml:16:13-36
 590
 591        <receiver
-591-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:29:9-33:20
+591-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:29:9-33:20
 592            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-592-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:30:13-85
+592-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:30:13-85
 593            android:enabled="true"
-593-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:31:13-35
+593-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:31:13-35
 594            android:exported="false" >
-594-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:32:13-37
+594-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:32:13-37
 595        </receiver>
 596        <receiver
-596-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:34:9-42:20
+596-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:34:9-42:20
 597            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-597-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:35:13-100
+597-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:35:13-100
 598            android:enabled="true"
-598-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:36:13-35
+598-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:36:13-35
 599            android:exported="true"
-599-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:37:13-36
+599-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:37:13-36
 600            android:permission="android.permission.INSTALL_PACKAGES" >
-600-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:38:13-69
+600-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:38:13-69
 601            <intent-filter>
 601-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:282:7-284:23
 602                <action android:name="com.android.vending.INSTALL_REFERRER" />
@@ -1115,30 +1115,30 @@
 604        </receiver>
 605
 606        <service
-606-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:44:9-47:40
+606-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:44:9-47:40
 607            android:name="com.google.android.gms.measurement.AppMeasurementService"
-607-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:45:13-84
+607-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:45:13-84
 608            android:enabled="true"
-608-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:46:13-35
+608-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:46:13-35
 609            android:exported="false" />
-609-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:47:13-37
+609-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:47:13-37
 610        <service
-610-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:48:9-52:72
+610-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:48:9-52:72
 611            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-611-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:49:13-87
+611-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:49:13-87
 612            android:enabled="true"
-612-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:50:13-35
+612-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:50:13-35
 613            android:exported="false"
-613-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:51:13-37
+613-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:51:13-37
 614            android:permission="android.permission.BIND_JOB_SERVICE" />
-614-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/0aaa8eacd62fe8b39fd267da035dda56/play-services-measurement-16.5.0/AndroidManifest.xml:52:13-69
+614-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/61d3da7853614e5323b3e3bd7326abcc/play-services-measurement-16.5.0/AndroidManifest.xml:52:13-69
 615
 616        <meta-data
-616-->[com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/7b6b11b1cba87baccc7c687cc98cfeec/play-services-basement-16.2.0/AndroidManifest.xml:23:9-25:69
+616-->[com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/99eebcf749f2fc7d3a14903f89bee4e2/play-services-basement-16.2.0/AndroidManifest.xml:23:9-25:69
 617            android:name="com.google.android.gms.version"
-617-->[com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/7b6b11b1cba87baccc7c687cc98cfeec/play-services-basement-16.2.0/AndroidManifest.xml:24:13-58
+617-->[com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/99eebcf749f2fc7d3a14903f89bee4e2/play-services-basement-16.2.0/AndroidManifest.xml:24:13-58
 618            android:value="@integer/google_play_services_version" />
-618-->[com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/7b6b11b1cba87baccc7c687cc98cfeec/play-services-basement-16.2.0/AndroidManifest.xml:25:13-66
+618-->[com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/99eebcf749f2fc7d3a14903f89bee4e2/play-services-basement-16.2.0/AndroidManifest.xml:25:13-66
 619        <!--
 620         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
 621         with the application context. This config is merged in with the host app's manifest,
@@ -1149,35 +1149,35 @@
 626         a completely different provider.
 627        -->
 628        <provider
-628-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:39:9-42:40
+628-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2292fab2e69a9aa4e863c110fa992546/facebook-core-5.0.1/AndroidManifest.xml:39:9-42:40
 629            android:name="com.facebook.internal.FacebookInitProvider"
-629-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:40:13-70
+629-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2292fab2e69a9aa4e863c110fa992546/facebook-core-5.0.1/AndroidManifest.xml:40:13-70
 630            android:authorities="com.pleo.expenseapp.FacebookInitProvider"
-630-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:41:13-72
+630-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2292fab2e69a9aa4e863c110fa992546/facebook-core-5.0.1/AndroidManifest.xml:41:13-72
 631            android:exported="false" />
-631-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:42:13-37
+631-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2292fab2e69a9aa4e863c110fa992546/facebook-core-5.0.1/AndroidManifest.xml:42:13-37
 632
 633        <receiver
-633-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:44:9-50:20
+633-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2292fab2e69a9aa4e863c110fa992546/facebook-core-5.0.1/AndroidManifest.xml:44:9-50:20
 634            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-634-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:45:13-86
+634-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2292fab2e69a9aa4e863c110fa992546/facebook-core-5.0.1/AndroidManifest.xml:45:13-86
 635            android:exported="false" >
-635-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:46:13-37
+635-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2292fab2e69a9aa4e863c110fa992546/facebook-core-5.0.1/AndroidManifest.xml:46:13-37
 636            <intent-filter>
-636-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:47:13-49:29
+636-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2292fab2e69a9aa4e863c110fa992546/facebook-core-5.0.1/AndroidManifest.xml:47:13-49:29
 637                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-637-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:48:17-95
-637-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:48:25-92
+637-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2292fab2e69a9aa4e863c110fa992546/facebook-core-5.0.1/AndroidManifest.xml:48:17-95
+637-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2292fab2e69a9aa4e863c110fa992546/facebook-core-5.0.1/AndroidManifest.xml:48:25-92
 638            </intent-filter>
 639        </receiver>
 640        <receiver
-640-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:51:9-58:20
+640-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2292fab2e69a9aa4e863c110fa992546/facebook-core-5.0.1/AndroidManifest.xml:51:9-58:20
 641            android:name="com.facebook.CampaignTrackingReceiver"
-641-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:52:13-65
+641-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2292fab2e69a9aa4e863c110fa992546/facebook-core-5.0.1/AndroidManifest.xml:52:13-65
 642            android:exported="true"
-642-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:53:13-36
+642-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2292fab2e69a9aa4e863c110fa992546/facebook-core-5.0.1/AndroidManifest.xml:53:13-36
 643            android:permission="android.permission.INSTALL_PACKAGES" >
-643-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/961914552bf592c0389661e18664db32/facebook-core-5.0.1/AndroidManifest.xml:54:13-69
+643-->[com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/2292fab2e69a9aa4e863c110fa992546/facebook-core-5.0.1/AndroidManifest.xml:54:13-69
 644            <intent-filter>
 644-->/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:282:7-284:23
 645                <action android:name="com.android.vending.INSTALL_REFERRER" />

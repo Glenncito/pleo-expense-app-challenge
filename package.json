@@ -19,6 +19,7 @@
     "react-native-unimodules": "^0.5.2",
     "react-native-web": "^0.11.4",
     "react-router-native": "^5.0.1",
+    "realm": "^3.0.0",
     "redux-starter-kit": "^0.7.0",
     "styled-components": "^4.3.2"
   },

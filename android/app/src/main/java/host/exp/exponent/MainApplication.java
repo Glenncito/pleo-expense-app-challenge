@@ -11,6 +11,7 @@ import java.util.List;
 
 import expo.loaders.provider.interfaces.AppLoaderPackagesProviderInterface;
 import host.exp.exponent.generated.BasePackageList;
+import io.realm.react.RealmReactPackage;
 import okhttp3.OkHttpClient;
 
 // Needed for `react-native link`
@@ -26,7 +27,8 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
   @Override
   public List<ReactPackage> getPackages() {
     return Arrays.<ReactPackage>asList(
-            new NativeCameraPackage()
+            new NativeCameraPackage(),
+            new RealmReactPackage()
 
         // TODO: add native modules!
 
