@@ -80,6 +80,14 @@
     "present": true
   },
   {
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/desugar/debug/4.jar-0",
+    "index": 10,
+    "scopes": ["SUB_PROJECTS"],
+    "types": ["DEX_ARCHIVE"],
+    "format": "JAR",
+    "present": false
+  },
+  {
     "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/desugar/debug/4.jar-1",
     "index": 11,
     "scopes": ["SUB_PROJECTS"],
@@ -224,6 +232,14 @@
     "present": true
   },
   {
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/desugar/debug/13.jar-1",
+    "index": 29,
+    "scopes": ["SUB_PROJECTS"],
+    "types": ["DEX_ARCHIVE"],
+    "format": "JAR",
+    "present": false
+  },
+  {
     "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/desugar/debug/14.jar-0",
     "index": 30,
     "scopes": ["SUB_PROJECTS"],
@@ -262,6 +278,14 @@
     "types": ["DEX_ARCHIVE"],
     "format": "JAR",
     "present": true
+  },
+  {
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/desugar/debug/16.jar-1",
+    "index": 35,
+    "scopes": ["SUB_PROJECTS"],
+    "types": ["DEX_ARCHIVE"],
+    "format": "JAR",
+    "present": false
   },
   {
     "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/desugar/debug/17.jar-0",
