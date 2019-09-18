@@ -1,0 +1,10 @@
+{
+  "mName": "debug",
+  "mStoreFile": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/debug.keystore",
+  "mStorePassword": "android",
+  "mKeyAlias": "AndroidDebugKey",
+  "mKeyPassword": "android",
+  "mStoreType": "jks",
+  "mV1SigningEnabled": true,
+  "mV2SigningEnabled": true
+}
