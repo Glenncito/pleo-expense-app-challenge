@@ -4,17 +4,7 @@
       "outputFile": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
       "map": [
         {
-          "source": "/Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/33cb9f3db501cdff78618a9da52a4e32/appcompat-v7-28.0.0/res/values-land/values-land.xml",
-          "from": {
-            "startLines": "2,3,4",
-            "startColumns": "4,4,4",
-            "startOffsets": "55,125,196",
-            "endColumns": "69,70,67",
-            "endOffsets": "120,191,259"
-          }
-        },
-        {
-          "source": "/Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/89c045e20b0f62df15e43d3eecfa304a/design-28.0.0/res/values-land/values-land.xml",
+          "source": "/Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/f4106ddfe3ce843c3aad3e7abe262782/design-28.0.0/res/values-land/values-land.xml",
           "from": {
             "startLines": "2",
             "startColumns": "4",
@@ -30,6 +20,16 @@
             "endLines": "8",
             "endColumns": "10",
             "endOffsets": "431"
+          }
+        },
+        {
+          "source": "/Users/g-wizkiz/.gradle/caches/transforms-2/files-2.1/65cf38d0b24fcb7b504f28eebf87353f/appcompat-v7-28.0.0/res/values-land/values-land.xml",
+          "from": {
+            "startLines": "2,3,4",
+            "startColumns": "4,4,4",
+            "startOffsets": "55,125,196",
+            "endColumns": "69,70,67",
+            "endOffsets": "120,191,259"
           }
         }
       ]

@@ -9,7 +9,7 @@ buildscript {
 
     buildToolsVersion = '28.0.0'
     supportLibVersion = '28.0.0'
-    kotlinVersion = '1.3.21'
+    kotlinVersion = '1.3.50'
     repositoryUrl = "file:${System.env.HOME}/.m2/repository/"
   }
   repositories {
@@ -19,8 +19,8 @@ buildscript {
   }
   dependencies {
     classpath 'com.android.tools.build:gradle:3.5.0'
-    classpath 'com.google.gms:google-services:3.2.1'
-    classpath 'de.undercouch:gradle-download-task:2.0.0'
+    classpath 'com.google.gms:google-services:4.3.2' //
+    classpath 'de.undercouch:gradle-download-task:3.4.3'
     classpath "io.realm:realm-gradle-plugin:5.15.1"
 
     // https://github.com/awslabs/aws-device-farm-gradle-plugin/releases
@@ -56,6 +56,9 @@ allprojects {
     maven {
       url "$rootDir/../node_modules/expokit/maven"
     }
+    /*maven {
+      url "$rootDir/../node_modules/react-native/android"
+    }*/
     maven {
       // We use a modified build of com.android.support.test:runner:1.0.1. Explanation in maven-test/README
       url "$rootDir/maven-test"

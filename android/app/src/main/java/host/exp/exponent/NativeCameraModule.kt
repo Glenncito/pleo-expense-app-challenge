@@ -7,6 +7,7 @@ import android.app.Activity
 import android.util.Log
 import com.facebook.react.bridge.BaseActivityEventListener
 import com.facebook.react.bridge.ReactMethod
+import host.exp.exponent.models.Expense
 import io.realm.Realm
 import io.realm.RealmObject
 import java.util.*
@@ -81,7 +82,7 @@ class NativeCameraModule(private val reactContext: ReactApplicationContext) : Re
         }
     }
 }
-
+/*
 open class Expense(
     var date: Date = Date(),
     var merchant: String = "",
@@ -105,3 +106,4 @@ open class User(
         var email: String = ""
 ) : RealmObject() {
 }
+ */
