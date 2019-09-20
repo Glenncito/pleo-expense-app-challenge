@@ -37,7 +37,7 @@ class NativeCameraModule(private val reactContext: ReactApplicationContext) : Re
     init {
         reactContext.addActivityEventListener(mActivityEventListener)
 
-        initRealm()
+        //initRealm()
 
 
     }

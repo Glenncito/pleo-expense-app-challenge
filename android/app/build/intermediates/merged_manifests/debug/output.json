@@ -1,7 +1,7 @@
 [
   {
     "outputType": { "type": "MERGED_MANIFESTS" },
-    "apkData": {
+    "apkInfo": {
       "type": "MAIN",
       "splits": [],
       "versionCode": 1,

@@ -1,5 +1,4 @@
 // Gradle script for detached apps.
-// Gradle script for detached apps.
 
 import org.apache.tools.ant.taskdefs.condition.Os
 

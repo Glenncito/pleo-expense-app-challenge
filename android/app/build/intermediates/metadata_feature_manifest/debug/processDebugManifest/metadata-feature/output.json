@@ -1,7 +1,7 @@
 [
   {
     "outputType": { "type": "METADATA_FEATURE_MANIFEST" },
-    "apkData": {
+    "apkInfo": {
       "type": "MAIN",
       "splits": [],
       "versionCode": 1,

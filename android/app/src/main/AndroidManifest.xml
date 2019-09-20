@@ -54,7 +54,7 @@
     android:usesCleartextTraffic="true">
 
       <provider
-          android:name="android.support.v4.content.FileProvider"
+          android:name="androidx.core.content.FileProvider"
           android:authorities="host.exp.exponent.fileprovider.camera"
           tools:replace="android:authorities"
           android:exported="false"
@@ -64,7 +64,7 @@
               android:resource="@xml/provider_paths" />
       </provider>
 
-    <activity
+      <activity
       android:name=".LauncherActivity"
       android:exported="true"
       android:launchMode="singleTask"
@@ -77,12 +77,7 @@
       android:theme="@style/Theme.Exponent.Light"
       android:windowSoftInputMode="adjustResize">
     </activity>
-      <activity
-          android:name=".CameraActivity"
-          android:label="Camera Activity"
-          android:theme="@style/AppTheme"
-          android:configChanges="orientation"
-          android:screenOrientation="portrait" />
+
     <activity
       android:name=".MainActivity"
       android:launchMode="singleTask"
@@ -104,6 +99,13 @@
       </intent-filter>
       <!-- ADD DETACH APP SPECIFIC INTENT FILTERS -->
     </activity>
+      <activity
+          android:name=".CameraActivity"
+          android:label="Camera Activity"
+          android:theme="@style/AppTheme"
+          android:configChanges="orientation"
+          android:screenOrientation="portrait">
+      </activity>
 
     <activity
       android:name=".experience.HomeActivity"
@@ -187,7 +189,7 @@
             <action android:name="android.intent.action.VIEW" />
             <category android:name="android.intent.category.DEFAULT" />
             <category android:name="android.intent.category.BROWSABLE" />
-            <data android:scheme="expo.modules.payments.stripe.0fd3f5f2-91f5-4872-b924-851303281858" />
+            <data android:scheme="expo.modules.payments.stripe.c82b1548-951a-42ce-bc22-ce8f0198fc4f" />
         </intent-filter>
     </activity>
     <!-- Versioned Activity for Stripe -->
@@ -379,7 +381,7 @@
     <!-- The Facebook SDK runs FacebookInitProvider on startup and crashes if there isn't an ID here -->
     <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="fb0"/>
 
-    <meta-data android:name="standaloneStripeScheme" android:value="0fd3f5f2-91f5-4872-b924-851303281858" />
+    <meta-data android:name="standaloneStripeScheme" android:value="c82b1548-951a-42ce-bc22-ce8f0198fc4f" />
   </application>
 
 </manifest>

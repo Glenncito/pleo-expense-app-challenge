@@ -1,7 +1,7 @@
 [
   {
     "outputType": { "type": "APK" },
-    "apkData": {
+    "apkInfo": {
       "type": "MAIN",
       "splits": [],
       "versionCode": 1,

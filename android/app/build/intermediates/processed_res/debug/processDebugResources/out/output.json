@@ -1,7 +1,7 @@
 [
   {
     "outputType": { "type": "PROCESSED_RES" },
-    "apkData": {
+    "apkInfo": {
       "type": "MAIN",
       "splits": [],
       "versionCode": 1,

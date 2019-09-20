@@ -116,7 +116,7 @@
     <application
         android:name="host.exp.exponent.MainApplication"
         android:allowBackup="true"
-        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -125,7 +125,7 @@
         android:testOnly="true"
         android:usesCleartextTraffic="true" >
         <provider
-            android:name="android.support.v4.content.FileProvider"
+            android:name="androidx.core.content.FileProvider"
             android:authorities="host.exp.exponent.fileprovider.camera"
             android:exported="false"
             android:grantUriPermissions="true" >
@@ -147,12 +147,6 @@
             android:windowSoftInputMode="adjustResize" >
         </activity>
         <activity
-            android:name="host.exp.exponent.CameraActivity"
-            android:configChanges="orientation"
-            android:label="Camera Activity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" />
-        <activity
             android:name="host.exp.exponent.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:launchMode="singleTask"
@@ -172,6 +166,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <!-- ADD DETACH APP SPECIFIC INTENT FILTERS -->
+        </activity>
+        <activity
+            android:name="host.exp.exponent.CameraActivity"
+            android:configChanges="orientation"
+            android:label="Camera Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
         </activity>
         <activity
             android:name="host.exp.exponent.experience.HomeActivity"
@@ -250,7 +251,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="expo.modules.payments.stripe.0fd3f5f2-91f5-4872-b924-851303281858" />
+                <data android:scheme="expo.modules.payments.stripe.c82b1548-951a-42ce-bc22-ce8f0198fc4f" />
             </intent-filter>
         </activity>
         <!-- Versioned Activity for Stripe -->
@@ -454,7 +455,7 @@
             android:value="fb0" />
         <meta-data
             android:name="standaloneStripeScheme"
-            android:value="0fd3f5f2-91f5-4872-b924-851303281858" />
+            android:value="c82b1548-951a-42ce-bc22-ce8f0198fc4f" />
         <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
         <!-- Scheduled notifications -->
         <receiver
@@ -540,7 +541,36 @@
             android:exported="false" />
         <service
             android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
-            android:exported="false" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+            android:exported="false" />
+        <!--
+         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+         with the application context. This config is merged in with the host app's manifest,
+         but there can only be one provider with the same authority activated at any given
+         point; so if the end user has two or more different apps that use Facebook SDK, only the
+         first one will be able to use the provider. To work around this problem, we use the
+         following placeholder in the authority to identify each host application as if it was
+         a completely different provider.
+        -->
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:authorities="com.pleo.expenseapp.FacebookInitProvider"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.facebook.CampaignTrackingReceiver"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
@@ -616,35 +646,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-        <!--
-         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
-         with the application context. This config is merged in with the host app's manifest,
-         but there can only be one provider with the same authority activated at any given
-         point; so if the end user has two or more different apps that use Facebook SDK, only the
-         first one will be able to use the provider. To work around this problem, we use the
-         following placeholder in the authority to identify each host application as if it was
-         a completely different provider.
-        -->
-        <provider
-            android:name="com.facebook.internal.FacebookInitProvider"
-            android:authorities="com.pleo.expenseapp.FacebookInitProvider"
-            android:exported="false" />
-
-        <receiver
-            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-            </intent-filter>
-        </receiver>
-        <receiver
-            android:name="com.facebook.CampaignTrackingReceiver"
-            android:exported="true"
-            android:permission="android.permission.INSTALL_PACKAGES" >
-            <intent-filter>
-                <action android:name="com.android.vending.INSTALL_REFERRER" />
-            </intent-filter>
-        </receiver>
     </application>
 
 </manifest>
