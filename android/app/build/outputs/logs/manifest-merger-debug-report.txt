@@ -5,6 +5,7 @@ INJECTED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/m
 INJECTED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:2:1-387:12
 INJECTED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:2:1-387:12
 MERGED from [io.realm:realm-android-library:5.15.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-realm-android-library-5.15.1.aar/8c13339441b6af925232124458d7f616/AndroidManifest.xml:2:1-10:12
+MERGED from [io.realm:realm-android-kotlin-extensions:5.15.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/realm-android-kotlin-extensions-5.15.1.aar/d57765bf12a166159fef8bec289ff589/AndroidManifest.xml:2:1-10:12
 MERGED from [host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-expoview-34.0.0.aar/099109f9ea9c599ecd0780f18c5b7ebd/AndroidManifest.xml:2:1-100:12
 MERGED from [org.webkit:android-jsc:r245459] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/android-jsc-r245459.aar/ac697be31b90e8f056d04238a1eeca5d/AndroidManifest.xml:2:1-11:12
 MERGED from [:realm] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/realm/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -996,6 +997,8 @@ INJECTED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/m
 INJECTED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml
 MERGED from [io.realm:realm-android-library:5.15.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-realm-android-library-5.15.1.aar/8c13339441b6af925232124458d7f616/AndroidManifest.xml:6:5-8:41
 MERGED from [io.realm:realm-android-library:5.15.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-realm-android-library-5.15.1.aar/8c13339441b6af925232124458d7f616/AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-kotlin-extensions:5.15.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/realm-android-kotlin-extensions-5.15.1.aar/d57765bf12a166159fef8bec289ff589/AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-kotlin-extensions:5.15.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/realm-android-kotlin-extensions-5.15.1.aar/d57765bf12a166159fef8bec289ff589/AndroidManifest.xml:6:5-8:41
 MERGED from [host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-expoview-34.0.0.aar/099109f9ea9c599ecd0780f18c5b7ebd/AndroidManifest.xml:7:5-9:41
 MERGED from [host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-expoview-34.0.0.aar/099109f9ea9c599ecd0780f18c5b7ebd/AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/android-jsc-r245459.aar/ac697be31b90e8f056d04238a1eeca5d/AndroidManifest.xml:7:5-9:41

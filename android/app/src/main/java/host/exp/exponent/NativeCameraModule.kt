@@ -12,6 +12,9 @@ import io.realm.Realm
 import io.realm.RealmObject
 import java.util.*
 import io.realm.RealmResults
+import io.realm.RealmConfiguration
+
+
 
 
 private val IMAGE_PICKER_REQUEST = 467081
@@ -37,21 +40,24 @@ class NativeCameraModule(private val reactContext: ReactApplicationContext) : Re
     init {
         reactContext.addActivityEventListener(mActivityEventListener)
 
-        //initRealm()
+        initRealm()
 
 
     }
 
     private fun initRealm() {
         Realm.init(reactContext)
+        val mRealmConfiguration = RealmConfiguration.Builder()
+                .name("default.realm")
+                .schemaVersion(0) // skip if you are not managing
+                .deleteRealmIfMigrationNeeded()
+                .build()
+
+        Realm.getInstance(mRealmConfiguration)
+        Realm.setDefaultConfiguration(mRealmConfiguration)
 
 // Get a Realm instance for this thread
-        val realm = Realm.getDefaultInstance()
-        success("Realm Init")
-        realm.where(Expense::class.java).findFirst()!!.let {
-            var amount = it.amount
-            Log.d("Amount", "${amount?.value}")
-        }
+
     }
 
     override fun getName(): String {

@@ -48,7 +48,7 @@
     <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"የተለያዩ"</string>
     <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"የተለያዩ"</string>
     <string msgid="368094699078615544" name="s1">"ምስል አስቀምጥ"</string>
-    <string msgid="4550830452390689489" name="s2">"ማስታወቂያ ምስሉን በስዕል ማዕከለ-ስዕላት ውስጥ እንዲያከማች ይፈቀድለት?"</string>
+    <string msgid="4550830452390689489" name="s2">"ማስታወቂያ ምስሉን በስዕል ማእከለ-ሥዕላት ውስጥ እንዲያከማች ይፈቀድለት?"</string>
     <string msgid="2435407834265420668" name="s3">"ተቀበል"</string>
     <string msgid="9167523597401839819" name="s4">"ውድቅ አድርግ"</string>
     <string msgid="1566682516266724847" name="s5">"የቀን መቁጠሪያ ክስተት ፍጠር"</string>

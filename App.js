@@ -28,10 +28,11 @@ export default function App() {
   const ExpenseSchema = {
     name: "Expense",
     properties: {
-      amount: "Amount",
-      user: "User",
+      amount: "Amount?",
+      user: "User?",
       date: "date",
-      merchant: "string"
+      merchant: "string",
+      receipt: "data?"
     }
   };
 

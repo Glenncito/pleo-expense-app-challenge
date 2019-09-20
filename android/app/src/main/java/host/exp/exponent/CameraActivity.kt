@@ -14,6 +14,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
+import android.util.Log
 
 import android.view.View
 import android.widget.Button
@@ -33,13 +34,21 @@ import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactContext
 import com.facebook.react.bridge.WritableMap
 import com.facebook.react.modules.core.DeviceEventManagerModule
+import host.exp.exponent.models.Expense
+import host.exp.exponent.utils.ioThread
+import io.realm.Realm
+import io.realm.RealmResults
+import io.realm.kotlin.where
+import java.io.ByteArrayOutputStream
 
 
 class CameraActivity : AppCompatActivity() {
     lateinit var imageView: ImageView
     lateinit var captureButton: Button
+    private lateinit var realm: Realm
 
     val REQUEST_IMAGE_CAPTURE = 1
+    var uri: Uri? = null
 
 
     private val PERMISSION_REQUEST_CODE: Int = 101
@@ -48,7 +57,7 @@ class CameraActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_camera)
-
+        realm = Realm.getDefaultInstance()
         imageView = findViewById(R.id.image_view)
         captureButton = findViewById(R.id.btn_capture)
         captureButton.setOnClickListener(View.OnClickListener {
@@ -85,7 +94,7 @@ class CameraActivity : AppCompatActivity() {
         val intent: Intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
         val file: File = createFile()
 
-        val uri: Uri = FileProvider.getUriForFile(
+        uri = FileProvider.getUriForFile(
                 this,
                 "host.exp.exponent.fileprovider.camera",
                 file
@@ -99,20 +108,53 @@ class CameraActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == Activity.RESULT_OK) {
             //To get the File for further usage
-            val auxFile = File(mCurrentPhotoPath)
-            var bitmap: Bitmap = BitmapFactory.decodeFile(mCurrentPhotoPath)
-            imageView.setImageBitmap(bitmap)
-           /* var params:WritableMap = Arguments.createMap();
-            params.putString("eventProperty", "someValue");
-           // sendEvent(, "EventReminder", params)*/
-             var resultIntent:Intent = Intent()
+            /* val auxFile = File(mCurrentPhotoPath)
+             var bitmap: Bitmap = BitmapFactory.decodeFile(mCurrentPhotoPath)
+             imageView.setImageBitmap(bitmap)*/
+            val inputStream = getContentResolver().openInputStream(uri)
+            val bitmap = BitmapFactory.decodeStream(inputStream)
+            val stream = ByteArrayOutputStream()
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 60, stream)
+            var byteArray:ByteArray= stream.toByteArray()
+
+            /*var expense =  realm.where<Expense>().findFirst()
+            Log.d("Expense: ", "${expense.toString()}")*/
+            realm.where(Expense::class.java).findFirst()!!.let {
+                storeReciept(it,byteArray)
+            }
+            Log.d("Expense: ", "Number of persons: ${realm.where<Expense>().count()}")
+
+ getFirstExpense()
+randomQuery()
+
+            /*var resultIntent:Intent = Intent()
             // TODO Add extras or a data URI to this intent as appropriate.
-                resultIntent.putExtra("some_key", "String data");
-                 setResult(Activity.RESULT_OK, resultIntent);
-                finish()
+            resultIntent.putExtra("some_key", "String data");
+            setResult(Activity.RESULT_OK, resultIntent);
+            finish()*/
 
         }
     }
+
+    fun randomQuery(){
+        var result: RealmResults<Expense> = realm.where(Expense::class.java).findAll()
+        val expense = result[0]
+
+    }
+    fun getFirstExpense(){
+        realm.where(Expense::class.java).findFirst().let {
+            var amount = it?.amount
+            Log.d("Amount", "${amount?.value}")
+            //return it
+        }
+    }
+
+    private fun storeReciept(expense: Expense, byteArray: ByteArray){
+        realm.executeTransaction {
+            expense.receipt = byteArray
+        }
+    }
+
 
     fun sendEvent(context: ReactContext, eventName:String, params: WritableMap) {
         context.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java).emit(eventName, params)

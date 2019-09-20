@@ -4,12 +4,12 @@
     "source": "/Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ac42abe69065bf45554fec177d6e3783/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
   },
   {
-    "merged": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/res/merged/debug/color_switch_thumb_material_light.xml.flat",
-    "source": "/Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ac42abe69065bf45554fec177d6e3783/res/color/switch_thumb_material_light.xml"
-  },
-  {
     "merged": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_arrow_back_white_36dp.png.flat",
     "source": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/res/drawable-mdpi/ic_arrow_back_white_36dp.png"
+  },
+  {
+    "merged": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/res/merged/debug/color_switch_thumb_material_light.xml.flat",
+    "source": "/Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ac42abe69065bf45554fec177d6e3783/res/color/switch_thumb_material_light.xml"
   },
   {
     "merged": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -52,12 +52,12 @@
     "source": "/Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/e8085df1e3747b2e989ee71d2439c3b5/res/drawable-v21/avd_show_password.xml"
   },
   {
-    "merged": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
-    "source": "/Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ac42abe69065bf45554fec177d6e3783/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
-  },
-  {
     "merged": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/res/merged/debug/layout_design_navigation_item_header.xml.flat",
     "source": "/Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/e8085df1e3747b2e989ee71d2439c3b5/res/layout/design_navigation_item_header.xml"
+  },
+  {
+    "merged": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
+    "source": "/Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ac42abe69065bf45554fec177d6e3783/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
   },
   {
     "merged": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
