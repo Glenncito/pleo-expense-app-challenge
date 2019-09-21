@@ -13,7 +13,7 @@ open class Expense(
         var amount: Amount? = null,
         var user: User? = null,
         var receipt: ByteArray? = null
-) : RealmObject() {//
+) : RealmObject() {
 
 
 }
