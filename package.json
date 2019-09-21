@@ -8,7 +8,6 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "FileReader": "^0.10.2",
     "expo": "^34.0.1",
     "expokit": "34.0.2",
     "jetifier": "^1.6.4",
@@ -24,7 +23,6 @@
     "react-router-native": "^5.0.1",
     "realm": "^3.0.0",
     "redux-starter-kit": "^0.7.0",
-    "rn-fetch-blob": "^0.10.16",
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
