@@ -6,7 +6,6 @@ import { NativeModules } from "react-native";
 
 export default function App() {
   const CameraApplication = NativeModules.KotlinCameraModule;
-
   const Realm = require("realm");
 
   const AmountSchema = {
@@ -34,6 +33,27 @@ export default function App() {
       merchant: "string",
       receipt: "data?"
     }
+  };
+
+  const showImage = () => {
+    Realm.open({
+      schema: [ExpenseSchema, UserSchema, AmountSchema]
+    }).then(realm => {
+      let expense = realm.objects("Expense")[0];
+      // console.log (expense.merchant);
+      var arrayBufferView = new Uint8Array(expense.receipt);
+      const blob = new Blob([arrayBufferView], { type: "image/jpeg" });
+
+      console.log(blob);
+      const fileReaderInstance = new FileReader();
+      fileReaderInstance.readAsDataURL(blob);
+      fileReaderInstance.onload = () => {
+        const base64data = fileReaderInstance.result;
+        //console.log("first: " + base64data);
+      };
+      var imageBase64 = "data:" + "image/jpeg" + ";base64," + blob;
+      console.log("Second: " + imageBase64);
+    });
   };
 
   const addRealmDummyData = () => {
@@ -68,7 +88,7 @@ export default function App() {
 
   return (
     <View>
-      <Button title="Press me" onPress={() => addRealmDummyData()} />
+      <Button title="Press me" onPress={() => showImage()} />
       <ScrollView>
         <FlatList
           data={expenseItems}
