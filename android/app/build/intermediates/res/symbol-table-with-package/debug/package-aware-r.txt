@@ -1446,6 +1446,7 @@ id fixed
 id focusCrop
 id forever
 id fps_text
+id fragmentLayout
 id ghost_view
 id glide_custom_view_target_tag
 id googleMaterial2
@@ -1756,6 +1757,7 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout oauth_webview_activity
+layout reciept_capture_fragment
 layout redbox_item_frame
 layout redbox_item_title
 layout redbox_view

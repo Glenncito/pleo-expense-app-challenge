@@ -4,24 +4,17 @@ import com.facebook.react.bridge.*
 import com.facebook.react.uimanager.IllegalViewOperationException
 import android.content.Intent
 import android.app.Activity
-import android.util.Log
 import com.facebook.react.bridge.BaseActivityEventListener
 import com.facebook.react.bridge.ReactMethod
-import host.exp.exponent.models.Expense
+import host.exp.exponent.custom.CameraActivity
 import io.realm.Realm
-import io.realm.RealmObject
-import java.util.*
-import io.realm.RealmResults
 import io.realm.RealmConfiguration
 
 
 
 
-private val IMAGE_PICKER_REQUEST = 467081
-private val E_ACTIVITY_DOES_NOT_EXIST = "E_ACTIVITY_DOES_NOT_EXIST"
-private val E_PICKER_CANCELLED = "E_PICKER_CANCELLED"
-private val E_FAILED_TO_SHOW_PICKER = "E_FAILED_TO_SHOW_PICKER"
-private val E_NO_IMAGE_DATA_FOUND = "E_NO_IMAGE_DATA_FOUND"
+
+private val EXPENSE_ID = "EXPENSE_ID"
 
 
 class NativeCameraModule(private val reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
@@ -66,9 +59,10 @@ class NativeCameraModule(private val reactContext: ReactApplicationContext) : Re
 
 
     @ReactMethod
-    fun sayHi(promise: Promise) {
+        fun initReceiptCapture(expenseId:String, promise: Promise) {
         mPromise = promise
-        val intent = Intent(reactContext, CameraActivity::class.java) // mContext got from your overriden constructor
+        var intent = Intent(reactContext, CameraActivity::class.java) // mContext got from your overriden constructor
+        intent.putExtra(EXPENSE_ID,expenseId)
         currentActivity?.startActivityForResult(intent, 0)
 
         /* try {

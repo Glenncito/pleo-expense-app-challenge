@@ -100,7 +100,7 @@
       <!-- ADD DETACH APP SPECIFIC INTENT FILTERS -->
     </activity>
       <activity
-          android:name=".CameraActivity"
+          android:name=".custom.CameraActivity"
           android:label="Camera Activity"
           android:theme="@style/AppTheme"
           android:configChanges="orientation"

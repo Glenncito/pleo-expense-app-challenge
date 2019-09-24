@@ -27,18 +27,18 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     private static final Set<Class<? extends RealmModel>> MODEL_CLASSES;
     static {
         Set<Class<? extends RealmModel>> modelClasses = new HashSet<Class<? extends RealmModel>>(3);
-        modelClasses.add(host.exp.exponent.models.Expense.class);
-        modelClasses.add(host.exp.exponent.models.Amount.class);
-        modelClasses.add(host.exp.exponent.models.User.class);
+        modelClasses.add(host.exp.exponent.custom.data.models.Expense.class);
+        modelClasses.add(host.exp.exponent.custom.data.models.Amount.class);
+        modelClasses.add(host.exp.exponent.custom.data.models.User.class);
         MODEL_CLASSES = Collections.unmodifiableSet(modelClasses);
     }
 
     @Override
     public Map<Class<? extends RealmModel>, OsObjectSchemaInfo> getExpectedObjectSchemaInfoMap() {
         Map<Class<? extends RealmModel>, OsObjectSchemaInfo> infoMap = new HashMap<Class<? extends RealmModel>, OsObjectSchemaInfo>(3);
-        infoMap.put(host.exp.exponent.models.Expense.class, io.realm.host_exp_exponent_models_ExpenseRealmProxy.getExpectedObjectSchemaInfo());
-        infoMap.put(host.exp.exponent.models.Amount.class, io.realm.host_exp_exponent_models_AmountRealmProxy.getExpectedObjectSchemaInfo());
-        infoMap.put(host.exp.exponent.models.User.class, io.realm.host_exp_exponent_models_UserRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(host.exp.exponent.custom.data.models.Expense.class, io.realm.host_exp_exponent_custom_data_models_ExpenseRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(host.exp.exponent.custom.data.models.Amount.class, io.realm.host_exp_exponent_custom_data_models_AmountRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(host.exp.exponent.custom.data.models.User.class, io.realm.host_exp_exponent_custom_data_models_UserRealmProxy.getExpectedObjectSchemaInfo());
         return infoMap;
     }
 
@@ -46,14 +46,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public ColumnInfo createColumnInfo(Class<? extends RealmModel> clazz, OsSchemaInfo schemaInfo) {
         checkClass(clazz);
 
-        if (clazz.equals(host.exp.exponent.models.Expense.class)) {
-            return io.realm.host_exp_exponent_models_ExpenseRealmProxy.createColumnInfo(schemaInfo);
+        if (clazz.equals(host.exp.exponent.custom.data.models.Expense.class)) {
+            return io.realm.host_exp_exponent_custom_data_models_ExpenseRealmProxy.createColumnInfo(schemaInfo);
         }
-        if (clazz.equals(host.exp.exponent.models.Amount.class)) {
-            return io.realm.host_exp_exponent_models_AmountRealmProxy.createColumnInfo(schemaInfo);
+        if (clazz.equals(host.exp.exponent.custom.data.models.Amount.class)) {
+            return io.realm.host_exp_exponent_custom_data_models_AmountRealmProxy.createColumnInfo(schemaInfo);
         }
-        if (clazz.equals(host.exp.exponent.models.User.class)) {
-            return io.realm.host_exp_exponent_models_UserRealmProxy.createColumnInfo(schemaInfo);
+        if (clazz.equals(host.exp.exponent.custom.data.models.User.class)) {
+            return io.realm.host_exp_exponent_custom_data_models_UserRealmProxy.createColumnInfo(schemaInfo);
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -62,13 +62,13 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public String getSimpleClassNameImpl(Class<? extends RealmModel> clazz) {
         checkClass(clazz);
 
-        if (clazz.equals(host.exp.exponent.models.Expense.class)) {
+        if (clazz.equals(host.exp.exponent.custom.data.models.Expense.class)) {
             return "Expense";
         }
-        if (clazz.equals(host.exp.exponent.models.Amount.class)) {
+        if (clazz.equals(host.exp.exponent.custom.data.models.Amount.class)) {
             return "Amount";
         }
-        if (clazz.equals(host.exp.exponent.models.User.class)) {
+        if (clazz.equals(host.exp.exponent.custom.data.models.User.class)) {
             return "User";
         }
         throw getMissingProxyClassException(clazz);
@@ -81,14 +81,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             objectContext.set((BaseRealm) baseRealm, row, columnInfo, acceptDefaultValue, excludeFields);
             checkClass(clazz);
 
-            if (clazz.equals(host.exp.exponent.models.Expense.class)) {
-                return clazz.cast(new io.realm.host_exp_exponent_models_ExpenseRealmProxy());
+            if (clazz.equals(host.exp.exponent.custom.data.models.Expense.class)) {
+                return clazz.cast(new io.realm.host_exp_exponent_custom_data_models_ExpenseRealmProxy());
             }
-            if (clazz.equals(host.exp.exponent.models.Amount.class)) {
-                return clazz.cast(new io.realm.host_exp_exponent_models_AmountRealmProxy());
+            if (clazz.equals(host.exp.exponent.custom.data.models.Amount.class)) {
+                return clazz.cast(new io.realm.host_exp_exponent_custom_data_models_AmountRealmProxy());
             }
-            if (clazz.equals(host.exp.exponent.models.User.class)) {
-                return clazz.cast(new io.realm.host_exp_exponent_models_UserRealmProxy());
+            if (clazz.equals(host.exp.exponent.custom.data.models.User.class)) {
+                return clazz.cast(new io.realm.host_exp_exponent_custom_data_models_UserRealmProxy());
             }
             throw getMissingProxyClassException(clazz);
         } finally {
@@ -107,17 +107,17 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<E> clazz = (Class<E>) ((obj instanceof RealmObjectProxy) ? obj.getClass().getSuperclass() : obj.getClass());
 
-        if (clazz.equals(host.exp.exponent.models.Expense.class)) {
-            host_exp_exponent_models_ExpenseRealmProxy.ExpenseColumnInfo columnInfo = (host_exp_exponent_models_ExpenseRealmProxy.ExpenseColumnInfo) realm.getSchema().getColumnInfo(host.exp.exponent.models.Expense.class);
-            return clazz.cast(io.realm.host_exp_exponent_models_ExpenseRealmProxy.copyOrUpdate(realm, columnInfo, (host.exp.exponent.models.Expense) obj, update, cache, flags));
+        if (clazz.equals(host.exp.exponent.custom.data.models.Expense.class)) {
+            host_exp_exponent_custom_data_models_ExpenseRealmProxy.ExpenseColumnInfo columnInfo = (host_exp_exponent_custom_data_models_ExpenseRealmProxy.ExpenseColumnInfo) realm.getSchema().getColumnInfo(host.exp.exponent.custom.data.models.Expense.class);
+            return clazz.cast(io.realm.host_exp_exponent_custom_data_models_ExpenseRealmProxy.copyOrUpdate(realm, columnInfo, (host.exp.exponent.custom.data.models.Expense) obj, update, cache, flags));
         }
-        if (clazz.equals(host.exp.exponent.models.Amount.class)) {
-            host_exp_exponent_models_AmountRealmProxy.AmountColumnInfo columnInfo = (host_exp_exponent_models_AmountRealmProxy.AmountColumnInfo) realm.getSchema().getColumnInfo(host.exp.exponent.models.Amount.class);
-            return clazz.cast(io.realm.host_exp_exponent_models_AmountRealmProxy.copyOrUpdate(realm, columnInfo, (host.exp.exponent.models.Amount) obj, update, cache, flags));
+        if (clazz.equals(host.exp.exponent.custom.data.models.Amount.class)) {
+            host_exp_exponent_custom_data_models_AmountRealmProxy.AmountColumnInfo columnInfo = (host_exp_exponent_custom_data_models_AmountRealmProxy.AmountColumnInfo) realm.getSchema().getColumnInfo(host.exp.exponent.custom.data.models.Amount.class);
+            return clazz.cast(io.realm.host_exp_exponent_custom_data_models_AmountRealmProxy.copyOrUpdate(realm, columnInfo, (host.exp.exponent.custom.data.models.Amount) obj, update, cache, flags));
         }
-        if (clazz.equals(host.exp.exponent.models.User.class)) {
-            host_exp_exponent_models_UserRealmProxy.UserColumnInfo columnInfo = (host_exp_exponent_models_UserRealmProxy.UserColumnInfo) realm.getSchema().getColumnInfo(host.exp.exponent.models.User.class);
-            return clazz.cast(io.realm.host_exp_exponent_models_UserRealmProxy.copyOrUpdate(realm, columnInfo, (host.exp.exponent.models.User) obj, update, cache, flags));
+        if (clazz.equals(host.exp.exponent.custom.data.models.User.class)) {
+            host_exp_exponent_custom_data_models_UserRealmProxy.UserColumnInfo columnInfo = (host_exp_exponent_custom_data_models_UserRealmProxy.UserColumnInfo) realm.getSchema().getColumnInfo(host.exp.exponent.custom.data.models.User.class);
+            return clazz.cast(io.realm.host_exp_exponent_custom_data_models_UserRealmProxy.copyOrUpdate(realm, columnInfo, (host.exp.exponent.custom.data.models.User) obj, update, cache, flags));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -128,12 +128,12 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-        if (clazz.equals(host.exp.exponent.models.Expense.class)) {
-            io.realm.host_exp_exponent_models_ExpenseRealmProxy.insert(realm, (host.exp.exponent.models.Expense) object, cache);
-        } else if (clazz.equals(host.exp.exponent.models.Amount.class)) {
-            io.realm.host_exp_exponent_models_AmountRealmProxy.insert(realm, (host.exp.exponent.models.Amount) object, cache);
-        } else if (clazz.equals(host.exp.exponent.models.User.class)) {
-            io.realm.host_exp_exponent_models_UserRealmProxy.insert(realm, (host.exp.exponent.models.User) object, cache);
+        if (clazz.equals(host.exp.exponent.custom.data.models.Expense.class)) {
+            io.realm.host_exp_exponent_custom_data_models_ExpenseRealmProxy.insert(realm, (host.exp.exponent.custom.data.models.Expense) object, cache);
+        } else if (clazz.equals(host.exp.exponent.custom.data.models.Amount.class)) {
+            io.realm.host_exp_exponent_custom_data_models_AmountRealmProxy.insert(realm, (host.exp.exponent.custom.data.models.Amount) object, cache);
+        } else if (clazz.equals(host.exp.exponent.custom.data.models.User.class)) {
+            io.realm.host_exp_exponent_custom_data_models_UserRealmProxy.insert(realm, (host.exp.exponent.custom.data.models.User) object, cache);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -151,22 +151,22 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             // generated by RealmProxy or the original type extending directly from RealmObject
             @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-            if (clazz.equals(host.exp.exponent.models.Expense.class)) {
-                io.realm.host_exp_exponent_models_ExpenseRealmProxy.insert(realm, (host.exp.exponent.models.Expense) object, cache);
-            } else if (clazz.equals(host.exp.exponent.models.Amount.class)) {
-                io.realm.host_exp_exponent_models_AmountRealmProxy.insert(realm, (host.exp.exponent.models.Amount) object, cache);
-            } else if (clazz.equals(host.exp.exponent.models.User.class)) {
-                io.realm.host_exp_exponent_models_UserRealmProxy.insert(realm, (host.exp.exponent.models.User) object, cache);
+            if (clazz.equals(host.exp.exponent.custom.data.models.Expense.class)) {
+                io.realm.host_exp_exponent_custom_data_models_ExpenseRealmProxy.insert(realm, (host.exp.exponent.custom.data.models.Expense) object, cache);
+            } else if (clazz.equals(host.exp.exponent.custom.data.models.Amount.class)) {
+                io.realm.host_exp_exponent_custom_data_models_AmountRealmProxy.insert(realm, (host.exp.exponent.custom.data.models.Amount) object, cache);
+            } else if (clazz.equals(host.exp.exponent.custom.data.models.User.class)) {
+                io.realm.host_exp_exponent_custom_data_models_UserRealmProxy.insert(realm, (host.exp.exponent.custom.data.models.User) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
             if (iterator.hasNext()) {
-                if (clazz.equals(host.exp.exponent.models.Expense.class)) {
-                    io.realm.host_exp_exponent_models_ExpenseRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(host.exp.exponent.models.Amount.class)) {
-                    io.realm.host_exp_exponent_models_AmountRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(host.exp.exponent.models.User.class)) {
-                    io.realm.host_exp_exponent_models_UserRealmProxy.insert(realm, iterator, cache);
+                if (clazz.equals(host.exp.exponent.custom.data.models.Expense.class)) {
+                    io.realm.host_exp_exponent_custom_data_models_ExpenseRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(host.exp.exponent.custom.data.models.Amount.class)) {
+                    io.realm.host_exp_exponent_custom_data_models_AmountRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(host.exp.exponent.custom.data.models.User.class)) {
+                    io.realm.host_exp_exponent_custom_data_models_UserRealmProxy.insert(realm, iterator, cache);
                 } else {
                     throw getMissingProxyClassException(clazz);
                 }
@@ -180,12 +180,12 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((obj instanceof RealmObjectProxy) ? obj.getClass().getSuperclass() : obj.getClass());
 
-        if (clazz.equals(host.exp.exponent.models.Expense.class)) {
-            io.realm.host_exp_exponent_models_ExpenseRealmProxy.insertOrUpdate(realm, (host.exp.exponent.models.Expense) obj, cache);
-        } else if (clazz.equals(host.exp.exponent.models.Amount.class)) {
-            io.realm.host_exp_exponent_models_AmountRealmProxy.insertOrUpdate(realm, (host.exp.exponent.models.Amount) obj, cache);
-        } else if (clazz.equals(host.exp.exponent.models.User.class)) {
-            io.realm.host_exp_exponent_models_UserRealmProxy.insertOrUpdate(realm, (host.exp.exponent.models.User) obj, cache);
+        if (clazz.equals(host.exp.exponent.custom.data.models.Expense.class)) {
+            io.realm.host_exp_exponent_custom_data_models_ExpenseRealmProxy.insertOrUpdate(realm, (host.exp.exponent.custom.data.models.Expense) obj, cache);
+        } else if (clazz.equals(host.exp.exponent.custom.data.models.Amount.class)) {
+            io.realm.host_exp_exponent_custom_data_models_AmountRealmProxy.insertOrUpdate(realm, (host.exp.exponent.custom.data.models.Amount) obj, cache);
+        } else if (clazz.equals(host.exp.exponent.custom.data.models.User.class)) {
+            io.realm.host_exp_exponent_custom_data_models_UserRealmProxy.insertOrUpdate(realm, (host.exp.exponent.custom.data.models.User) obj, cache);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -203,22 +203,22 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             // generated by RealmProxy or the original type extending directly from RealmObject
             @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-            if (clazz.equals(host.exp.exponent.models.Expense.class)) {
-                io.realm.host_exp_exponent_models_ExpenseRealmProxy.insertOrUpdate(realm, (host.exp.exponent.models.Expense) object, cache);
-            } else if (clazz.equals(host.exp.exponent.models.Amount.class)) {
-                io.realm.host_exp_exponent_models_AmountRealmProxy.insertOrUpdate(realm, (host.exp.exponent.models.Amount) object, cache);
-            } else if (clazz.equals(host.exp.exponent.models.User.class)) {
-                io.realm.host_exp_exponent_models_UserRealmProxy.insertOrUpdate(realm, (host.exp.exponent.models.User) object, cache);
+            if (clazz.equals(host.exp.exponent.custom.data.models.Expense.class)) {
+                io.realm.host_exp_exponent_custom_data_models_ExpenseRealmProxy.insertOrUpdate(realm, (host.exp.exponent.custom.data.models.Expense) object, cache);
+            } else if (clazz.equals(host.exp.exponent.custom.data.models.Amount.class)) {
+                io.realm.host_exp_exponent_custom_data_models_AmountRealmProxy.insertOrUpdate(realm, (host.exp.exponent.custom.data.models.Amount) object, cache);
+            } else if (clazz.equals(host.exp.exponent.custom.data.models.User.class)) {
+                io.realm.host_exp_exponent_custom_data_models_UserRealmProxy.insertOrUpdate(realm, (host.exp.exponent.custom.data.models.User) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
             if (iterator.hasNext()) {
-                if (clazz.equals(host.exp.exponent.models.Expense.class)) {
-                    io.realm.host_exp_exponent_models_ExpenseRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(host.exp.exponent.models.Amount.class)) {
-                    io.realm.host_exp_exponent_models_AmountRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(host.exp.exponent.models.User.class)) {
-                    io.realm.host_exp_exponent_models_UserRealmProxy.insertOrUpdate(realm, iterator, cache);
+                if (clazz.equals(host.exp.exponent.custom.data.models.Expense.class)) {
+                    io.realm.host_exp_exponent_custom_data_models_ExpenseRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(host.exp.exponent.custom.data.models.Amount.class)) {
+                    io.realm.host_exp_exponent_custom_data_models_AmountRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(host.exp.exponent.custom.data.models.User.class)) {
+                    io.realm.host_exp_exponent_custom_data_models_UserRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else {
                     throw getMissingProxyClassException(clazz);
                 }
@@ -231,14 +231,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         throws JSONException {
         checkClass(clazz);
 
-        if (clazz.equals(host.exp.exponent.models.Expense.class)) {
-            return clazz.cast(io.realm.host_exp_exponent_models_ExpenseRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(host.exp.exponent.custom.data.models.Expense.class)) {
+            return clazz.cast(io.realm.host_exp_exponent_custom_data_models_ExpenseRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
-        if (clazz.equals(host.exp.exponent.models.Amount.class)) {
-            return clazz.cast(io.realm.host_exp_exponent_models_AmountRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(host.exp.exponent.custom.data.models.Amount.class)) {
+            return clazz.cast(io.realm.host_exp_exponent_custom_data_models_AmountRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
-        if (clazz.equals(host.exp.exponent.models.User.class)) {
-            return clazz.cast(io.realm.host_exp_exponent_models_UserRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(host.exp.exponent.custom.data.models.User.class)) {
+            return clazz.cast(io.realm.host_exp_exponent_custom_data_models_UserRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -248,14 +248,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         throws IOException {
         checkClass(clazz);
 
-        if (clazz.equals(host.exp.exponent.models.Expense.class)) {
-            return clazz.cast(io.realm.host_exp_exponent_models_ExpenseRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(host.exp.exponent.custom.data.models.Expense.class)) {
+            return clazz.cast(io.realm.host_exp_exponent_custom_data_models_ExpenseRealmProxy.createUsingJsonStream(realm, reader));
         }
-        if (clazz.equals(host.exp.exponent.models.Amount.class)) {
-            return clazz.cast(io.realm.host_exp_exponent_models_AmountRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(host.exp.exponent.custom.data.models.Amount.class)) {
+            return clazz.cast(io.realm.host_exp_exponent_custom_data_models_AmountRealmProxy.createUsingJsonStream(realm, reader));
         }
-        if (clazz.equals(host.exp.exponent.models.User.class)) {
-            return clazz.cast(io.realm.host_exp_exponent_models_UserRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(host.exp.exponent.custom.data.models.User.class)) {
+            return clazz.cast(io.realm.host_exp_exponent_custom_data_models_UserRealmProxy.createUsingJsonStream(realm, reader));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -266,14 +266,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<E> clazz = (Class<E>) realmObject.getClass().getSuperclass();
 
-        if (clazz.equals(host.exp.exponent.models.Expense.class)) {
-            return clazz.cast(io.realm.host_exp_exponent_models_ExpenseRealmProxy.createDetachedCopy((host.exp.exponent.models.Expense) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(host.exp.exponent.custom.data.models.Expense.class)) {
+            return clazz.cast(io.realm.host_exp_exponent_custom_data_models_ExpenseRealmProxy.createDetachedCopy((host.exp.exponent.custom.data.models.Expense) realmObject, 0, maxDepth, cache));
         }
-        if (clazz.equals(host.exp.exponent.models.Amount.class)) {
-            return clazz.cast(io.realm.host_exp_exponent_models_AmountRealmProxy.createDetachedCopy((host.exp.exponent.models.Amount) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(host.exp.exponent.custom.data.models.Amount.class)) {
+            return clazz.cast(io.realm.host_exp_exponent_custom_data_models_AmountRealmProxy.createDetachedCopy((host.exp.exponent.custom.data.models.Amount) realmObject, 0, maxDepth, cache));
         }
-        if (clazz.equals(host.exp.exponent.models.User.class)) {
-            return clazz.cast(io.realm.host_exp_exponent_models_UserRealmProxy.createDetachedCopy((host.exp.exponent.models.User) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(host.exp.exponent.custom.data.models.User.class)) {
+            return clazz.cast(io.realm.host_exp_exponent_custom_data_models_UserRealmProxy.createDetachedCopy((host.exp.exponent.custom.data.models.User) realmObject, 0, maxDepth, cache));
         }
         throw getMissingProxyClassException(clazz);
     }

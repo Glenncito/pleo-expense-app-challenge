@@ -7,6 +7,7 @@ import { NativeModules } from "react-native";
 export default function App() {
   const CameraApplication = NativeModules.KotlinCameraModule;
   const Realm = require("realm");
+  //const image = showImage();
 
   const AmountSchema = {
     name: "Amount",
@@ -26,7 +27,9 @@ export default function App() {
   };
   const ExpenseSchema = {
     name: "Expense",
+    primaryKey: "id",
     properties: {
+      id: "string",
       amount: "Amount?",
       user: "User?",
       date: "date",
@@ -45,14 +48,9 @@ export default function App() {
       const blob = new Blob([arrayBufferView], { type: "image/jpeg" });
 
       console.log(blob);
-      const fileReaderInstance = new FileReader();
-      fileReaderInstance.readAsDataURL(blob);
-      fileReaderInstance.onload = () => {
-        const base64data = fileReaderInstance.result;
-        //console.log("first: " + base64data);
-      };
       var imageBase64 = "data:" + "image/jpeg" + ";base64," + blob;
       console.log("Second: " + imageBase64);
+      // return imageBase64;
     });
   };
 
@@ -62,14 +60,14 @@ export default function App() {
     }).then(realm => {
       realm.write(() => {
         realm.create("Expense", {
-          id: 3,
+          id: "5b996064dfd5b783915112f5",
           amount: { value: "113.5", currency: "ZAR" },
           date: "2018-01-01T02:11:29.184Z",
           merchant: "KAGE",
           user: { first: "Glenn", last: "Steing", email: "Glenn@pleo.com" }
         });
         realm.create("Expense", {
-          id: 4,
+          id: "5b99606474ab17b7820b3922",
           amount: { value: "513.5", currency: "USD" },
           date: "2018-05-05T02:11:29.184Z",
           merchant: "McD",
@@ -88,7 +86,7 @@ export default function App() {
 
   return (
     <View>
-      <Button title="Press me" onPress={() => showImage()} />
+      <Button title="Dummy Data" onPress={() => addRealmDummyData()} />
       <ScrollView>
         <FlatList
           data={expenseItems}

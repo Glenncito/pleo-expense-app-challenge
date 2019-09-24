@@ -34,6 +34,7 @@ MERGED from [:unimodules-image-loader-interface] /Users/g-wizkiz/Projects/pleo-e
 MERGED from [:unimodules-sensors-interface] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/unimodules-sensors-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/leakcanary-android-no-op-1.4-beta1.aar/b143514463f241a9877d22654af2f543/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/multidex-2.0.0.aar/2cf923a8ee6a0848090a43d11989fd86/AndroidManifest.xml:17:1-22:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.1.aar/65f4f3c1ed551f0095b74e06abbf8d06/AndroidManifest.xml:15:1-20:12
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.7.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-android-image-cropper-2.7.0.aar/64dd0405bdb8748de00211705451adb7/AndroidManifest.xml:2:1-11:12
 MERGED from [com.airbnb.android:lottie:2.5.6] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-lottie-2.5.6.aar/7957616cd44049ddca90e96bad048b2c/AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.android:facebook-android-sdk:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-5.0.1.aar/c28f1fd4058ec3cbfad8c04dbf4a2cb6/AndroidManifest.xml:21:1-31:12
@@ -43,15 +44,45 @@ MERGED from [com.facebook.android:facebook-common:5.0.1] /Users/g-wizkiz/.gradle
 MERGED from [com.google.android.material:material:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/e8085df1e3747b2e989ee71d2439c3b5/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ac42abe69065bf45554fec177d6e3783/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-audience-network-sdk-5.1.1.aar/618e3d42dae22d680e4f26556ffc56be/AndroidManifest.xml:2:1-34:12
-MERGED from [com.jakewharton:butterknife:9.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-butterknife-9.0.0.aar/b929ecd26c870d29c5efeda9f82bef8f/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-ads:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-15.0.1.aar/042d7ffff4472cd8947c7a40990b80b0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-fitness:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-fitness-16.0.1.aar/cccd433aaa050b11f213c087ffbcf70b/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/bd33fa142679a87b3ed91de9569ff10d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.android.gms:play-services-gass:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/90ab7b378a4599fa9e15f9811b9616ad/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-gcm-16.1.0.aar/14365c04902286c94cea71ea8a0d56a5/AndroidManifest.xml:17:1-28:12
 MERGED from [com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-16.0.8.aar/bcf80ca48ee160a15bb3b76b0eceb6e1/AndroidManifest.xml:17:1-47:12
 MERGED from [com.google.android.gms:play-services-wallet:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-wallet-16.0.1.aar/c292c943dfa23ccdef063f7f52b26c18/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/58c9a595eeee0468ccbf475a4056f634/AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-16.0.1.aar/5b15a9405b4776fec26120e7b8723f30/AndroidManifest.xml:17:1-39:12
-MERGED from [com.google.android.gms:play-services-fitness:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-fitness-16.0.1.aar/cccd433aaa050b11f213c087ffbcf70b/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/bd33fa142679a87b3ed91de9569ff10d/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-ads:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-15.0.1.aar/042d7ffff4472cd8947c7a40990b80b0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-18.0.0.aar/9839c9ae0150b89725b5192f88ce6c29/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-iid-16.0.1.aar/54ba84715844459a3705f3afc9fb680f/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tagmanager-v4-impl-16.0.8.aar/2bf08756a2c4af129ecad89ef4e54e9d/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-analytics-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-impl-16.0.8.aar/d3978e53cee5227d6b2ba10e53374abc/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-api-phone-16.0.0.aar/9521fbf3ec6ce889fefc6eb920ef9384/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-base-16.0.0.aar/7679b3fbceffe7c82f9d5ab943734058/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-identity:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-identity-16.0.0.aar/db601b51beffa249b9b2a469e1de6830/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-core:16.0.9] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.9.aar/dd7fbcac9adab906d87b0533c25d0b1c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-analytics:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.5.0.aar/bd1e3d39046ab7dd65d0ca64855a10b4/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.5.0.aar/684bd8c45b247051ef98df3ecb00cb6c/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-18.0.0.aar/216e483f15f3550aed168968cfcaf7e0/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.1.aar/b4fec7114ad332fd5d4a8b8b63900e22/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/155852de1ad97f0ae9a890fde86d0e6c/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/82582378d549e91251ba8fb2ead6fff3/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-17.0.0.aar/4b4ae19e07671e5bc6d911403194d9d2/AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/b81cd7e0e00f483d9fff095f6b0be32f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-16.5.0.aar/f17323fb2c6cac51a45f5b09db0f82c6/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-16.5.0.aar/45228c973977d39f735eae3126b9427c/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-impl-16.5.0.aar/90ed94bc3f3c3d71b81683aeb4e60d4c/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-16.0.1.aar/53e6e612340ffd0ee567577081c33c7c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.1.aar/c7bd07808b6bbcb2eeb5726ce7949e51/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-16.0.0.aar/633f3c5f9cc35a1f0a1201063959c04a/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.5.0.aar/f061cbc9c1ad84ca8f4e2aba6d5d3f2a/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-base-16.5.0.aar/80ef2ccf3d6661219c1eff0bceb19060/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.2.0.aar/dee660b87c5dc491deab857445c10983/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/1c5915159b56a48bb6183e8c08f16684/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.1.0.aar/916e0f9f94b13f8d86ad24121d8baaf1/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-ktx-2.1.0.aar/35e71b482a56c439cb765d9b92578c2d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:9.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-butterknife-9.0.0.aar/b929ecd26c870d29c5efeda9f82bef8f/AndroidManifest.xml:2:1-7:12
 MERGED from [com.raizlabs.android:DBFlow:2.2.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-DBFlow-2.2.1.aar/4f6c5420cd0393118a460bf4edcfbff4/AndroidManifest.xml:2:1-13:12
 MERGED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:2:1-35:12
 MERGED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:15:1-46:12
@@ -80,34 +111,6 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/g-wizkiz/.gradle
 MERGED from [com.jakewharton:butterknife-runtime:9.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-butterknife-runtime-9.0.0.aar/45787a30c07ec4401d17535aefc3c23b/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.2] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.9.2.aar/b791e2819f7b5066825dbba4c77215bc/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.browser:browser:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/d3acdffbbda31418ad31adb87deeea7d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:17:1-36:12
-MERGED from [com.google.android.gms:play-services-gass:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/90ab7b378a4599fa9e15f9811b9616ad/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-18.0.0.aar/9839c9ae0150b89725b5192f88ce6c29/AndroidManifest.xml:17:1-37:12
-MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-iid-16.0.1.aar/54ba84715844459a3705f3afc9fb680f/AndroidManifest.xml:17:1-28:12
-MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tagmanager-v4-impl-16.0.8.aar/2bf08756a2c4af129ecad89ef4e54e9d/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-analytics-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-impl-16.0.8.aar/d3978e53cee5227d6b2ba10e53374abc/AndroidManifest.xml:17:1-31:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-api-phone-16.0.0.aar/9521fbf3ec6ce889fefc6eb920ef9384/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-base-16.0.0.aar/7679b3fbceffe7c82f9d5ab943734058/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-identity:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-identity-16.0.0.aar/db601b51beffa249b9b2a469e1de6830/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.firebase:firebase-core:16.0.9] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.9.aar/dd7fbcac9adab906d87b0533c25d0b1c/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-analytics:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.5.0.aar/bd1e3d39046ab7dd65d0ca64855a10b4/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.5.0.aar/684bd8c45b247051ef98df3ecb00cb6c/AndroidManifest.xml:17:1-36:12
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-18.0.0.aar/216e483f15f3550aed168968cfcaf7e0/AndroidManifest.xml:17:1-47:12
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.1.aar/b4fec7114ad332fd5d4a8b8b63900e22/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/155852de1ad97f0ae9a890fde86d0e6c/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/82582378d549e91251ba8fb2ead6fff3/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-17.0.0.aar/4b4ae19e07671e5bc6d911403194d9d2/AndroidManifest.xml:2:1-19:12
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/b81cd7e0e00f483d9fff095f6b0be32f/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-16.5.0.aar/f17323fb2c6cac51a45f5b09db0f82c6/AndroidManifest.xml:17:1-55:12
-MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-16.5.0.aar/45228c973977d39f735eae3126b9427c/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-impl-16.5.0.aar/90ed94bc3f3c3d71b81683aeb4e60d4c/AndroidManifest.xml:17:1-40:12
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-16.0.1.aar/53e6e612340ffd0ee567577081c33c7c/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.1.aar/c7bd07808b6bbcb2eeb5726ce7949e51/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-16.0.0.aar/633f3c5f9cc35a1f0a1201063959c04a/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.5.0.aar/f061cbc9c1ad84ca8f4e2aba6d5d3f2a/AndroidManifest.xml:17:1-40:12
-MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-base-16.5.0.aar/80ef2ccf3d6661219c1eff0bceb19060/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.2.0.aar/dee660b87c5dc491deab857445c10983/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/1c5915159b56a48bb6183e8c08f16684/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/284b538b6720a35727f54745691c1f81/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/6e38bf7d08f3a5f44d2e5d37c3cf849a/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/2bbb7d4f5793a7ee6846501d75e7348f/AndroidManifest.xml:17:1-22:12
@@ -116,7 +119,6 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/g-wizkiz/.g
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/455401215cea36a6047cf05c62e09fd6/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media:media:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/732191acd239d20751278b89cd769310/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/ba3cce8dc39a6d73c1009542b98013fa/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/f424a75d960e764000a4a12348256d55/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/22d0349a608fbe0b7e5dbd89eb51699e/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/d64e39a9f5790629c4734c01cf8e7058/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/ff22cfae66538c0ac42ae933ef58bf5c/AndroidManifest.xml:17:1-22:12
@@ -124,19 +126,22 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/g-wizkiz
 MERGED from [androidx.customview:customview:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/d6b0dc58d8dc7174d287f4df82b04641/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/e89173ff5e7f1405100de446e1b72619/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/5a630777b9f180723cb21e7a72f7de7b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/f424a75d960e764000a4a12348256d55/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/d3ac0f57ce5ff3268eeff380e44167ae/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/50661a60da7557508a761ef5579df176/AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/a17fdafa4f008f1ad1f5b02a4f98bfa7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0.aar/9f8bc69fc3c65b94ef6782f8b69ec2e5/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-service-2.1.0.aar/cc04553d5f7e40e487a2413f14a78ddb/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.1.0.aar/4e735b398fc23bb902746007f1227c0e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.1.0.aar/c3da124e6f4503ad3ec47acb59cc1f47/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.1.0.aar/b01dafb3164048d9e67a43c1d7f6d82a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/core-runtime-2.1.0.aar/0428e280f8c764024eea709556ead29e/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0.aar/9de5fe346129d5f50e49715d6325d9dd/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/55fa64e081fd3d645e2949c46ddd51c6/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/e095cad7210044e6bfc95b1c39764bae/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/7086ac13d20c94f568c07b6d8449cd22/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/49e4b1fa1f628950dc332f968540572e/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/f3b27939002461c96809a44bb7d3d16d/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/601e69653e46ed9d5ee9e9ac0c06f785/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/806566942465c5a18618deff4124830c/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/56e101aa4975ab4c5e539cf4863d66bf/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/03a6af1c344aae643e41a60d39fd62c2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/25fa2a0d11de613b56e578f16a2530d4/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-15.0.1.aar/8c56de2b6ae25f5c971724c6aa5386b7/AndroidManifest.xml:17:1-24:12
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/crashlytics-2.5.5.aar/f1bb9a1481312b85b1ae7845d525fa9c/AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-android-maps-utils-0.5.aar/088259b763228df5fe3e24223ea8cf12/AndroidManifest.xml:2:1-13:12
@@ -190,16 +195,12 @@ MERGED from [host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/t
 MERGED from [host.exp.exponent:expoview:34.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-expoview-34.0.0.aar/099109f9ea9c599ecd0780f18c5b7ebd/AndroidManifest.xml:27:5-79
 MERGED from [com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-audience-network-sdk-5.1.1.aar/618e3d42dae22d680e4f26556ffc56be/AndroidManifest.xml:12:5-79
 MERGED from [com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-audience-network-sdk-5.1.1.aar/618e3d42dae22d680e4f26556ffc56be/AndroidManifest.xml:12:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-16.0.8.aar/bcf80ca48ee160a15bb3b76b0eceb6e1/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-16.0.8.aar/bcf80ca48ee160a15bb3b76b0eceb6e1/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/58c9a595eeee0468ccbf475a4056f634/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/58c9a595eeee0468ccbf475a4056f634/AndroidManifest.xml:23:5-79
-MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:13:5-79
-MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:13:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.2] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.9.2.aar/b791e2819f7b5066825dbba4c77215bc/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.2] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.9.2.aar/b791e2819f7b5066825dbba4c77215bc/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-analytics-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-impl-16.0.8.aar/d3978e53cee5227d6b2ba10e53374abc/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-analytics-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-impl-16.0.8.aar/d3978e53cee5227d6b2ba10e53374abc/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.5.0.aar/684bd8c45b247051ef98df3ecb00cb6c/AndroidManifest.xml:23:5-79
@@ -212,6 +213,10 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-impl-16.5.0.aar/90ed94bc3f3c3d71b81683aeb4e60d4c/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.5.0.aar/f061cbc9c1ad84ca8f4e2aba6d5d3f2a/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.5.0.aar/f061cbc9c1ad84ca8f4e2aba6d5d3f2a/AndroidManifest.xml:24:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:13:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:13:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.2] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.9.2.aar/b791e2819f7b5066825dbba4c77215bc/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.2] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.9.2.aar/b791e2819f7b5066825dbba4c77215bc/AndroidManifest.xml:24:5-79
 	android:name
 		ADDED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:14:20-74
 uses-permission#android.permission.INTERNET
@@ -222,16 +227,14 @@ MERGED from [:expo-file-system] /Users/g-wizkiz/Projects/pleo-expenses-challenge
 MERGED from [:expo-file-system] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-67
 MERGED from [com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-audience-network-sdk-5.1.1.aar/618e3d42dae22d680e4f26556ffc56be/AndroidManifest.xml:11:5-67
 MERGED from [com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-audience-network-sdk-5.1.1.aar/618e3d42dae22d680e4f26556ffc56be/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-gcm-16.1.0.aar/14365c04902286c94cea71ea8a0d56a5/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-gcm-16.1.0.aar/14365c04902286c94cea71ea8a0d56a5/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-16.0.8.aar/bcf80ca48ee160a15bb3b76b0eceb6e1/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-16.0.8.aar/bcf80ca48ee160a15bb3b76b0eceb6e1/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/58c9a595eeee0468ccbf475a4056f634/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/58c9a595eeee0468ccbf475a4056f634/AndroidManifest.xml:24:5-67
-MERGED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:24:5-67
-MERGED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-iid-16.0.1.aar/54ba84715844459a3705f3afc9fb680f/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-iid-16.0.1.aar/54ba84715844459a3705f3afc9fb680f/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-analytics-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-impl-16.0.8.aar/d3978e53cee5227d6b2ba10e53374abc/AndroidManifest.xml:23:5-67
@@ -246,6 +249,8 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-impl-16.5.0.aar/90ed94bc3f3c3d71b81683aeb4e60d4c/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.5.0.aar/f061cbc9c1ad84ca8f4e2aba6d5d3f2a/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.5.0.aar/f061cbc9c1ad84ca8f4e2aba6d5d3f2a/AndroidManifest.xml:23:5-67
+MERGED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:24:5-67
+MERGED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:24:5-67
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/crashlytics-2.5.5.aar/f1bb9a1481312b85b1ae7845d525fa9c/AndroidManifest.xml:9:5-67
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/crashlytics-2.5.5.aar/f1bb9a1481312b85b1ae7845d525fa9c/AndroidManifest.xml:9:5-67
 MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.3.8.aar/a54ad8f09584035becedf6137c1f25e3/AndroidManifest.xml:9:5-67
@@ -436,6 +441,14 @@ MERGED from [com.google.android.material:material:1.0.0] /Users/g-wizkiz/.gradle
 MERGED from [com.google.android.material:material:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/e8085df1e3747b2e989ee71d2439c3b5/AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-audience-network-sdk-5.1.1.aar/618e3d42dae22d680e4f26556ffc56be/AndroidManifest.xml:14:5-32:19
 MERGED from [com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-audience-network-sdk-5.1.1.aar/618e3d42dae22d680e4f26556ffc56be/AndroidManifest.xml:14:5-32:19
+MERGED from [com.google.android.gms:play-services-fitness:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-fitness-16.0.1.aar/cccd433aaa050b11f213c087ffbcf70b/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-fitness:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-fitness-16.0.1.aar/cccd433aaa050b11f213c087ffbcf70b/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/bd33fa142679a87b3ed91de9569ff10d/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/bd33fa142679a87b3ed91de9569ff10d/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-gass:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/90ab7b378a4599fa9e15f9811b9616ad/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-gass:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/90ab7b378a4599fa9e15f9811b9616ad/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-gcm-16.1.0.aar/14365c04902286c94cea71ea8a0d56a5/AndroidManifest.xml:26:5-20
 MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-gcm-16.1.0.aar/14365c04902286c94cea71ea8a0d56a5/AndroidManifest.xml:26:5-20
 MERGED from [com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-16.0.8.aar/bcf80ca48ee160a15bb3b76b0eceb6e1/AndroidManifest.xml:29:5-45:19
@@ -444,34 +457,6 @@ MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/58c9a595eeee0468ccbf475a4056f634/AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-16.0.1.aar/5b15a9405b4776fec26120e7b8723f30/AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-16.0.1.aar/5b15a9405b4776fec26120e7b8723f30/AndroidManifest.xml:22:5-37:19
-MERGED from [com.google.android.gms:play-services-fitness:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-fitness-16.0.1.aar/cccd433aaa050b11f213c087ffbcf70b/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-fitness:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-fitness-16.0.1.aar/cccd433aaa050b11f213c087ffbcf70b/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/bd33fa142679a87b3ed91de9569ff10d/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/bd33fa142679a87b3ed91de9569ff10d/AndroidManifest.xml:7:5-20
-MERGED from [com.raizlabs.android:DBFlow:2.2.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-DBFlow-2.2.1.aar/4f6c5420cd0393118a460bf4edcfbff4/AndroidManifest.xml:11:5-20
-MERGED from [com.raizlabs.android:DBFlow:2.2.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-DBFlow-2.2.1.aar/4f6c5420cd0393118a460bf4edcfbff4/AndroidManifest.xml:11:5-20
-MERGED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:26:5-44:19
-MERGED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:26:5-44:19
-MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:18:5-28:19
-MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:18:5-28:19
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/faa3894ba72b18c75a1f764f35a1f1fa/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/faa3894ba72b18c75a1f764f35a1f1fa/AndroidManifest.xml:11:5-20
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/285f7878ba3f4cac764becf5749ecd43/AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/285f7878ba3f4cac764becf5749ecd43/AndroidManifest.xml:10:5-20
-MERGED from [com.facebook.android:facebook-places:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/facebook-places-5.0.1.aar/c63bbbf7977e280d7f1aaab1c487b782/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-places:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/facebook-places-5.0.1.aar/c63bbbf7977e280d7f1aaab1c487b782/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/facebook-applinks-5.0.1.aar/90af0d0c8e5b216857428411be94b723/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/facebook-applinks-5.0.1.aar/90af0d0c8e5b216857428411be94b723/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/facebook-messenger-5.0.1.aar/a5f919160f1f4e0aa19ace07f7c22184/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/facebook-messenger-5.0.1.aar/a5f919160f1f4e0aa19ace07f7c22184/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:28:5-59:19
-MERGED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:28:5-59:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/eca0ad622d3209740d62d2b78a917d97/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/eca0ad622d3209740d62d2b78a917d97/AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:26:5-34:19
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:26:5-34:19
-MERGED from [com.google.android.gms:play-services-gass:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/90ab7b378a4599fa9e15f9811b9616ad/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-gass:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/90ab7b378a4599fa9e15f9811b9616ad/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-18.0.0.aar/9839c9ae0150b89725b5192f88ce6c29/AndroidManifest.xml:22:5-35:19
 MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-18.0.0.aar/9839c9ae0150b89725b5192f88ce6c29/AndroidManifest.xml:22:5-35:19
 MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-iid-16.0.1.aar/54ba84715844459a3705f3afc9fb680f/AndroidManifest.xml:26:5-20
@@ -518,10 +503,34 @@ MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-base-16.5.0.aar/80ef2ccf3d6661219c1eff0bceb19060/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.2.0.aar/dee660b87c5dc491deab857445c10983/AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.2.0.aar/dee660b87c5dc491deab857445c10983/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.1.0.aar/916e0f9f94b13f8d86ad24121d8baaf1/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.1.0.aar/916e0f9f94b13f8d86ad24121d8baaf1/AndroidManifest.xml:22:5-23:19
+MERGED from [com.raizlabs.android:DBFlow:2.2.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-DBFlow-2.2.1.aar/4f6c5420cd0393118a460bf4edcfbff4/AndroidManifest.xml:11:5-20
+MERGED from [com.raizlabs.android:DBFlow:2.2.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-DBFlow-2.2.1.aar/4f6c5420cd0393118a460bf4edcfbff4/AndroidManifest.xml:11:5-20
+MERGED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:26:5-44:19
+MERGED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:26:5-44:19
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:18:5-28:19
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:18:5-28:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/faa3894ba72b18c75a1f764f35a1f1fa/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/faa3894ba72b18c75a1f764f35a1f1fa/AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/285f7878ba3f4cac764becf5749ecd43/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/285f7878ba3f4cac764becf5749ecd43/AndroidManifest.xml:10:5-20
+MERGED from [com.facebook.android:facebook-places:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/facebook-places-5.0.1.aar/c63bbbf7977e280d7f1aaab1c487b782/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-places:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/facebook-places-5.0.1.aar/c63bbbf7977e280d7f1aaab1c487b782/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/facebook-applinks-5.0.1.aar/90af0d0c8e5b216857428411be94b723/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/facebook-applinks-5.0.1.aar/90af0d0c8e5b216857428411be94b723/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/facebook-messenger-5.0.1.aar/a5f919160f1f4e0aa19ace07f7c22184/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/facebook-messenger-5.0.1.aar/a5f919160f1f4e0aa19ace07f7c22184/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:28:5-59:19
+MERGED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:28:5-59:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/eca0ad622d3209740d62d2b78a917d97/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/eca0ad622d3209740d62d2b78a917d97/AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/d3ac0f57ce5ff3268eeff380e44167ae/AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/d3ac0f57ce5ff3268eeff380e44167ae/AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/50661a60da7557508a761ef5579df176/AndroidManifest.xml:22:5-23:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/50661a60da7557508a761ef5579df176/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0.aar/9f8bc69fc3c65b94ef6782f8b69ec2e5/AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0.aar/9f8bc69fc3c65b94ef6782f8b69ec2e5/AndroidManifest.xml:22:5-28:19
 MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-15.0.1.aar/8c56de2b6ae25f5c971724c6aa5386b7/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-15.0.1.aar/8c56de2b6ae25f5c971724c6aa5386b7/AndroidManifest.xml:22:5-20
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/crashlytics-2.5.5.aar/f1bb9a1481312b85b1ae7845d525fa9c/AndroidManifest.xml:11:5-20
@@ -637,7 +646,7 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:98:9-68
 	android:name
 		ADDED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:98:19-66
-activity#host.exp.exponent.CameraActivity
+activity#host.exp.exponent.custom.CameraActivity
 ADDED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:102:7-108:18
 	android:screenOrientation
 		ADDED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:107:11-47
@@ -648,7 +657,7 @@ ADDED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main
 	android:theme
 		ADDED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:105:11-42
 	android:name
-		ADDED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:103:11-41
+		ADDED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:103:11-48
 activity#host.exp.exponent.experience.HomeActivity
 ADDED from /Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/AndroidManifest.xml:110:5-116:16
 	android:screenOrientation
@@ -1055,6 +1064,8 @@ MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta1] /Users/
 MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/leakcanary-android-no-op-1.4-beta1.aar/b143514463f241a9877d22654af2f543/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/multidex-2.0.0.aar/2cf923a8ee6a0848090a43d11989fd86/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/multidex-2.0.0.aar/2cf923a8ee6a0848090a43d11989fd86/AndroidManifest.xml:20:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.1.aar/65f4f3c1ed551f0095b74e06abbf8d06/AndroidManifest.xml:18:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.1.aar/65f4f3c1ed551f0095b74e06abbf8d06/AndroidManifest.xml:18:5-43
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.7.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-android-image-cropper-2.7.0.aar/64dd0405bdb8748de00211705451adb7/AndroidManifest.xml:7:5-9:41
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.7.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-android-image-cropper-2.7.0.aar/64dd0405bdb8748de00211705451adb7/AndroidManifest.xml:7:5-9:41
 MERGED from [com.airbnb.android:lottie:2.5.6] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-lottie-2.5.6.aar/7957616cd44049ddca90e96bad048b2c/AndroidManifest.xml:7:5-9:41
@@ -1073,8 +1084,16 @@ MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/g-wizkiz/.gradle/caches/
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ac42abe69065bf45554fec177d6e3783/AndroidManifest.xml:20:5-44
 MERGED from [com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-audience-network-sdk-5.1.1.aar/618e3d42dae22d680e4f26556ffc56be/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-audience-network-sdk-5.1.1.aar/618e3d42dae22d680e4f26556ffc56be/AndroidManifest.xml:7:5-9:41
-MERGED from [com.jakewharton:butterknife:9.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-butterknife-9.0.0.aar/b929ecd26c870d29c5efeda9f82bef8f/AndroidManifest.xml:5:5-44
-MERGED from [com.jakewharton:butterknife:9.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-butterknife-9.0.0.aar/b929ecd26c870d29c5efeda9f82bef8f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-15.0.1.aar/042d7ffff4472cd8947c7a40990b80b0/AndroidManifest.xml:21:5-23:52
+MERGED from [com.google.android.gms:play-services-ads:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-15.0.1.aar/042d7ffff4472cd8947c7a40990b80b0/AndroidManifest.xml:21:5-23:52
+MERGED from [com.google.android.gms:play-services-fitness:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-fitness-16.0.1.aar/cccd433aaa050b11f213c087ffbcf70b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-fitness:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-fitness-16.0.1.aar/cccd433aaa050b11f213c087ffbcf70b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/bd33fa142679a87b3ed91de9569ff10d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/bd33fa142679a87b3ed91de9569ff10d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gass:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/90ab7b378a4599fa9e15f9811b9616ad/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-gass:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/90ab7b378a4599fa9e15f9811b9616ad/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-gcm-16.1.0.aar/14365c04902286c94cea71ea8a0d56a5/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-gcm-16.1.0.aar/14365c04902286c94cea71ea8a0d56a5/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-16.0.8.aar/bcf80ca48ee160a15bb3b76b0eceb6e1/AndroidManifest.xml:20:5-44
@@ -1085,12 +1104,64 @@ MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/58c9a595eeee0468ccbf475a4056f634/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-16.0.1.aar/5b15a9405b4776fec26120e7b8723f30/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-16.0.1.aar/5b15a9405b4776fec26120e7b8723f30/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-fitness:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-fitness-16.0.1.aar/cccd433aaa050b11f213c087ffbcf70b/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-fitness:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-fitness-16.0.1.aar/cccd433aaa050b11f213c087ffbcf70b/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/bd33fa142679a87b3ed91de9569ff10d/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/bd33fa142679a87b3ed91de9569ff10d/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-ads:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-15.0.1.aar/042d7ffff4472cd8947c7a40990b80b0/AndroidManifest.xml:21:5-23:52
-MERGED from [com.google.android.gms:play-services-ads:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-15.0.1.aar/042d7ffff4472cd8947c7a40990b80b0/AndroidManifest.xml:21:5-23:52
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-18.0.0.aar/9839c9ae0150b89725b5192f88ce6c29/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-18.0.0.aar/9839c9ae0150b89725b5192f88ce6c29/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-iid-16.0.1.aar/54ba84715844459a3705f3afc9fb680f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-iid-16.0.1.aar/54ba84715844459a3705f3afc9fb680f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tagmanager-v4-impl-16.0.8.aar/2bf08756a2c4af129ecad89ef4e54e9d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tagmanager-v4-impl-16.0.8.aar/2bf08756a2c4af129ecad89ef4e54e9d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-analytics-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-impl-16.0.8.aar/d3978e53cee5227d6b2ba10e53374abc/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-analytics-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-impl-16.0.8.aar/d3978e53cee5227d6b2ba10e53374abc/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-api-phone-16.0.0.aar/9521fbf3ec6ce889fefc6eb920ef9384/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-api-phone-16.0.0.aar/9521fbf3ec6ce889fefc6eb920ef9384/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-base-16.0.0.aar/7679b3fbceffe7c82f9d5ab943734058/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-base-16.0.0.aar/7679b3fbceffe7c82f9d5ab943734058/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-identity:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-identity-16.0.0.aar/db601b51beffa249b9b2a469e1de6830/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-identity-16.0.0.aar/db601b51beffa249b9b2a469e1de6830/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.9] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.9.aar/dd7fbcac9adab906d87b0533c25d0b1c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.9] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.9.aar/dd7fbcac9adab906d87b0533c25d0b1c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.5.0.aar/bd1e3d39046ab7dd65d0ca64855a10b4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.5.0.aar/bd1e3d39046ab7dd65d0ca64855a10b4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.5.0.aar/684bd8c45b247051ef98df3ecb00cb6c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.5.0.aar/684bd8c45b247051ef98df3ecb00cb6c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-18.0.0.aar/216e483f15f3550aed168968cfcaf7e0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-18.0.0.aar/216e483f15f3550aed168968cfcaf7e0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.1.aar/b4fec7114ad332fd5d4a8b8b63900e22/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.1.aar/b4fec7114ad332fd5d4a8b8b63900e22/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/155852de1ad97f0ae9a890fde86d0e6c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/155852de1ad97f0ae9a890fde86d0e6c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/82582378d549e91251ba8fb2ead6fff3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/82582378d549e91251ba8fb2ead6fff3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-17.0.0.aar/4b4ae19e07671e5bc6d911403194d9d2/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-17.0.0.aar/4b4ae19e07671e5bc6d911403194d9d2/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/b81cd7e0e00f483d9fff095f6b0be32f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/b81cd7e0e00f483d9fff095f6b0be32f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-16.5.0.aar/f17323fb2c6cac51a45f5b09db0f82c6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-16.5.0.aar/f17323fb2c6cac51a45f5b09db0f82c6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-16.5.0.aar/45228c973977d39f735eae3126b9427c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-16.5.0.aar/45228c973977d39f735eae3126b9427c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-impl-16.5.0.aar/90ed94bc3f3c3d71b81683aeb4e60d4c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-impl-16.5.0.aar/90ed94bc3f3c3d71b81683aeb4e60d4c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-16.0.1.aar/53e6e612340ffd0ee567577081c33c7c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-16.0.1.aar/53e6e612340ffd0ee567577081c33c7c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.1.aar/c7bd07808b6bbcb2eeb5726ce7949e51/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.1.aar/c7bd07808b6bbcb2eeb5726ce7949e51/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-16.0.0.aar/633f3c5f9cc35a1f0a1201063959c04a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-16.0.0.aar/633f3c5f9cc35a1f0a1201063959c04a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.5.0.aar/f061cbc9c1ad84ca8f4e2aba6d5d3f2a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.5.0.aar/f061cbc9c1ad84ca8f4e2aba6d5d3f2a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-base-16.5.0.aar/80ef2ccf3d6661219c1eff0bceb19060/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-base-16.5.0.aar/80ef2ccf3d6661219c1eff0bceb19060/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.2.0.aar/dee660b87c5dc491deab857445c10983/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.2.0.aar/dee660b87c5dc491deab857445c10983/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/1c5915159b56a48bb6183e8c08f16684/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/1c5915159b56a48bb6183e8c08f16684/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.1.0.aar/916e0f9f94b13f8d86ad24121d8baaf1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.1.0.aar/916e0f9f94b13f8d86ad24121d8baaf1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-ktx-2.1.0.aar/35e71b482a56c439cb765d9b92578c2d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-ktx-2.1.0.aar/35e71b482a56c439cb765d9b92578c2d/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:9.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-butterknife-9.0.0.aar/b929ecd26c870d29c5efeda9f82bef8f/AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife:9.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-butterknife-9.0.0.aar/b929ecd26c870d29c5efeda9f82bef8f/AndroidManifest.xml:5:5-44
 MERGED from [com.raizlabs.android:DBFlow:2.2.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-DBFlow-2.2.1.aar/4f6c5420cd0393118a460bf4edcfbff4/AndroidManifest.xml:7:5-9:41
 MERGED from [com.raizlabs.android:DBFlow:2.2.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-DBFlow-2.2.1.aar/4f6c5420cd0393118a460bf4edcfbff4/AndroidManifest.xml:7:5-9:41
 MERGED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:7:5-9:41
@@ -1147,62 +1218,6 @@ MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.2] /Users/g-wizkiz/
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.2] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-exoplayer-core-2.9.2.aar/b791e2819f7b5066825dbba4c77215bc/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.browser:browser:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/d3acdffbbda31418ad31adb87deeea7d/AndroidManifest.xml:20:5-44
 MERGED from [androidx.browser:browser:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/d3acdffbbda31418ad31adb87deeea7d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-gass:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/90ab7b378a4599fa9e15f9811b9616ad/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-gass:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/90ab7b378a4599fa9e15f9811b9616ad/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-18.0.0.aar/9839c9ae0150b89725b5192f88ce6c29/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-18.0.0.aar/9839c9ae0150b89725b5192f88ce6c29/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-iid-16.0.1.aar/54ba84715844459a3705f3afc9fb680f/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-iid-16.0.1.aar/54ba84715844459a3705f3afc9fb680f/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tagmanager-v4-impl-16.0.8.aar/2bf08756a2c4af129ecad89ef4e54e9d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tagmanager-v4-impl-16.0.8.aar/2bf08756a2c4af129ecad89ef4e54e9d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-analytics-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-impl-16.0.8.aar/d3978e53cee5227d6b2ba10e53374abc/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-analytics-impl:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-impl-16.0.8.aar/d3978e53cee5227d6b2ba10e53374abc/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-api-phone-16.0.0.aar/9521fbf3ec6ce889fefc6eb920ef9384/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-api-phone-16.0.0.aar/9521fbf3ec6ce889fefc6eb920ef9384/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-base-16.0.0.aar/7679b3fbceffe7c82f9d5ab943734058/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-base-16.0.0.aar/7679b3fbceffe7c82f9d5ab943734058/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-identity:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-identity-16.0.0.aar/db601b51beffa249b9b2a469e1de6830/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-identity:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-identity-16.0.0.aar/db601b51beffa249b9b2a469e1de6830/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-core:16.0.9] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.9.aar/dd7fbcac9adab906d87b0533c25d0b1c/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-core:16.0.9] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.9.aar/dd7fbcac9adab906d87b0533c25d0b1c/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-analytics:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.5.0.aar/bd1e3d39046ab7dd65d0ca64855a10b4/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-analytics:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.5.0.aar/bd1e3d39046ab7dd65d0ca64855a10b4/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.5.0.aar/684bd8c45b247051ef98df3ecb00cb6c/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.5.0.aar/684bd8c45b247051ef98df3ecb00cb6c/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-18.0.0.aar/216e483f15f3550aed168968cfcaf7e0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-18.0.0.aar/216e483f15f3550aed168968cfcaf7e0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.1.aar/b4fec7114ad332fd5d4a8b8b63900e22/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.1.aar/b4fec7114ad332fd5d4a8b8b63900e22/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/155852de1ad97f0ae9a890fde86d0e6c/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/155852de1ad97f0ae9a890fde86d0e6c/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/82582378d549e91251ba8fb2ead6fff3/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/82582378d549e91251ba8fb2ead6fff3/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-17.0.0.aar/4b4ae19e07671e5bc6d911403194d9d2/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-17.0.0.aar/4b4ae19e07671e5bc6d911403194d9d2/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/b81cd7e0e00f483d9fff095f6b0be32f/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/b81cd7e0e00f483d9fff095f6b0be32f/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-16.5.0.aar/f17323fb2c6cac51a45f5b09db0f82c6/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-16.5.0.aar/f17323fb2c6cac51a45f5b09db0f82c6/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-16.5.0.aar/45228c973977d39f735eae3126b9427c/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-16.5.0.aar/45228c973977d39f735eae3126b9427c/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-impl-16.5.0.aar/90ed94bc3f3c3d71b81683aeb4e60d4c/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-impl-16.5.0.aar/90ed94bc3f3c3d71b81683aeb4e60d4c/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-16.0.1.aar/53e6e612340ffd0ee567577081c33c7c/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-16.0.1.aar/53e6e612340ffd0ee567577081c33c7c/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.1.aar/c7bd07808b6bbcb2eeb5726ce7949e51/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.1.aar/c7bd07808b6bbcb2eeb5726ce7949e51/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-16.0.0.aar/633f3c5f9cc35a1f0a1201063959c04a/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-16.0.0.aar/633f3c5f9cc35a1f0a1201063959c04a/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.5.0.aar/f061cbc9c1ad84ca8f4e2aba6d5d3f2a/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.5.0.aar/f061cbc9c1ad84ca8f4e2aba6d5d3f2a/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-base-16.5.0.aar/80ef2ccf3d6661219c1eff0bceb19060/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-base-16.5.0.aar/80ef2ccf3d6661219c1eff0bceb19060/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.2.0.aar/dee660b87c5dc491deab857445c10983/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.2.0.aar/dee660b87c5dc491deab857445c10983/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/1c5915159b56a48bb6183e8c08f16684/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/1c5915159b56a48bb6183e8c08f16684/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/284b538b6720a35727f54745691c1f81/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/284b538b6720a35727f54745691c1f81/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/6e38bf7d08f3a5f44d2e5d37c3cf849a/AndroidManifest.xml:20:5-44
@@ -1219,8 +1234,6 @@ MERGED from [androidx.media:media:1.0.0] /Users/g-wizkiz/.gradle/caches/transfor
 MERGED from [androidx.media:media:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/732191acd239d20751278b89cd769310/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/ba3cce8dc39a6d73c1009542b98013fa/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/ba3cce8dc39a6d73c1009542b98013fa/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/f424a75d960e764000a4a12348256d55/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/f424a75d960e764000a4a12348256d55/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/22d0349a608fbe0b7e5dbd89eb51699e/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/22d0349a608fbe0b7e5dbd89eb51699e/AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/d64e39a9f5790629c4734c01cf8e7058/AndroidManifest.xml:20:5-44
@@ -1235,32 +1248,38 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/g-wizk
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/e89173ff5e7f1405100de446e1b72619/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/5a630777b9f180723cb21e7a72f7de7b/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/5a630777b9f180723cb21e7a72f7de7b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/f424a75d960e764000a4a12348256d55/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/f424a75d960e764000a4a12348256d55/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/d3ac0f57ce5ff3268eeff380e44167ae/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/d3ac0f57ce5ff3268eeff380e44167ae/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/50661a60da7557508a761ef5579df176/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/50661a60da7557508a761ef5579df176/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/a17fdafa4f008f1ad1f5b02a4f98bfa7/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/a17fdafa4f008f1ad1f5b02a4f98bfa7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0.aar/9f8bc69fc3c65b94ef6782f8b69ec2e5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0.aar/9f8bc69fc3c65b94ef6782f8b69ec2e5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-service-2.1.0.aar/cc04553d5f7e40e487a2413f14a78ddb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-service-2.1.0.aar/cc04553d5f7e40e487a2413f14a78ddb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.1.0.aar/4e735b398fc23bb902746007f1227c0e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.1.0.aar/4e735b398fc23bb902746007f1227c0e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.1.0.aar/c3da124e6f4503ad3ec47acb59cc1f47/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.1.0.aar/c3da124e6f4503ad3ec47acb59cc1f47/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.1.0.aar/b01dafb3164048d9e67a43c1d7f6d82a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.1.0.aar/b01dafb3164048d9e67a43c1d7f6d82a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/core-runtime-2.1.0.aar/0428e280f8c764024eea709556ead29e/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/core-runtime-2.1.0.aar/0428e280f8c764024eea709556ead29e/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0.aar/9de5fe346129d5f50e49715d6325d9dd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0.aar/9de5fe346129d5f50e49715d6325d9dd/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/55fa64e081fd3d645e2949c46ddd51c6/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/55fa64e081fd3d645e2949c46ddd51c6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/e095cad7210044e6bfc95b1c39764bae/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/e095cad7210044e6bfc95b1c39764bae/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/7086ac13d20c94f568c07b6d8449cd22/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/7086ac13d20c94f568c07b6d8449cd22/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/49e4b1fa1f628950dc332f968540572e/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/49e4b1fa1f628950dc332f968540572e/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/f3b27939002461c96809a44bb7d3d16d/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/f3b27939002461c96809a44bb7d3d16d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/601e69653e46ed9d5ee9e9ac0c06f785/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/601e69653e46ed9d5ee9e9ac0c06f785/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/806566942465c5a18618deff4124830c/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/806566942465c5a18618deff4124830c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/56e101aa4975ab4c5e539cf4863d66bf/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/56e101aa4975ab4c5e539cf4863d66bf/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/03a6af1c344aae643e41a60d39fd62c2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/03a6af1c344aae643e41a60d39fd62c2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/25fa2a0d11de613b56e578f16a2530d4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/25fa2a0d11de613b56e578f16a2530d4/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-15.0.1.aar/8c56de2b6ae25f5c971724c6aa5386b7/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-15.0.1.aar/8c56de2b6ae25f5c971724c6aa5386b7/AndroidManifest.xml:20:5-44
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/crashlytics-2.5.5.aar/f1bb9a1481312b85b1ae7845d525fa9c/AndroidManifest.xml:7:5-43
@@ -1441,6 +1460,16 @@ ADDED from [com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gr
 		ADDED from [com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-audience-network-sdk-5.1.1.aar/618e3d42dae22d680e4f26556ffc56be/AndroidManifest.xml:30:13-37
 	android:name
 		ADDED from [com.facebook.android:audience-network-sdk:5.1.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-audience-network-sdk-5.1.1.aar/618e3d42dae22d680e4f26556ffc56be/AndroidManifest.xml:29:13-77
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:29:9-33:64
+	android:exported
+		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:32:13-37
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:31:13-122
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:33:13-61
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:30:13-65
 service#com.google.android.gms.analytics.AnalyticsJobService
 ADDED from [com.google.android.gms:play-services-analytics:16.0.8] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-analytics-16.0.8.aar/bcf80ca48ee160a15bb3b76b0eceb6e1/AndroidManifest.xml:40:9-44:72
 	android:enabled
@@ -1475,108 +1504,6 @@ ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.g
 		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-16.0.1.aar/5b15a9405b4776fec26120e7b8723f30/AndroidManifest.xml:36:13-107
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-auth-16.0.1.aar/5b15a9405b4776fec26120e7b8723f30/AndroidManifest.xml:34:13-89
-uses-permission#com.sec.android.provider.badge.permission.READ
-ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:19:5-86
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:19:22-83
-uses-permission#com.sec.android.provider.badge.permission.WRITE
-ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:20:5-87
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:20:22-84
-uses-permission#com.htc.launcher.permission.READ_SETTINGS
-ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:23:5-81
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:23:22-78
-uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
-ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:24:5-83
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:24:22-80
-uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
-ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:27:5-88
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:27:22-85
-uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
-ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:30:5-84
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:30:22-81
-uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
-ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:33:5-83
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:33:22-80
-activity#net.openid.appauth.AuthorizationManagementActivity
-ADDED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:27:9-31:75
-	android:launchMode
-		ADDED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:30:13-44
-	android:exported
-		ADDED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:29:13-37
-	android:theme
-		ADDED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:31:13-72
-	android:name
-		ADDED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:28:13-78
-uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:15:5-98
-	android:name
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:15:22-95
-uses-permission#com.google.android.gms.permission.ACTIVITY_RECOGNITION
-ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:16:5-94
-	android:name
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:16:22-91
-service#io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService
-ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:19:9-21:40
-	android:exported
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:21:13-37
-	android:name
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:20:13-132
-service#io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService
-ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:22:9-24:40
-	android:exported
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:24:13-37
-	android:name
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:23:13-127
-service#io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService
-ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:25:9-27:40
-	android:exported
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:27:13-37
-	android:name
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:26:13-120
-provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:39:9-42:40
-	android:authorities
-		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:41:13-72
-	android:exported
-		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:42:13-37
-	android:name
-		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:40:13-70
-receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:44:9-50:20
-	android:exported
-		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:46:13-37
-	android:name
-		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:45:13-86
-intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:47:13-49:29
-action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:48:17-95
-	android:name
-		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:48:25-92
-receiver#com.facebook.CampaignTrackingReceiver
-ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:51:9-58:20
-	android:exported
-		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:53:13-36
-	android:permission
-		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:54:13-69
-	android:name
-		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:52:13-65
-activity#com.google.android.gms.ads.AdActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:29:9-33:64
-	android:exported
-		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:32:13-37
-	android:configChanges
-		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:31:13-122
-	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:33:13-61
-	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-15.0.1.aar/0817a6cf1937cd17b56a84bef2a065c0/AndroidManifest.xml:30:13-65
 service#com.google.firebase.messaging.FirebaseMessagingService
 ADDED from [com.google.firebase:firebase-messaging:18.0.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-18.0.0.aar/9839c9ae0150b89725b5192f88ce6c29/AndroidManifest.xml:28:9-34:19
 	android:exported
@@ -1685,3 +1612,105 @@ MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/g-wizkiz/.gr
 		ADDED from [com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.2.0.aar/dee660b87c5dc491deab857445c10983/AndroidManifest.xml:25:13-66
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:16.2.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.2.0.aar/dee660b87c5dc491deab857445c10983/AndroidManifest.xml:24:13-58
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:27:22-85
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:30:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:30:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:33:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.4] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/8336f853c014d8378150b87fff4822b5/AndroidManifest.xml:33:22-80
+activity#net.openid.appauth.AuthorizationManagementActivity
+ADDED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:27:9-31:75
+	android:launchMode
+		ADDED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:30:13-44
+	android:exported
+		ADDED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:29:13-37
+	android:theme
+		ADDED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:31:13-72
+	android:name
+		ADDED from [net.openid:appauth:0.7.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-appauth-0.7.1.aar/9ae5cf50a4df096a1d33993943ca55df/AndroidManifest.xml:28:13-78
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:15:5-98
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:15:22-95
+uses-permission#com.google.android.gms.permission.ACTIVITY_RECOGNITION
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:16:5-94
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:16:22-91
+service#io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:19:9-21:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:20:13-132
+service#io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:22:9-24:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:23:13-127
+service#io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/b21578e2533b5f1c2f849330b8b962eb/AndroidManifest.xml:26:13-120
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:39:9-42:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:40:13-70
+receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
+ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:44:9-50:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:45:13-86
+intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:47:13-49:29
+action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:48:17-95
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:48:25-92
+receiver#com.facebook.CampaignTrackingReceiver
+ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:51:9-58:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:53:13-36
+	android:permission
+		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:54:13-69
+	android:name
+		ADDED from [com.facebook.android:facebook-core:5.0.1] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-5.0.1.aar/cf9c3f41dcd3a304449c0aaa13eda117/AndroidManifest.xml:52:13-65
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0.aar/9f8bc69fc3c65b94ef6782f8b69ec2e5/AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0.aar/9f8bc69fc3c65b94ef6782f8b69ec2e5/AndroidManifest.xml:25:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0.aar/9f8bc69fc3c65b94ef6782f8b69ec2e5/AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0.aar/9f8bc69fc3c65b94ef6782f8b69ec2e5/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0.aar/9f8bc69fc3c65b94ef6782f8b69ec2e5/AndroidManifest.xml:24:13-79

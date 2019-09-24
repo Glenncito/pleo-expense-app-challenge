@@ -352,6 +352,10 @@
     "source": "/Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/e8085df1e3747b2e989ee71d2439c3b5/res/layout/design_navigation_item.xml"
   },
   {
+    "merged": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/res/merged/debug/layout_reciept_capture_fragment.xml.flat",
+    "source": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/src/main/res/layout/reciept_capture_fragment.xml"
+  },
+  {
     "merged": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
     "source": "/Users/g-wizkiz/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/155852de1ad97f0ae9a890fde86d0e6c/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
   },
