@@ -1,41 +1,49 @@
 import { View, ScrollView, FlatList, Button } from "react-native";
 import ExpenseCard from "components/ExpenseCard/ExpenseCard";
-import React from "react";
 import { NativeModules } from "react-native";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
 //import {AmountSchema, UserSchema, ExpenseSchema} from "models"; //make it target the alias
 
 export default function App() {
-  const CameraApplication = NativeModules.KotlinCameraModule;
+  const [data, setData] = useState([]);
   const Realm = require("realm");
-  //const image = showImage();
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(
+        // 'http://localhost:3000/expenses?limit=10&offset=0',
+        //'http://d909d1a9.ngrok.io/expenses?limit=10&offset=0',
+        "https://demo5313442.mockable.io/get"
+      );
+      //setApiResonse(result.data);
+      writeData(result.data.expenses);
+      /* Realm.open({
+        schema: [ExpenseSchema, UserSchema, AmountSchema]
+      }).then(realm => {
+        realm.write(() => {
+          result.data.expenses.map((expense) => {
+            realm.create ('Expense',expense)
+            setData ([...data, expense]);  
+          });
+        });
+      });*/
+    };
+    fetchData();
+  }, []);
 
-  const AmountSchema = {
-    name: "Amount",
-    properties: {
-      value: "string",
-      currency: "string"
-    }
-  };
-
-  const UserSchema = {
-    name: "User",
-    properties: {
-      first: "string",
-      last: "string",
-      email: "string"
-    }
-  };
-  const ExpenseSchema = {
-    name: "Expense",
-    primaryKey: "id",
-    properties: {
-      id: "string",
-      amount: "Amount?",
-      user: "User?",
-      date: "date",
-      merchant: "string",
-      receipt: "data?"
-    }
+  const writeData = data => {
+    Realm.open({
+      schema: [ExpenseSchema, UserSchema, AmountSchema]
+    }).then(realm => {
+      realm.write(() => {
+        data.map(expense => {
+          realm.create("expense", expense);
+          setData([...data, expense]);
+          console.log(expense);
+        });
+      });
+    });
   };
 
   const showImage = () => {
@@ -86,10 +94,9 @@ export default function App() {
 
   return (
     <View>
-      <Button title="Dummy Data" onPress={() => addRealmDummyData()} />
       <ScrollView>
         <FlatList
-          data={expenseItems}
+          data={data}
           showsVerticalScrollIndicator={false}
           renderItem={({ item }) => (
             <ExpenseCard
@@ -176,3 +183,32 @@ const expenseItems = [
     }
   }
 ];
+
+const AmountSchema = {
+  name: "amount",
+  properties: {
+    value: "string",
+    currency: "string"
+  }
+};
+
+const UserSchema = {
+  name: "user",
+  properties: {
+    first: "string",
+    last: "string",
+    email: "string"
+  }
+};
+const ExpenseSchema = {
+  name: "expense",
+  primaryKey: "id",
+  properties: {
+    id: "string",
+    amount: "amount?",
+    user: "user?",
+    date: "date",
+    merchant: "string",
+    receipt: "data?"
+  }
+};

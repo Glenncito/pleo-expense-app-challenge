@@ -63,13 +63,13 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         checkClass(clazz);
 
         if (clazz.equals(host.exp.exponent.custom.data.models.Expense.class)) {
-            return "Expense";
+            return "expense";
         }
         if (clazz.equals(host.exp.exponent.custom.data.models.Amount.class)) {
-            return "Amount";
+            return "amount";
         }
         if (clazz.equals(host.exp.exponent.custom.data.models.User.class)) {
-            return "User";
+            return "user";
         }
         throw getMissingProxyClassException(clazz);
     }

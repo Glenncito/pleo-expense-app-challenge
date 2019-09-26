@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Sep 23 22:48:04 SAST 2019
+#Thu Sep 26 09:39:02 SAST 2019
 60.set=NATIVE_RESOURCE
 52.set=DEX
 53.base=/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0

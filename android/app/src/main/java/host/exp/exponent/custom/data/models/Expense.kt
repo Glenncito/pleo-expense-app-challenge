@@ -7,7 +7,7 @@ import io.realm.annotations.PrimaryKey
 import io.realm.annotations.RealmClass
 import java.util.*
 
-@RealmClass
+@RealmClass (name = "expense")
 open class Expense(
         @PrimaryKey
         var id: String = "",
