@@ -11,11 +11,14 @@ import java.util.*
 open class Expense(
         @PrimaryKey
         var id: String = "",
-        var date: Date = Date(),
+        var date: String = "",
         var merchant: String = "",
         var amount: Amount? = null,
+        var category: String = "",
+        var comment: String = "",
         var user: User? = null,
-        var receipt: ByteArray? = null
+        var receipt: ByteArray? = null,
+        var index: Int = 0
 ) : RealmObject() {
 
 

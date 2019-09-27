@@ -1,4 +1,4 @@
-#Thu Sep 26 09:38:55 SAST 2019
+#Fri Sep 27 11:30:54 SAST 2019
 path.38=classes.dex
 base.10=/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexMerger/debug/13
 path.37=classes.dex
@@ -90,8 +90,8 @@ base.46=/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/inter
 base.45=/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexMerger/debug/44
 base.44=/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexMerger/debug/2
 base.43=/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexMerger/debug/41
-base.42=/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexMerger/debug/22
-base.41=/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexMerger/debug/44
+base.42=/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexMerger/debug/44
+base.41=/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexMerger/debug/22
 base.40=/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexMerger/debug/31
 renamed.19=classes20.dex
 renamed.18=classes19.dex

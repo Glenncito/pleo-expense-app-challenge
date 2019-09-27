@@ -42,8 +42,7 @@ class NativeCameraModule(private val reactContext: ReactApplicationContext) : Re
         Realm.init(reactContext)
         val mRealmConfiguration = RealmConfiguration.Builder()
                 .name("default.realm")
-                .schemaVersion(0) // skip if you are not managing
-                .deleteRealmIfMigrationNeeded()
+                .inMemory()
                 .build()
 
         Realm.getInstance(mRealmConfiguration)

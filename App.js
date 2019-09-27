@@ -10,37 +10,41 @@ export default function App() {
   const [data, setData] = useState([]);
   const Realm = require("realm");
   useEffect(() => {
+    controller = new AbortController();
     const fetchData = async () => {
       const result = await axios(
-        // 'http://localhost:3000/expenses?limit=10&offset=0',
+        "https://6e52029d.ngrok.io/expenses?limit=10&offset=0"
         //'http://d909d1a9.ngrok.io/expenses?limit=10&offset=0',
-        "https://demo5313442.mockable.io/get"
+        //  "https://demo5313442.mockable.io/get"
       );
-      //setApiResonse(result.data);
       writeData(result.data.expenses);
-      /* Realm.open({
-        schema: [ExpenseSchema, UserSchema, AmountSchema]
-      }).then(realm => {
-        realm.write(() => {
-          result.data.expenses.map((expense) => {
-            realm.create ('Expense',expense)
-            setData ([...data, expense]);  
-          });
-        });
-      });*/
     };
     fetchData();
+    return () => {
+      this.controller.abort();
+    };
   }, []);
 
-  const writeData = data => {
+  const writeData = response => {
     Realm.open({
-      schema: [ExpenseSchema, UserSchema, AmountSchema]
+      schema: [ExpenseSchema, UserSchema, AmountSchema],
+      inMemory: true
     }).then(realm => {
       realm.write(() => {
-        data.map(expense => {
+        response.map(expense => {
+          const existingExpense = realm.objectForPrimaryKey(
+            "expense",
+            expense.id
+          );
+          if (existingExpense != null) {
+            realm.delete(existingExpense);
+          }
           realm.create("expense", expense);
-          setData([...data, expense]);
-          console.log(expense);
+        });
+        const objects = realm.objects("expense");
+        const values = Object.values(objects);
+        values.map(obj => {
+          setData(data => [...data, obj]);
         });
       });
     });
@@ -50,7 +54,7 @@ export default function App() {
     Realm.open({
       schema: [ExpenseSchema, UserSchema, AmountSchema]
     }).then(realm => {
-      let expense = realm.objects("Expense")[0];
+      let expense = realm.objects("expense")[0];
       // console.log (expense.merchant);
       var arrayBufferView = new Uint8Array(expense.receipt);
       const blob = new Blob([arrayBufferView], { type: "image/jpeg" });
@@ -109,7 +113,7 @@ export default function App() {
               }
             />
           )}
-          keyExtractor={item => item.user.email}
+          keyExtractor={item => item.id}
         />
       </ScrollView>
     </View>
@@ -206,9 +210,12 @@ const ExpenseSchema = {
   properties: {
     id: "string",
     amount: "amount?",
+    category: "string",
+    comment: "string",
     user: "user?",
-    date: "date",
+    date: "string",
     merchant: "string",
-    receipt: "data?"
+    receipt: "data?",
+    index: "int"
   }
 };
