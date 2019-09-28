@@ -33,7 +33,9 @@ import java.util.*
 import host.exp.exponent.R
 import host.exp.exponent.custom.utils.*
 import host.exp.exponent.custom.CameraActivity
+import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.schedulers.Schedulers
 
 
 import java.io.ByteArrayOutputStream
@@ -51,6 +53,8 @@ class ReceiptCaptureFragment : Fragment() {
 
     private var mCurrentPhotoPath: String? = null;
     private var expenseId: String? = null
+
+    var rxSubs = CompositeDisposable()
 
 
 
@@ -141,13 +145,25 @@ class ReceiptCaptureFragment : Fragment() {
             /* val auxFile = File(mCurrentPhotoPath)
              var bitmap: Bitmap = BitmapFactory.decodeFile(mCurrentPhotoPath)
              imageView.setImageBitmap(bitmap)*/
+
+            viewModel.uploadReceipt(mCurrentPhotoPath!!)?.subscribeOn(Schedulers.io())?.observeOn(AndroidSchedulers.mainThread())?.subscribe ({
+                Log.d("RESPONSE: ", "$it")
+            },{
+                Log.e("ERROR: ", "$it")
+            }
+            )?.let {
+                rxSubs.add(
+                        it
+                )
+            }
+           // val auxFile = File(mCurrentPhotoPath)
             val inputStream = activity!!.getContentResolver().openInputStream(uri)
             val bitmap = BitmapFactory.decodeStream(inputStream)
             val stream = ByteArrayOutputStream()
             bitmap.compress(Bitmap.CompressFormat.JPEG, 60, stream)
             var byteArray:ByteArray= stream.toByteArray()
 
-            viewModel.insertRecieptDataIntoExpense(byteArray)
+           // viewModel.insertRecieptDataIntoExpense(byteArray)
             OnReiceptDataDidStoreBus.publish((true))
             /*var expense =  realm.where<Expense>().findFirst()
             Log.d("Expense: ", "${expense.toString()}")

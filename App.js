@@ -13,9 +13,9 @@ export default function App() {
     controller = new AbortController();
     const fetchData = async () => {
       const result = await axios(
-        "https://6e52029d.ngrok.io/expenses?limit=10&offset=0"
+        // "https://67f94dae.ngrok.io/expenses?limit=10&offset=0"
         //'http://d909d1a9.ngrok.io/expenses?limit=10&offset=0',
-        //  "https://demo5313442.mockable.io/get"
+        "http://192.168.0.183:3000/expenses?limit=5&offset=0"
       );
       writeData(result.data.expenses);
     };

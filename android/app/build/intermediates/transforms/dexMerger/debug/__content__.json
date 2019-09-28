@@ -1,6 +1,6 @@
 [
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/212",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/219",
     "index": 0,
     "scopes": ["PROJECT"],
     "types": ["DEX"],
@@ -8,7 +8,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/166.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/173.jar",
     "index": 1,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -16,7 +16,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/167.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/174.jar",
     "index": 2,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -24,7 +24,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/168.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/175.jar",
     "index": 3,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -32,7 +32,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/169.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/176.jar",
     "index": 4,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -40,7 +40,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/170.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/177.jar",
     "index": 5,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -48,7 +48,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/171.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/178.jar",
     "index": 6,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -56,7 +56,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/172.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/179.jar",
     "index": 7,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -64,7 +64,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/173.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/180.jar",
     "index": 8,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -72,7 +72,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/174.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/181.jar",
     "index": 9,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -80,7 +80,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/175.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/182.jar",
     "index": 10,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -88,7 +88,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/177.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/184.jar",
     "index": 11,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -96,7 +96,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/178.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/185.jar",
     "index": 12,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -104,7 +104,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/179.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/186.jar",
     "index": 13,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -112,7 +112,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/180.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/187.jar",
     "index": 14,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -120,7 +120,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/181.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/188.jar",
     "index": 15,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -128,7 +128,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/182.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/189.jar",
     "index": 16,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -136,7 +136,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/183.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/190.jar",
     "index": 17,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -144,7 +144,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/184.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/191.jar",
     "index": 18,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -152,7 +152,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/185.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/192.jar",
     "index": 19,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -160,7 +160,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/186.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/193.jar",
     "index": 20,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -168,7 +168,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/187.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/194.jar",
     "index": 21,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -176,7 +176,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/188.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/195.jar",
     "index": 22,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -184,7 +184,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/189.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/196.jar",
     "index": 23,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -192,7 +192,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/190.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/197.jar",
     "index": 24,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -200,7 +200,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/191.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/198.jar",
     "index": 25,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -208,7 +208,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/192.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/199.jar",
     "index": 26,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -216,7 +216,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/193.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/200.jar",
     "index": 27,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -224,7 +224,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/194.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/201.jar",
     "index": 28,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -232,7 +232,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/196.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/203.jar",
     "index": 29,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -240,7 +240,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/197.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/204.jar",
     "index": 30,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -248,7 +248,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/198.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/205.jar",
     "index": 31,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -256,7 +256,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/199.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/206.jar",
     "index": 32,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -264,7 +264,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/200.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/207.jar",
     "index": 33,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -272,7 +272,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/202.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/209.jar",
     "index": 34,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -280,7 +280,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/203.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/210.jar",
     "index": 35,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -288,7 +288,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/204.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/211.jar",
     "index": 36,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -296,7 +296,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/205.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/212.jar",
     "index": 37,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -304,7 +304,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/206.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/213.jar",
     "index": 38,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -312,7 +312,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/207.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/214.jar",
     "index": 39,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -320,7 +320,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/208.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/215.jar",
     "index": 40,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -328,7 +328,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/209.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/216.jar",
     "index": 41,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -336,7 +336,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/210.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/217.jar",
     "index": 42,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -344,7 +344,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/211.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/218.jar",
     "index": 43,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
