@@ -12,8 +12,6 @@ import {
   ExpenseInfo,
   Reciept
 } from "./styles";
-import { NativeModules } from "react-native";
-import { uploadReceipt } from "../../api/expenses";
 
 const ExpenseCard = props => (
   <Wrapper>
