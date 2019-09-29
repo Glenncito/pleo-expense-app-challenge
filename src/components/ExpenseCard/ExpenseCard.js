@@ -15,14 +15,16 @@ import {
 import { NativeModules } from "react-native";
 
 const CameraApplication = NativeModules.NativeCameraModule;
+
 const fetchData = async () => {
-  CameraApplication.initReceiptCapture("5b996064dfd5b783915112f5")
-    .then(message => {
-      console.log(message);
-    })
-    .catch(error => {
-      console.log(error);
-    });
+  try {
+    const message = await CameraApplication.initReceiptCapture(
+      "5b996064dfd5b783915112f5"
+    );
+    console.log(message);
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 const ExpenseCard = props => (

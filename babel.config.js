@@ -11,7 +11,9 @@ module.exports = function(api) {
             store: "./src/store",
             lib: "./src/lib",
             pages: "./src/pages",
-            models: "./src/models"
+            models: "./src/models",
+            api: "./src/api",
+            modules: "./src/store/modules"
           }
         }
       ]
