@@ -13,6 +13,7 @@ import {
   Reciept
 } from "./styles";
 import { NativeModules } from "react-native";
+import { uploadReceipt } from "../../api/uploadReceipt";
 
 const CameraApplication = NativeModules.NativeCameraModule;
 
@@ -21,7 +22,9 @@ const fetchData = async () => {
     const message = await CameraApplication.initReceiptCapture(
       "5b996064dfd5b783915112f5"
     );
+
     console.log(message);
+    uploadReceipt("5b996064dfd5b783915112f5", message);
   } catch (error) {
     console.error(error);
   }

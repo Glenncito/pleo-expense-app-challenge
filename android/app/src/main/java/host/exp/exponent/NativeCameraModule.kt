@@ -25,7 +25,7 @@ class NativeCameraModule(private val reactContext: ReactApplicationContext) : Re
 
         override fun onActivityResult(activity: Activity?, requestCode: Int, resultCode: Int, intent: Intent?) {
 
-            success("YEAH BOY")
+            success(intent!!.getStringExtra("name"))
 
         }
     }

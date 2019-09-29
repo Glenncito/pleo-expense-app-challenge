@@ -56,11 +56,11 @@ class CameraActivity : AppCompatActivity() {
                         .subscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe({
-                            if (it){
+                            if (it!=""){
                                 var resultIntent: Intent = Intent()
                                 // TODO Add extras or a data URI to this intent as appropriate.
-                                resultIntent.putExtra("some_key", "String data");
-                                this.setResult(Activity.RESULT_OK, resultIntent);
+                                resultIntent.putExtra("name", it)
+                                this.setResult(Activity.RESULT_OK, resultIntent)
                                 finish()
                             }
                         },{

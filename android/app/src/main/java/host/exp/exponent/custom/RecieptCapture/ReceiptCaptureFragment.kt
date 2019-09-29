@@ -148,7 +148,7 @@ class ReceiptCaptureFragment : Fragment() {
             var byteArray:ByteArray= stream.toByteArray()
 
             viewModel.insertRecieptDataIntoExpense(byteArray)
-            OnReiceptDataDidStoreBus.publish((true))
+            OnReiceptDataDidStoreBus.publish((mCurrentPhotoPath!!))
             /*var expense =  realm.where<Expense>().findFirst()
             Log.d("Expense: ", "${expense.toString()}")
             realm.where(Expense::class.java).findFirst()!!.let {
