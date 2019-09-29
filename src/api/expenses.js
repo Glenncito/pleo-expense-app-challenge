@@ -7,3 +7,22 @@ export const fetchExpensesApi = async () => {
 
   return response;
 };
+
+export const uploadReceipt = async (expenseId, imageData) => {
+  let formData = new FormData();
+  formData.append("receipt", {
+    uri: "file://" + imageData,
+    name: expenseId,
+    type: "image/jpg"
+  });
+
+  axios.post(
+    `http://192.168.0.102:3000/expenses/${expenseId}/receipts`,
+    formData,
+    {
+      headers: {
+        "Content-Type": "multipart/form-data"
+      }
+    }
+  );
+};

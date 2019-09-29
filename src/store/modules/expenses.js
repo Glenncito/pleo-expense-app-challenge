@@ -2,8 +2,8 @@ import { combineReducers } from "redux";
 import { createSlice } from "redux-starter-kit";
 import { fetchExpensesApi } from "../../api/expenses";
 
-const data = createSlice({
-  slice: "data",
+const dataFetch = createSlice({
+  slice: "dataFetch",
   initialState: [],
   reducers: {
     fetchSuccess: (state, { payload }) => (state = payload)
@@ -21,7 +21,7 @@ const utils = createSlice({
   }
 });
 
-export const fromExpenses = state => state.expenses.data;
+export const fromExpenses = state => state.expenses.dataFetch; //dont understand this variable
 
 export const fetchExpenses = () => async dispatch => {
   utils.actions.toggleLoading(true);
@@ -31,7 +31,7 @@ export const fetchExpenses = () => async dispatch => {
     const response = await fetchExpensesApi();
 
     // Dispatch action to write response to store
-    dispatch(data.actions.fetchSuccess(response.data.expenses));
+    dispatch(dataFetch.actions.fetchSuccess(response.data.expenses));
   } catch (err) {
     console.error(err);
   } finally {
@@ -39,4 +39,7 @@ export const fetchExpenses = () => async dispatch => {
   }
 };
 
-export default combineReducers({ data: data.reducer, utils: utils.reducer });
+export default combineReducers({
+  dataFetch: dataFetch.reducer,
+  utils: utils.reducer
+});

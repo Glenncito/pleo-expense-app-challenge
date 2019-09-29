@@ -3,6 +3,7 @@ import { FlatList, ScrollView, View } from "react-native";
 import ExpenseCard from "components/ExpenseCard/ExpenseCard";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchExpenses, fromExpenses } from "store/modules/expenses";
+import { initReceiptMenu } from "../lib/helpers";
 
 function Expenses() {
   const dispatch = useDispatch();
@@ -28,6 +29,7 @@ function Expenses() {
               user={
                 item.user.first + " " + item.user.last + "\n" + item.user.email
               }
+              receiptMenu={() => initReceiptMenu(item.id)}
             />
           )}
           keyExtractor={item => item.id}
