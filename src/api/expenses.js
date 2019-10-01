@@ -1,8 +1,9 @@
 import axios from "axios";
+import { BASE_URL } from "../lib/constants";
 
 export const fetchExpensesApi = async () => {
   const response = await axios(
-    "http://192.168.100.105:3000/expenses?limit=10&offset=0"
+    `http://${BASE_URL}:3000/expenses?limit=10&offset=0`
   );
 
   return response;
@@ -17,7 +18,7 @@ export const uploadReceipt = async (expenseId, imageData) => {
   });
 
   axios.post(
-    `http://192.168.100.105:3000/expenses/${expenseId}/receipts`,
+    `http://${BASE_URL}:3000/expenses/${expenseId}/receipts`,
     formData,
     {
       headers: {

@@ -1,5 +1,5 @@
 import React from "react";
-import { TextInput, Button } from "react-native";
+import { TextInput, Button, View } from "react-native";
 import {
   Wrapper,
   Header,
@@ -12,6 +12,7 @@ import {
   ExpenseInfo,
   Reciept
 } from "./styles";
+import AddCommentModal from "../Modals/AddCommentModal";
 
 const ExpenseCard = props => (
   <Wrapper>
@@ -34,6 +35,7 @@ const ExpenseCard = props => (
         <Button title="Press me" onPress={props.receiptMenu} />
       </Reciept>
     </Body>
+    <View>{props.visible ? <AddCommentModal /> : null}</View>
   </Wrapper>
 );
 

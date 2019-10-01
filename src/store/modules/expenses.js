@@ -2,38 +2,52 @@ import { combineReducers } from "redux";
 import { createSlice } from "redux-starter-kit";
 import { fetchExpensesApi } from "../../api/expenses";
 import { useDispatch, useSelector } from "react-redux";
+/*
+export const modal = createSlice({
+  slice: "modal",
+  initialState: {
+      selectedExpenseId: null
+  },
+  reducers:{
+    showModal: (state, { payload }) => (
+      state = payload
+    ), 
+    hideModal: (state, {payload}) => (state = {...state.initialState})     
+  }
+});*/
+
+const modalInitialState = {
+  selectedExpenseId: null
+};
 
 export const modal = createSlice({
   slice: "modal",
   initialState: {
-    visible: false,
     selectedExpenseId: null
   },
   reducers: {
-    showModal: (state, { payload }) =>
-      (state = {
-        visible: true,
-        selectedExpenseId: payload
-      }),
-    hideModal: (state, { payload }) => (state = { ...state.initialState })
+    showModal(state, { payload }) {
+      return { selectedExpenseId: payload };
+      // state.selectedExpenseId = payload;
+    },
+    hideModal(state) {
+      return modalInitialState;
+    }
   }
 });
 
-export const fromModal = state => state.expenses.modal.visible;
+export const fromModal = state => state.expenses.modal;
 
 export const model = createSlice({
   slice: "model",
   initialState: [],
   reducers: {
     fetchSuccess: (state, { payload }) => (state = payload),
-    updateExpense: (state, { payload }) => (
-      console.log("payload", payload),
-      [
-        ...state.slice(0, payload.index),
-        payload,
-        ...state.slice(payload.index + 1)
-      ]
-    )
+    updateExpense: (state, { payload }) => [
+      ...state.slice(0, payload.index),
+      payload,
+      ...state.slice(payload.index + 1)
+    ]
   }
 });
 

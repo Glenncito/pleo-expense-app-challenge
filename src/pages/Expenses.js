@@ -26,10 +26,10 @@ function Expenses() {
 
   return (
     <View>
-      <View>{modalState ? <AddCommentModal /> : null}</View>
       <ScrollView>
         <FlatList
           data={expensesState}
+          extraData={modalState.selectedExpenseId}
           showsVerticalScrollIndicator={false}
           renderItem={({ item }) => (
             <ExpenseCard
@@ -42,6 +42,7 @@ function Expenses() {
                 item.user.first + " " + item.user.last + "\n" + item.user.email
               }
               receiptMenu={() => initReceiptMenu(item.id)}
+              visible={item.id === modalState.selectedExpenseId ? true : false}
             />
           )}
           keyExtractor={item => item.id}
