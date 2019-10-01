@@ -29,6 +29,9 @@ const ExpenseCard = props => (
         <InfoRow>
           <InfoText>{props.user}</InfoText>
         </InfoRow>
+        <InfoRow>
+          <InfoText>{props.comment}</InfoText>
+        </InfoRow>
         <Button title="add comment" onPress={props.addComment} />
       </ExpenseInfo>
       <Reciept>

@@ -34,6 +34,7 @@ function Expenses() {
           renderItem={({ item }) => (
             <ExpenseCard
               addComment={() => showModal(item.id)}
+              comment={item.comment !== "" ? item.comment : "no comment"}
               date={item.date}
               category={item.category}
               amount={item.amount.currency + item.amount.value}

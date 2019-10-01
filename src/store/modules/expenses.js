@@ -38,19 +38,28 @@ export const modal = createSlice({
 
 export const fromModal = state => state.expenses.modal;
 
+const modelInitialState = [];
+
 export const model = createSlice({
   slice: "model",
   initialState: [],
   reducers: {
-    fetchSuccess: (state, { payload }) => (state = payload),
-    updateExpense: (state, { payload }) => [
+    fetchSuccess(state, { payload }) {
+      return payload;
+    },
+    updateExpense(state, { payload }) {
+      state[payload.index] = payload;
+    }
+  }
+});
+
+/*
+[
       ...state.slice(0, payload.index),
       payload,
       ...state.slice(payload.index + 1)
     ]
-  }
-});
-
+*/
 const utils = createSlice({
   slice: "utils",
   initialState: {
