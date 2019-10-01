@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 import { createSlice } from "redux-starter-kit";
-import { fetchExpensesApi } from "../../api/expenses";
+import { fetchExpensesApi, updateComment } from "../../api/expenses";
 import { useDispatch, useSelector } from "react-redux";
 /*
 export const modal = createSlice({
@@ -75,7 +75,6 @@ export const fromExpenses = state => state.expenses.model;
 
 export const fetchExpenses = () => async dispatch => {
   utils.actions.toggleLoading(true);
-
   try {
     // Fetch list of expenses
     const response = await fetchExpensesApi();
@@ -86,6 +85,18 @@ export const fetchExpenses = () => async dispatch => {
     console.error(err);
   } finally {
     dispatch(utils.actions.toggleLoading(false));
+  }
+};
+
+export const addComment = updatedExpense => async dispatch => {
+  console.log("add add comment, $updatedExpense");
+  try {
+    console.log("add add comment, $updatedExpense");
+    updateComment(updatedExpense);
+  } catch (err) {
+    console.error(err);
+  } finally {
+    dispatch(model.actions.updateExpense(updatedExpense));
   }
 };
 

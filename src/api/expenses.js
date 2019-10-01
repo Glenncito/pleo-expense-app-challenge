@@ -27,3 +27,19 @@ export const uploadReceipt = async (expenseId, imageData) => {
     }
   );
 };
+
+export const updateComment = async updatedExpense => {
+  console.log("updateCOmmentApi");
+  axios
+    .post(`http://${BASE_URL}:3000/expenses/${updatedExpense.id}`, {
+      comment: updatedExpense.comment
+    })
+    .then(
+      response => {
+        console.log(response);
+      },
+      error => {
+        console.log(error);
+      }
+    );
+};
