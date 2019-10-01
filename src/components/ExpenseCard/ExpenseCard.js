@@ -12,8 +12,6 @@ import {
   ExpenseInfo,
   Reciept
 } from "./styles";
-import { NativeModules } from "react-native";
-import { uploadReceipt } from "../../api/expenses";
 
 const ExpenseCard = props => (
   <Wrapper>
@@ -30,13 +28,7 @@ const ExpenseCard = props => (
         <InfoRow>
           <InfoText>{props.user}</InfoText>
         </InfoRow>
-        <TextInput
-          style={{ height: 40 }}
-          multiline={true}
-          placeholder="add a comment?"
-          placeholderTextColor="#abbabb"
-          onChangeText={value => console.log(value)}
-        />
+        <Button title="add comment" onPress={props.addComment} />
       </ExpenseInfo>
       <Reciept>
         <Button title="Press me" onPress={props.receiptMenu} />
