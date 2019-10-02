@@ -358,5 +358,21 @@
     "types": ["DEX"],
     "format": "DIRECTORY",
     "present": true
+  },
+  {
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/217.jar",
+    "index": 45,
+    "scopes": ["SUB_PROJECTS"],
+    "types": ["DEX"],
+    "format": "DIRECTORY",
+    "present": true
+  },
+  {
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/218.jar",
+    "index": 46,
+    "scopes": ["SUB_PROJECTS"],
+    "types": ["DEX"],
+    "format": "DIRECTORY",
+    "present": true
   }
 ]

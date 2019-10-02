@@ -17,6 +17,7 @@ MERGED from [:expo-file-system] /Users/g-wizkiz/Projects/pleo-expenses-challenge
 MERGED from [:expo-font] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-font/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:expo-keep-awake] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-keep-awake/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:expo-linear-gradient] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-localization] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-localization/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:expo-location] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-21:12
 MERGED from [:expo-permissions] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:expo-sqlite] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-sqlite/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -1030,6 +1031,8 @@ MERGED from [:expo-keep-awake] /Users/g-wizkiz/Projects/pleo-expenses-challenge/
 MERGED from [:expo-keep-awake] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-keep-awake/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:expo-linear-gradient] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:expo-linear-gradient] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-localization] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-localization/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-localization] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-localization/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:expo-location] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:expo-location] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:expo-permissions] /Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41

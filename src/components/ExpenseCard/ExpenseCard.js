@@ -13,6 +13,21 @@ import {
   Reciept
 } from "./styles";
 import AddCommentModal from "../Modals/AddCommentModal";
+import * as Localization from "expo-localization";
+import i18n from "i18n-js";
+
+const en = {
+  addComment: "add comment",
+  addReceipt: "add receipt"
+};
+const es = {
+  addComment: "agrega comentario",
+  addReceipt: "agrega recite"
+};
+
+i18n.fallbacks = true;
+i18n.translations = { en, es };
+i18n.locale = "es";
 
 const ExpenseCard = props => (
   <Wrapper>
@@ -32,7 +47,7 @@ const ExpenseCard = props => (
         <InfoRow>
           <InfoText>{props.comment}</InfoText>
         </InfoRow>
-        <Button title="add comment" onPress={props.addComment} />
+        <Button title={i18n.t("addComment")} onPress={props.addComment} />
       </ExpenseInfo>
       <Reciept>
         <Button title="Press me" onPress={props.receiptMenu} />

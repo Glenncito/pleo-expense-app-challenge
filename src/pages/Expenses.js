@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FlatList, ScrollView, View, TextInput } from "react-native";
 import ExpenseCard from "components/ExpenseCard/ExpenseCard";
 import { useDispatch, useSelector } from "react-redux";
+
 import {
   fetchExpenses,
   fromExpenses,
@@ -19,12 +20,13 @@ function Expenses() {
   const showModal = expenseId => dispatch(modal.actions.showModal(expenseId));
   const modalState = useSelector(fromModal);
   const expensesState = useSelector(fromExpenses);
+
   useEffect(() => {
     dispatch(fetchExpenses());
   }, [dispatch]);
 
   useEffect(() => {
-    setCurrentlyDisplayed(expensesState);
+    setCurrentlyDisplayed(expensesState); //make more
   }, [expensesState]);
 
   const onSearchTermUpdated = term => {
@@ -47,16 +49,6 @@ function Expenses() {
       expense =>
         merchantFilter(expense) || userFilter(expense) || amountFilter(expense)
     );
-
-    /*const filteredResults = expensesState.filter(expense => 
-      (Object.values(expense.user).toString().toLowerCase().includes(term.toLowerCase())
-      || Object.values(expense.amount).toString().toLowerCase().includes(term.toLowerCase())
-      || expense.merchant.toLowerCase().includes(term.toLowerCase()))
-    )*/
-
-    console.log("filteredResults", filteredResults);
-    console.log("merchant", expensesState[1].merchant);
-    console.log("term", term);
     setCurrentlyDisplayed(filteredResults);
     setSearchTerm(term);
   };

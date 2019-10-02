@@ -1440,14 +1440,6 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-font/android/build/intermediates/intermediate-jars/debug/classes.jar-0",
-    "index": 180,
-    "scopes": ["SUB_PROJECTS"],
-    "types": ["DEX_ARCHIVE"],
-    "format": "JAR",
-    "present": false
-  },
-  {
     "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-font/android/build/intermediates/intermediate-jars/debug/classes.jar-1",
     "index": 181,
     "scopes": ["SUB_PROJECTS"],
@@ -1592,14 +1584,6 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/unimodules-constants-interface/android/build/intermediates/intermediate-jars/debug/classes.jar-1",
-    "index": 199,
-    "scopes": ["SUB_PROJECTS"],
-    "types": ["DEX_ARCHIVE"],
-    "format": "JAR",
-    "present": false
-  },
-  {
     "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/unimodules-face-detector-interface/android/build/intermediates/intermediate-jars/debug/classes.jar-0",
     "index": 200,
     "scopes": ["SUB_PROJECTS"],
@@ -1638,14 +1622,6 @@
     "types": ["DEX_ARCHIVE"],
     "format": "JAR",
     "present": true
-  },
-  {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/unimodules-font-interface/android/build/intermediates/intermediate-jars/debug/classes.jar-1",
-    "index": 205,
-    "scopes": ["SUB_PROJECTS"],
-    "types": ["DEX_ARCHIVE"],
-    "format": "JAR",
-    "present": false
   },
   {
     "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/unimodules-permissions-interface/android/build/intermediates/intermediate-jars/debug/classes.jar-0",
@@ -1734,5 +1710,29 @@
     "types": ["DEX_ARCHIVE"],
     "format": "DIRECTORY",
     "present": true
+  },
+  {
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-localization/android/build/intermediates/intermediate-jars/debug/classes.jar-0",
+    "index": 217,
+    "scopes": ["SUB_PROJECTS"],
+    "types": ["DEX_ARCHIVE"],
+    "format": "JAR",
+    "present": true
+  },
+  {
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-localization/android/build/intermediates/intermediate-jars/debug/classes.jar-1",
+    "index": 218,
+    "scopes": ["SUB_PROJECTS"],
+    "types": ["DEX_ARCHIVE"],
+    "format": "JAR",
+    "present": true
+  },
+  {
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/node_modules/expo-localization/android/build/intermediates/intermediate-jars/debug/classes.jar",
+    "index": 219,
+    "scopes": ["SUB_PROJECTS"],
+    "types": ["DEX_ARCHIVE"],
+    "format": "JAR",
+    "present": false
   }
 ]
