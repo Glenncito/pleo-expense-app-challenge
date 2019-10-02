@@ -1,34 +1,76 @@
 import React, { useState, useEffect } from "react";
-import { FlatList, ScrollView, View } from "react-native";
+import { FlatList, ScrollView, View, TextInput } from "react-native";
 import ExpenseCard from "components/ExpenseCard/ExpenseCard";
 import { useDispatch, useSelector } from "react-redux";
 import {
   fetchExpenses,
   fromExpenses,
   fromModal,
-  showCommentModal,
-  hideCommentModal,
   modal
 } from "../store/modules/expenses";
 import { initReceiptMenu } from "../lib/helpers";
 import AddCommentModal from "../components/Modals/AddCommentModal";
 
 function Expenses() {
+  const [searchTerm, setSearchTerm] = React.useState("");
+  const [currentlyDisplayed, setCurrentlyDisplayed] = React.useState([]);
+
   const dispatch = useDispatch();
   const showModal = expenseId => dispatch(modal.actions.showModal(expenseId));
-
+  const modalState = useSelector(fromModal);
+  const expensesState = useSelector(fromExpenses);
   useEffect(() => {
     dispatch(fetchExpenses());
   }, [dispatch]);
 
-  const modalState = useSelector(fromModal);
-  const expensesState = useSelector(fromExpenses);
+  useEffect(() => {
+    setCurrentlyDisplayed(expensesState);
+  }, [expensesState]);
+
+  const onSearchTermUpdated = term => {
+    const userFilter = expense => {
+      return Object.values(expense.user)
+        .toString()
+        .toLowerCase()
+        .includes(term.toLowerCase());
+    };
+    const amountFilter = expense => {
+      return Object.values(expense.amount)
+        .toString()
+        .toLowerCase()
+        .includes(term.toLowerCase());
+    };
+    const merchantFilter = expense => {
+      return expense.merchant.toLowerCase().includes(term.toLowerCase());
+    };
+    const filteredResults = expensesState.filter(
+      expense =>
+        merchantFilter(expense) || userFilter(expense) || amountFilter(expense)
+    );
+
+    /*const filteredResults = expensesState.filter(expense => 
+      (Object.values(expense.user).toString().toLowerCase().includes(term.toLowerCase())
+      || Object.values(expense.amount).toString().toLowerCase().includes(term.toLowerCase())
+      || expense.merchant.toLowerCase().includes(term.toLowerCase()))
+    )*/
+
+    console.log("filteredResults", filteredResults);
+    console.log("merchant", expensesState[1].merchant);
+    console.log("term", term);
+    setCurrentlyDisplayed(filteredResults);
+    setSearchTerm(term);
+  };
 
   return (
     <View>
+      <TextInput
+        style={{ height: 100, borderColor: "gray", borderWidth: 1 }}
+        onChangeText={text => onSearchTermUpdated(text)}
+        value={searchTerm}
+      />
       <ScrollView>
         <FlatList
-          data={expensesState}
+          data={currentlyDisplayed}
           extraData={modalState.selectedExpenseId}
           showsVerticalScrollIndicator={false}
           renderItem={({ item }) => (
