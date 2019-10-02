@@ -1,6 +1,6 @@
 [
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/216",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/218",
     "index": 0,
     "scopes": ["PROJECT"],
     "types": ["DEX"],
@@ -232,7 +232,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/200.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/199.jar",
     "index": 29,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -240,7 +240,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/201.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/200.jar",
     "index": 30,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -272,7 +272,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/206.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/205.jar",
     "index": 34,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -280,7 +280,7 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/207.jar",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/206.jar",
     "index": 35,
     "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
@@ -352,9 +352,9 @@
     "present": true
   },
   {
-    "name": "externalLibs",
+    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/216.jar",
     "index": 44,
-    "scopes": ["EXTERNAL_LIBRARIES"],
+    "scopes": ["SUB_PROJECTS"],
     "types": ["DEX"],
     "format": "DIRECTORY",
     "present": true
@@ -368,9 +368,9 @@
     "present": true
   },
   {
-    "name": "/Users/g-wizkiz/Projects/pleo-expenses-challenge/android/app/build/intermediates/transforms/dexBuilder/debug/218.jar",
+    "name": "externalLibs",
     "index": 46,
-    "scopes": ["SUB_PROJECTS"],
+    "scopes": ["EXTERNAL_LIBRARIES"],
     "types": ["DEX"],
     "format": "DIRECTORY",
     "present": true

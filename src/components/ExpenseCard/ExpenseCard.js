@@ -13,21 +13,8 @@ import {
   Reciept
 } from "./styles";
 import AddCommentModal from "../Modals/AddCommentModal";
-import * as Localization from "expo-localization";
+import { en, es } from "../../lib/constants";
 import i18n from "i18n-js";
-
-const en = {
-  addComment: "add comment",
-  addReceipt: "add receipt"
-};
-const es = {
-  addComment: "agrega comentario",
-  addReceipt: "agrega recite"
-};
-
-i18n.fallbacks = true;
-i18n.translations = { en, es };
-i18n.locale = "es";
 
 const ExpenseCard = props => (
   <Wrapper>
