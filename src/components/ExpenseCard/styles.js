@@ -20,18 +20,34 @@ export const Wrapper = styled.View`
 `;
 
 export const Header = styled.View`
-  background: rgba(0, 0, 0, 0.2);
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 8px;
+  border-bottom-width: 1;
+  border-color: rgba(0, 0, 0, 0.1);
 `;
 
-export const Date = styled.Text``;
+export const Date = styled.View`
+  flex-direction: row;
+`;
+
+export const PrimaryText = styled.Text`
+  font-weight: bold;
+  font-size: 28;
+  font-family: Helvetica;
+`;
+
+export const SecondaryText = styled.Text`
+  font-size: 14;
+  font-family: "Roboto";
+`;
 
 export const Category = styled.Text``;
 
-export const Amount = styled.Text``;
+export const Amount = styled.View`
+  flex-direction: row;
+`;
 
 export const Body = styled.View`
   padding: 8px;
@@ -50,10 +66,6 @@ export const InfoRow = styled.View`
 
 export const InfoText = styled.Text``;
 
-export const Reciept = styled.View`
-  flex: 1;
-`;
-
 export const BreakRow = styled.View`
   height: 8;
 `;
@@ -61,10 +73,14 @@ export const BreakRow = styled.View`
 export const AddCommentButton = styled.TouchableOpacity`
   border-radius: 16;
 `;
+export const Reciept = styled.View`
+  flex: 1;
+  align-items: center;
+`;
 
 export const AddReceiptButton = styled.TouchableOpacity`
-  border-radius: 10;
-  height: 48;
+  width: 100%;
+  height: 36;
   background-color: #fd3366;
   flex-direction: row;
   align-items: center;

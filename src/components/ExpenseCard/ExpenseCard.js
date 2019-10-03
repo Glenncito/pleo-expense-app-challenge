@@ -11,12 +11,11 @@ import {
   Category,
   ExpenseInfo,
   Reciept,
-  ShadowWrapper,
-  shadow,
   BreakRow,
-  PrimaryButtonText,
   AddCommentButton,
-  AddReceiptButton
+  AddReceiptButton,
+  PrimaryText,
+  SecondaryText
 } from "./styles";
 import AddCommentModal from "../Modals/AddCommentModal";
 import { eng, esp } from "../../lib/constants";
@@ -36,9 +35,24 @@ function ExpenseCard(props) {
   return (
     <Wrapper>
       <Header>
-        <Date>{props.date}</Date>
+        <Date>
+          <View style={{ paddingRight: 4 }}>
+            <PrimaryText>{props.dateDay}</PrimaryText>
+          </View>
+          <View style={{ flexDirection: "column" }}>
+            <SecondaryText>{props.dateMonthYear}</SecondaryText>
+            <SecondaryText>{props.dateWeekday}</SecondaryText>
+          </View>
+        </Date>
         <Category>{props.category}</Category>
-        <Amount>{props.amount}</Amount>
+        <Amount>
+          <View style={{ paddingRight: 2, justifyContent: "flex-end" }}>
+            <SecondaryText>{props.currency}</SecondaryText>
+          </View>
+          <View style={{ flexDirection: "column" }}>
+            <PrimaryText>{props.amount}</PrimaryText>
+          </View>
+        </Amount>
       </Header>
       <Body>
         <ExpenseInfo>
@@ -95,23 +109,27 @@ function ExpenseCard(props) {
             )}
           </View>
         </ExpenseInfo>
-        <Reciept>
-          <AddReceiptButton onPress={props.receiptMenu}>
-            <Icon name={"plus"} size={22} color="white" style={{ margin: 1 }} />
-            <View
-              style={{
-                alignContent: "center",
-                justifyContent: "center",
-                marginRight: 4
-              }}
-            >
-              <Text style={{ color: "white", fontSize: 10 }}>ADD</Text>
-              <Text style={{ color: "white", fontSize: 10 }}>RECEIPT</Text>
-            </View>
-          </AddReceiptButton>
-        </Reciept>
       </Body>
       <View>{props.visible ? <AddCommentModal /> : null}</View>
+      <Reciept>
+        <AddReceiptButton onPress={props.receiptMenu}>
+          <Icon
+            name={"plus"}
+            size={22}
+            color="white"
+            style={{ margin: 1, paddingRight: 2 }}
+          />
+          <View
+            style={{
+              alignContent: "center",
+              justifyContent: "center",
+              marginRight: 4
+            }}
+          >
+            <Text style={{ color: "white", fontSize: 10 }}>ADD RECEIPT</Text>
+          </View>
+        </AddReceiptButton>
+      </Reciept>
     </Wrapper>
   );
 }

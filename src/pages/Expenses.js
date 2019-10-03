@@ -102,11 +102,18 @@ function Expenses() {
                 )
               }
               commentExists={item.comment !== "" ? true : false}
-              date={format(new Date(item.date), "eee do MMM yy", {
+              dateDay={format(new Date(item.date), "do", {
+                locale: dateLocale
+              })}
+              dateMonthYear={format(new Date(item.date), `MMM yy`, {
+                locale: dateLocale
+              })}
+              dateWeekday={format(new Date(item.date), "iii", {
                 locale: dateLocale
               })}
               category={item.category}
-              amount={item.amount.currency + item.amount.value}
+              currency={item.amount.currency}
+              amount={item.amount.value}
               merchant={item.merchant}
               userName={`${item.user.first} ${item.user.last}`}
               userMail={item.user.email}
