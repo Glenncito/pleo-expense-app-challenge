@@ -1,20 +1,26 @@
 import { combineReducers } from "redux";
 import { createSlice } from "redux-starter-kit";
 import { fetchExpensesApi, updateComment } from "../../api/expenses";
-import { useDispatch, useSelector } from "react-redux";
-/*
-export const modal = createSlice({
-  slice: "modal",
+
+const localeInitialState = {
+  selectedLocaleConstant: "esp"
+};
+
+export const locale = createSlice({
+  slice: "locale",
   initialState: {
-      selectedExpenseId: null
+    selectedLocaleConstant: "esp"
   },
-  reducers:{
-    showModal: (state, { payload }) => (
-      state = payload
-    ), 
-    hideModal: (state, {payload}) => (state = {...state.initialState})     
+  reducers: {
+    updateLocal(state, { payload }) {
+      return {
+        selectedLocaleConstant: payload.selectedLocaleConstant
+      };
+    }
   }
-});*/
+});
+
+export const fromLocale = state => state.expenses.locale.selectedLocaleConstant;
 
 const modalInitialState = {
   selectedExpenseId: null
@@ -108,5 +114,6 @@ export const hideCommentModal = () => dispatch => {
 export default combineReducers({
   modal: modal.reducer,
   model: model.reducer,
-  utils: utils.reducer
+  utils: utils.reducer,
+  locale: locale.reducer
 });

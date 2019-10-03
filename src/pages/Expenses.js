@@ -2,19 +2,26 @@ import React, { useState, useEffect } from "react";
 import { FlatList, ScrollView, View, TextInput } from "react-native";
 import ExpenseCard from "components/ExpenseCard/ExpenseCard";
 import { useDispatch, useSelector } from "react-redux";
+import { format } from "date-fns";
 
 import {
   fetchExpenses,
   fromExpenses,
   fromModal,
-  modal
+  modal,
+  fromLocale
 } from "../store/modules/expenses";
 import { initReceiptMenu } from "../lib/helpers";
 import AddCommentModal from "../components/Modals/AddCommentModal";
+import * as Localization from "expo-localization";
+import { eng, esp } from "lib/constants";
+import { es, en } from "date-fns/locale";
+import i18n from "i18n-js";
 
 function Expenses() {
   const [searchTerm, setSearchTerm] = React.useState("");
   const [currentlyDisplayed, setCurrentlyDisplayed] = React.useState([]);
+  const [dateLocale, setDateLocale] = React.useState(es);
 
   const dispatch = useDispatch();
   const showModal = expenseId => dispatch(modal.actions.showModal(expenseId));
@@ -28,6 +35,14 @@ function Expenses() {
   useEffect(() => {
     setCurrentlyDisplayed(expensesState); //make more
   }, [expensesState]);
+
+  useEffect(() => {
+    if (currentLocale === "eng") {
+      setDateLocale(en);
+    } else if (currentLocale === "esp") {
+      setDateLocale(es);
+    }
+  }, [currentLocale]);
 
   const onSearchTermUpdated = term => {
     const userFilter = expense => {
@@ -52,6 +67,10 @@ function Expenses() {
     setCurrentlyDisplayed(filteredResults);
     setSearchTerm(term);
   };
+  const currentLocale = useSelector(fromLocale);
+  i18n.fallbacks = true;
+  i18n.translations = { eng, esp };
+  i18n.locale = currentLocale;
 
   return (
     <View>
@@ -69,7 +88,9 @@ function Expenses() {
             <ExpenseCard
               addComment={() => showModal(item.id)}
               comment={item.comment !== "" ? item.comment : "no comment"}
-              date={item.date}
+              date={format(new Date(item.date), "eee do MMM yy", {
+                locale: dateLocale
+              })}
               category={item.category}
               amount={item.amount.currency + item.amount.value}
               merchant={item.merchant}
