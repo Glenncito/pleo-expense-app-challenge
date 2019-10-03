@@ -1,6 +1,7 @@
 import { combineReducers } from "redux";
 import { createSlice } from "redux-starter-kit";
 import { fetchExpensesApi, updateComment } from "../../api/expenses";
+import { storeDataOffline } from "../../lib/helpers";
 
 const localeInitialState = {
   selectedLocaleConstant: "fra"
@@ -91,6 +92,7 @@ export const fetchExpenses = () => async dispatch => {
     console.error(err);
   } finally {
     dispatch(utils.actions.toggleLoading(false));
+    storeDataOffline(fromExpenses);
   }
 };
 

@@ -18,6 +18,19 @@ export const initReceiptMenu = async expenseId => {
   }
 };
 
+export const storeDataOffline = async data => {
+  const Realm = require("realm");
+  data.map(expense => {
+    Realm.open({
+      schema: [ExpenseSchema, AmountSchema, UserSchema]
+    }).then(realm => {
+      realm.write(() => {
+        const expenseItem = realm.create("Expense", expense);
+      });
+    });
+  });
+};
+
 export function getLocalizedString(value) {
   const currentLocale = useSelector(fromLocale);
   useEffect(() => {
