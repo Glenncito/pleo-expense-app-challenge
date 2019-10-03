@@ -63,10 +63,10 @@ export const AddCommentButton = styled.TouchableOpacity`
 `;
 
 export const AddReceiptButton = styled.TouchableOpacity`
-  border-radius: 64;
-  height: 72;
+  border-radius: 10;
+  height: 48;
   background-color: #fd3366;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 `;

@@ -97,9 +97,17 @@ function ExpenseCard(props) {
         </ExpenseInfo>
         <Reciept>
           <AddReceiptButton onPress={props.receiptMenu}>
-            <Icon name={"plus"} size={16} color="white" style={{ margin: 1 }} />
-            <Text style={{ color: "white", fontSize: 10 }}>ADD</Text>
-            <Text style={{ color: "white", fontSize: 10 }}>RECEIPT</Text>
+            <Icon name={"plus"} size={22} color="white" style={{ margin: 1 }} />
+            <View
+              style={{
+                alignContent: "center",
+                justifyContent: "center",
+                marginRight: 4
+              }}
+            >
+              <Text style={{ color: "white", fontSize: 10 }}>ADD</Text>
+              <Text style={{ color: "white", fontSize: 10 }}>RECEIPT</Text>
+            </View>
           </AddReceiptButton>
         </Reciept>
       </Body>
