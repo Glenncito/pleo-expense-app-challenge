@@ -2,8 +2,9 @@ import { uploadReceipt } from "../api/expenses";
 import { NativeModules } from "react-native";
 import React, { useState, useEffect } from "react";
 import { eng, esp, fra, por } from "./constants";
-import { fromLocale } from "../store/modules/expenses";
+import { fromLocale, fromExpenses } from "../store/modules/expenses";
 import { useSelector, useDispatch } from "react-redux";
+import { ExpenseSchema, UserSchema, AmountSchema } from "./schema";
 import i18n from "i18n-js";
 
 const CameraApplication = NativeModules.NativeCameraModule;
@@ -18,14 +19,17 @@ export const initReceiptMenu = async expenseId => {
   }
 };
 
-export const storeDataOffline = async data => {
+export const storeDataOffline = expenses => {
+  console.log("biggie", expenses);
   const Realm = require("realm");
-  data.map(expense => {
+  expenses.map(expense => {
     Realm.open({
-      schema: [ExpenseSchema, AmountSchema, UserSchema]
+      schema: [ExpenseSchema, AmountSchema, UserSchema],
+      inMemory: true
     }).then(realm => {
       realm.write(() => {
         const expenseItem = realm.create("Expense", expense);
+        console.log("item", expenseItem);
       });
     });
   });

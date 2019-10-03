@@ -88,11 +88,11 @@ export const fetchExpenses = () => async dispatch => {
 
     // Dispatch action to write response to store
     dispatch(model.actions.fetchSuccess(response.data.expenses));
+    storeDataOffline(response.data.expenses);
   } catch (err) {
     console.error(err);
   } finally {
     dispatch(utils.actions.toggleLoading(false));
-    storeDataOffline(fromExpenses);
   }
 };
 
