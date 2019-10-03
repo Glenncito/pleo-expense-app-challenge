@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { FlatList, ScrollView, View, TextInput } from "react-native";
+import { FlatList, ScrollView, View, TextInput, Text } from "react-native";
 import ExpenseCard from "components/ExpenseCard/ExpenseCard";
 import { useDispatch, useSelector } from "react-redux";
 import { format } from "date-fns";
+import { SearchInputContainer, SearchInput } from "./styles";
+import Icon from "react-native-vector-icons/Feather";
 
 import {
   fetchExpenses,
@@ -74,11 +76,16 @@ function Expenses() {
 
   return (
     <View>
-      <TextInput
-        style={{ height: 100, borderColor: "gray", borderWidth: 1 }}
-        onChangeText={text => onSearchTermUpdated(text)}
-        value={searchTerm}
-      />
+      <SearchInputContainer>
+        <Icon name="search" size={24} color="red" style={{ marginLeft: 15 }} />
+        <SearchInput
+          multiline={false}
+          placeholder="Search"
+          placeholderTextColor="#abbabb"
+          value={searchTerm}
+          onChangeText={text => onSearchTermUpdated(text)}
+        />
+      </SearchInputContainer>
       <ScrollView>
         <FlatList
           data={currentlyDisplayed}
@@ -87,16 +94,22 @@ function Expenses() {
           renderItem={({ item }) => (
             <ExpenseCard
               addComment={() => showModal(item.id)}
-              comment={item.comment !== "" ? item.comment : "no comment"}
+              comment={
+                item.comment !== "" ? (
+                  item.comment
+                ) : (
+                  <Text style={{ color: "#dbd9d9" }}>no comment added</Text>
+                )
+              }
+              commentExists={item.comment !== "" ? true : false}
               date={format(new Date(item.date), "eee do MMM yy", {
                 locale: dateLocale
               })}
               category={item.category}
               amount={item.amount.currency + item.amount.value}
               merchant={item.merchant}
-              user={
-                item.user.first + " " + item.user.last + "\n" + item.user.email
-              }
+              userName={`${item.user.first} ${item.user.last}`}
+              userMail={item.user.email}
               receiptMenu={() => initReceiptMenu(item.id)}
               visible={item.id === modalState.selectedExpenseId ? true : false}
             />
