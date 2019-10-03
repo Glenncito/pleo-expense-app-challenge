@@ -13,17 +13,21 @@ import {
   modal,
   fromLocale
 } from "../store/modules/expenses";
-import { initReceiptMenu } from "../lib/helpers";
+import {
+  initReceiptMenu,
+  getLocalizedDateString,
+  getLocalizedString
+} from "../lib/helpers";
 import AddCommentModal from "../components/Modals/AddCommentModal";
 import * as Localization from "expo-localization";
-import { eng, esp } from "lib/constants";
-import { es, en } from "date-fns/locale";
+import { eng, esp, fra, por } from "lib/constants";
+import { es, en, fr, ptBR } from "date-fns/locale";
 import i18n from "i18n-js";
 
 function Expenses() {
   const [searchTerm, setSearchTerm] = React.useState("");
   const [currentlyDisplayed, setCurrentlyDisplayed] = React.useState([]);
-  const [dateLocale, setDateLocale] = React.useState(es);
+  const [dateLocale, setDateLocale] = React.useState(en);
 
   const dispatch = useDispatch();
   const showModal = expenseId => dispatch(modal.actions.showModal(expenseId));
@@ -38,11 +42,20 @@ function Expenses() {
     setCurrentlyDisplayed(expensesState); //make more
   }, [expensesState]);
 
+  const currentLocale = useSelector(fromLocale);
+  i18n.fallbacks = true;
+  i18n.translations = { eng, esp, fra, por };
+  i18n.locale = currentLocale;
   useEffect(() => {
+    i18n.locale = currentLocale;
     if (currentLocale === "eng") {
       setDateLocale(en);
     } else if (currentLocale === "esp") {
       setDateLocale(es);
+    } else if (currentLocale === "fra") {
+      setDateLocale(fr);
+    } else if (currentLocale === "por") {
+      setDateLocale(ptBR);
     }
   }, [currentLocale]);
 
@@ -69,10 +82,6 @@ function Expenses() {
     setCurrentlyDisplayed(filteredResults);
     setSearchTerm(term);
   };
-  const currentLocale = useSelector(fromLocale);
-  i18n.fallbacks = true;
-  i18n.translations = { eng, esp };
-  i18n.locale = currentLocale;
 
   return (
     <View>
@@ -98,7 +107,9 @@ function Expenses() {
                 item.comment !== "" ? (
                   item.comment
                 ) : (
-                  <Text style={{ color: "#dbd9d9" }}>no comment added</Text>
+                  <Text style={{ color: "#dbd9d9" }}>
+                    {i18n.t("noCommentAdded")}
+                  </Text>
                 )
               }
               commentExists={item.comment !== "" ? true : false}

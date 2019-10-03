@@ -18,19 +18,13 @@ import {
   SecondaryText
 } from "./styles";
 import AddCommentModal from "../Modals/AddCommentModal";
-import { eng, esp } from "../../lib/constants";
-import { useSelector } from "react-redux";
-import { fromLocale } from "../../store/modules/expenses";
-import i18n from "i18n-js";
 import Icon from "react-native-vector-icons/Feather";
+import { getLocalizedString } from "../../lib/helpers";
+import i18n from "i18n-js";
 
 function ExpenseCard(props) {
   const infoIconSize = 20;
   const infoIconMarginRight = 6;
-  const currentLocale = useSelector(fromLocale);
-  i18n.fallbacks = true;
-  i18n.translations = { eng, esp };
-  i18n.locale = currentLocale;
 
   return (
     <Wrapper>
@@ -126,7 +120,9 @@ function ExpenseCard(props) {
               marginRight: 4
             }}
           >
-            <Text style={{ color: "white", fontSize: 10 }}>ADD RECEIPT</Text>
+            <Text style={{ color: "white", fontSize: 14 }}>
+              {i18n.t("addComment")}
+            </Text>
           </View>
         </AddReceiptButton>
       </Reciept>

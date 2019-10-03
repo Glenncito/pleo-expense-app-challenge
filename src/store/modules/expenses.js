@@ -3,13 +3,13 @@ import { createSlice } from "redux-starter-kit";
 import { fetchExpensesApi, updateComment } from "../../api/expenses";
 
 const localeInitialState = {
-  selectedLocaleConstant: "esp"
+  selectedLocaleConstant: "fra"
 };
 
 export const locale = createSlice({
   slice: "locale",
   initialState: {
-    selectedLocaleConstant: "esp"
+    selectedLocaleConstant: "fra"
   },
   reducers: {
     updateLocal(state, { payload }) {
