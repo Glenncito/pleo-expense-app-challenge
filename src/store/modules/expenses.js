@@ -2,20 +2,24 @@ import { combineReducers } from "redux";
 import { createSlice } from "redux-starter-kit";
 import { fetchExpensesApi, updateComment } from "../../api/expenses";
 import { storeDataOffline } from "../../lib/helpers";
+import { es, en, fr, ptBR } from "date-fns/locale";
 
 const localeInitialState = {
-  selectedLocaleConstant: "fra"
+  selectedLocaleConstant: "fra",
+  selectedDateLocale: `${fr}`
 };
 
 export const locale = createSlice({
   slice: "locale",
   initialState: {
-    selectedLocaleConstant: "fra"
+    selectedLocaleConstant: "fra",
+    selectedDateLocale: `${fr}`
   },
   reducers: {
     updateLocal(state, { payload }) {
       return {
-        selectedLocaleConstant: payload.selectedLocaleConstant
+        selectedLocaleConstant: payload.selectedLocaleConstant,
+        selectedDateLocale: `${payload.selectedDateLocale}`
       };
     }
   }
@@ -102,10 +106,10 @@ export const addComment = updatedExpense => async dispatch => {
   try {
     console.log("add add comment, $updatedExpense");
     updateComment(updatedExpense);
+    dispatch(model.actions.updateExpense(updatedExpense));
   } catch (err) {
     console.error(err);
   } finally {
-    dispatch(model.actions.updateExpense(updatedExpense));
   }
 };
 

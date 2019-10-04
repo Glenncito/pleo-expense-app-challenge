@@ -33,7 +33,7 @@ export const storeDataOffline = expenses => {
     });
   });
 };
-
+/*
 export function getLocalizedString(value) {
   const currentLocale = useSelector(fromLocale);
   useEffect(() => {
@@ -64,4 +64,11 @@ export function getLocalizedDateString() {
   }, [currentLocale]);
 
   return dateLocale;
+}*/
+
+export function initLocalization() {
+  const currentLocale = useSelector(fromLocale);
+  i18n.fallbacks = true;
+  i18n.translations = { eng, esp, fra, por };
+  i18n.locale = currentLocale;
 }
