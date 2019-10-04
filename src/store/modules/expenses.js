@@ -3,6 +3,7 @@ import { createSlice } from "redux-starter-kit";
 import { fetchExpensesApi, updateComment } from "../../api/expenses";
 import { storeDataOffline } from "../../lib/helpers";
 import { es, en, fr, ptBR } from "date-fns/locale";
+import { ExpenseSchema, UserSchema, AmountSchema } from "../../lib/schema";
 
 const localeInitialState = {
   selectedLocaleConstant: "esp",
@@ -58,6 +59,9 @@ export const model = createSlice({
     fetchSuccess(state, { payload }) {
       return payload;
     },
+    fetchFaliure(state, { payload }) {
+      return payload;
+    },
     updateExpense(state, { payload }) {
       state[payload.index] = payload;
     }
@@ -95,10 +99,29 @@ export const fetchExpenses = () => async dispatch => {
     console.log("BIG LIST", response.data.expenses);
     storeDataOffline(response.data.expenses);
   } catch (err) {
-    console.error(err);
+    console.log("ERROR", err);
+    dispatch(fetchFromDatabase());
   } finally {
     dispatch(utils.actions.toggleLoading(false));
   }
+};
+
+const fetchFromDatabase = () => async dispatch => {
+  const Realm = require("realm");
+
+  console.log("trying fetchdb");
+  Realm.open({ schema: [ExpenseSchema, UserSchema, AmountSchema] }).then(
+    realm => {
+      const expenses = realm.objects("expense");
+      console.log("first object", Object.values(expenses));
+      if (expenses !== null) {
+        dispatch(model.actions.fetchSuccess(Object.values(expenses)));
+      } else {
+        dispatch(model.actions.fetchFaliure());
+      }
+    }
+  );
+  dispatch(utils.actions.toggleLoading(false));
 };
 
 export const addComment = updatedExpense => async dispatch => {
