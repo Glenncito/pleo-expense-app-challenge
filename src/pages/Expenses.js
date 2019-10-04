@@ -91,6 +91,9 @@ function Expenses() {
       <ScrollView>
         <FlatList
           data={currentlyDisplayed}
+          removeClippedSubviews={true}
+          initialNumToRender={5}
+          maxToRenderPerBatch={5}
           extraData={modalState.selectedExpenseId}
           showsVerticalScrollIndicator={false}
           renderItem={({ item }) => (

@@ -45,8 +45,7 @@ class CameraActivity : AppCompatActivity() {
 
         supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.fragmentLayout, receiptCaptureFragment!!,"" )
-                .addToBackStack(null)
+                .add(R.id.fragmentLayout, receiptCaptureFragment!!,"" )
                 .commit()
     }
 

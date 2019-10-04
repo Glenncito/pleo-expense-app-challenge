@@ -80,11 +80,12 @@ class ReceiptCaptureFragment : Fragment() {
 
         val view =  inflater.inflate(R.layout.reciept_capture_fragment, container, false)
         realm = Realm.getDefaultInstance()
-        imageView = view.findViewById(R.id.image_view)
+        if (checkPersmission()) takePicture() else requestPermission()
+        /*imageView = view.findViewById(R.id.image_view)
         captureButton = view.findViewById(R.id.btn_capture)
         captureButton.setOnClickListener(View.OnClickListener {
             if (checkPersmission()) takePicture() else requestPermission()
-        })
+        })*/
         return view
     }
 
