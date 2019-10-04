@@ -3,7 +3,7 @@ import { createSlice } from "redux-starter-kit";
 import { fetchExpensesApi, updateComment } from "../../api/expenses";
 import { storeDataOffline, getArrayFromDb } from "../../lib/helpers";
 import { es, en, fr, ptBR } from "date-fns/locale";
-import { ExpenseSchema, UserSchema, AmountSchema } from "../../lib/schema";
+import { ExpenseSchema, UserSchema, AmountSchema } from "../../lib/schema.js";
 
 const localeInitialState = {
   selectedLocaleConstant: "esp",

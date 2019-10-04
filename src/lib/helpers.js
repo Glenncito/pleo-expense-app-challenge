@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { eng, esp, fra, por } from "./constants";
 import { fromLocale, fromExpenses } from "../store/modules/expenses";
 import { useSelector, useDispatch } from "react-redux";
-import { ExpenseSchema, UserSchema, AmountSchema } from "./schema";
+import { ExpenseSchema, UserSchema, AmountSchema } from "./schema.js";
 import i18n from "i18n-js";
 
 const CameraApplication = NativeModules.NativeCameraModule;

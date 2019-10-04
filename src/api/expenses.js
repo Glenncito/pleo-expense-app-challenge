@@ -3,7 +3,7 @@ import { BASE_URL } from "../lib/constants";
 
 export const fetchExpensesApi = async () => {
   const response = await axios(
-    `http://${BASE_URL}:3000/expenss?limit=170&offset=0`
+    `http://${BASE_URL}:3000/expenses?limit=170&offset=0`
   );
 
   return response;

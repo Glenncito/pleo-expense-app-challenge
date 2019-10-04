@@ -17,7 +17,7 @@ import {
   PrimaryText,
   SecondaryText
 } from "./styles";
-import AddCommentModal from "../Modals/AddCommentModal";
+import AddCommentModal from "../modals/AddCommentModal";
 import Icon from "react-native-vector-icons/Feather";
 import { getLocalizedString } from "../../lib/helpers";
 import i18n from "i18n-js";
