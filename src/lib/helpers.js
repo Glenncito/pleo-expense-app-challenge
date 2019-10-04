@@ -2,12 +2,13 @@ import { uploadReceipt } from "../api/expenses";
 import { NativeModules } from "react-native";
 import React, { useState, useEffect } from "react";
 import { eng, esp, fra, por } from "./constants";
-import { fromLocale } from "../store/modules/expenses";
+import { fromLocale, fromExpenses } from "../store/modules/expenses";
 import { useSelector, useDispatch } from "react-redux";
+import { ExpenseSchema, UserSchema, AmountSchema } from "./schema";
 import i18n from "i18n-js";
 
 const CameraApplication = NativeModules.NativeCameraModule;
-
+const Realm = require("realm");
 export const initReceiptMenu = async expenseId => {
   try {
     const message = await CameraApplication.initReceiptCapture(expenseId);
@@ -18,6 +19,27 @@ export const initReceiptMenu = async expenseId => {
   }
 };
 
+export const storeDataOffline = expenses => {
+  console.log("biggie", expenses);
+
+  expenses.map(expense => {
+    Realm.open({
+      schema: [ExpenseSchema, AmountSchema, UserSchema]
+    }).then(realm => {
+      realm.write(() => {
+        const existingExpense = realm.objectForPrimaryKey(
+          "expense",
+          expense.id
+        );
+        if (existingExpense === null) {
+          const expenseItem = realm.create("expense", expense);
+          console.log("itemmm", expenseItem);
+        }
+      });
+    });
+  });
+};
+/*
 export function getLocalizedString(value) {
   const currentLocale = useSelector(fromLocale);
   useEffect(() => {
@@ -48,4 +70,30 @@ export function getLocalizedDateString() {
   }, [currentLocale]);
 
   return dateLocale;
+}*/
+
+export function initLocalization() {
+  const currentLocale = useSelector(fromLocale);
+  i18n.fallbacks = true;
+  i18n.translations = { eng, esp, fra, por };
+  i18n.locale = currentLocale;
+}
+
+export function getArrayFromDb() {
+  const [data, setData] = useState([]);
+  const Realm = require("realm");
+  console.log("trying fetchdb");
+  Realm.open({ schema: [ExpenseSchema, UserSchema, AmountSchema] }).then(
+    realm => {
+      const expenses = realm.objects("expense");
+      const values = Object.values(expenses);
+      if (expenses !== null) {
+        values.map(obj => {
+          setData(data => [...data, obj]);
+        });
+        return data;
+      }
+    }
+  );
+  return data;
 }

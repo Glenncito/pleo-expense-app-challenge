@@ -1,26 +1,32 @@
 import { combineReducers } from "redux";
 import { createSlice } from "redux-starter-kit";
 import { fetchExpensesApi, updateComment } from "../../api/expenses";
+import { storeDataOffline, getArrayFromDb } from "../../lib/helpers";
+import { es, en, fr, ptBR } from "date-fns/locale";
+import { ExpenseSchema, UserSchema, AmountSchema } from "../../lib/schema";
 
 const localeInitialState = {
-  selectedLocaleConstant: "fra"
+  selectedLocaleConstant: "esp",
+  selectedDateLocale: `${es}`
 };
 
 export const locale = createSlice({
   slice: "locale",
   initialState: {
-    selectedLocaleConstant: "fra"
+    selectedLocaleConstant: "esp",
+    selectedDateLocale: `${es}`
   },
   reducers: {
     updateLocal(state, { payload }) {
       return {
-        selectedLocaleConstant: payload.selectedLocaleConstant
+        selectedLocaleConstant: payload.selectedLocaleConstant,
+        selectedDateLocale: `${payload.selectedDateLocale}`
       };
     }
   }
 });
 
-export const fromLocale = state => state.expenses.locale.selectedLocaleConstant;
+export const fromLocale = state => state.expenses.locale;
 
 const modalInitialState = {
   selectedExpenseId: null
@@ -51,6 +57,9 @@ export const model = createSlice({
   initialState: [],
   reducers: {
     fetchSuccess(state, { payload }) {
+      return payload;
+    },
+    fetchFaliure(state, { payload }) {
       return payload;
     },
     updateExpense(state, { payload }) {
@@ -87,11 +96,25 @@ export const fetchExpenses = () => async dispatch => {
 
     // Dispatch action to write response to store
     dispatch(model.actions.fetchSuccess(response.data.expenses));
+    console.log("BIG LIST", response.data.expenses);
+    storeDataOffline(response.data.expenses);
   } catch (err) {
-    console.error(err);
+    console.log("ERROR", err);
+    dispatch(fetchFromDatabase());
   } finally {
     dispatch(utils.actions.toggleLoading(false));
   }
+};
+
+const fetchFromDatabase = () => async dispatch => {
+  const expenseArray = () => getArrayFromDb();
+  console.log("expenseArray", expenseArray());
+  if (expenseArray !== null) {
+    dispatch(model.actions.fetchSuccess(expenseArray()));
+  } else {
+    dispatch(model.actions.fetchFaliure());
+  }
+  dispatch(utils.actions.toggleLoading(false));
 };
 
 export const addComment = updatedExpense => async dispatch => {
@@ -99,10 +122,10 @@ export const addComment = updatedExpense => async dispatch => {
   try {
     console.log("add add comment, $updatedExpense");
     updateComment(updatedExpense);
+    dispatch(model.actions.updateExpense(updatedExpense));
   } catch (err) {
     console.error(err);
   } finally {
-    dispatch(model.actions.updateExpense(updatedExpense));
   }
 };
 

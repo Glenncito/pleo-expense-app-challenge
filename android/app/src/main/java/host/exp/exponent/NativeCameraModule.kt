@@ -42,10 +42,10 @@ class NativeCameraModule(private val reactContext: ReactApplicationContext) : Re
         Realm.init(reactContext)
         val mRealmConfiguration = RealmConfiguration.Builder()
                 .name("default.realm")
-                .inMemory()
                 .build()
 
         Realm.getInstance(mRealmConfiguration)
+        mRealmConfiguration.shouldDeleteRealmIfMigrationNeeded()
         Realm.setDefaultConfiguration(mRealmConfiguration)
 
 // Get a Realm instance for this thread
@@ -81,28 +81,3 @@ class NativeCameraModule(private val reactContext: ReactApplicationContext) : Re
         }
     }
 }
-/*
-open class Expense(
-    var date: Date = Date(),
-    var merchant: String = "",
-    var amount: Amount? = null,
-    var user: User? = null
-) : RealmObject() {
-
-
-}
-
-open class Amount(
-        var value: String = "",
-        var currency: String = ""
-) : RealmObject() {
-
-}
-
-open class User(
-        var first: String = "",
-        var last: String = "",
-        var email: String = ""
-) : RealmObject() {
-}
- */

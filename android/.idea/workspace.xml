@@ -6,8 +6,9 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="realm" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c8f7318-435f-4f27-8aa3-a8d27287d7a1" name="Default Changelist" comment="">
@@ -16,14 +17,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/io/realm/host_exp_exponent_models_AmountRealmProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/io/realm/host_exp_exponent_models_AmountRealmProxyInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/io/realm/host_exp_exponent_models_ExpenseRealmProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/io/realm/host_exp_exponent_models_ExpenseRealmProxyInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/io/realm/host_exp_exponent_models_UserRealmProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/io/realm/host_exp_exponent_models_UserRealmProxyInterface.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/annotation_processor_list/debug/annotationProcessors.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/annotation_processor_list/debug/annotationProcessors.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" afterDir="false" />
@@ -168,18 +162,6 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/TdSrhxuZyDM4fimf_MA6HNx99I8=" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/TdSrhxuZyDM4fimf_MA6HNx99I8=" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/processDebugManifest/instant-app-manifest/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/processDebugManifest/instant-app-manifest/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_run_merged_manifests/debug/processDebugManifest/instant-run/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_run_merged_manifests/debug/processDebugManifest/instant-run/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/realm/host_exp_exponent_models_AmountRealmProxy$AmountColumnInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/realm/host_exp_exponent_models_AmountRealmProxy$ClassNameHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/realm/host_exp_exponent_models_AmountRealmProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/realm/host_exp_exponent_models_AmountRealmProxyInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/realm/host_exp_exponent_models_ExpenseRealmProxy$ClassNameHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/realm/host_exp_exponent_models_ExpenseRealmProxy$ExpenseColumnInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/realm/host_exp_exponent_models_ExpenseRealmProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/realm/host_exp_exponent_models_ExpenseRealmProxyInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/realm/host_exp_exponent_models_UserRealmProxy$ClassNameHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/realm/host_exp_exponent_models_UserRealmProxy$UserColumnInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/realm/host_exp_exponent_models_UserRealmProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/io/realm/host_exp_exponent_models_UserRealmProxyInterface.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/metadata_feature_manifest/debug/processDebugManifest/metadata-feature/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/metadata_feature_manifest/debug/processDebugManifest/metadata-feature/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/output.json" afterDir="false" />
@@ -1717,30 +1699,8 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/stripDebugSymbol/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/stripDebugSymbol/debug/__content__.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/host/exp/exponent/CameraActivity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/host/exp/exponent/models/Amount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/host/exp/exponent/models/Expense.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/host/exp/exponent/models/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/host/exp/exponent/utils/ExcecutorKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/host/exp/exponent/CameraActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/host/exp/exponent/CameraActivity.kapt_metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/host/exp/exponent/models/Amount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/host/exp/exponent/models/Amount.kapt_metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/host/exp/exponent/models/Expense.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/host/exp/exponent/models/Expense.kapt_metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/host/exp/exponent/models/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/host/exp/exponent/models/User.kapt_metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/host/exp/exponent/utils/ExcecutorKt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/host/exp/exponent/utils/ExcecutorKt.kapt_metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/host/exp/exponent/CameraActivity$onCreate$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/host/exp/exponent/CameraActivity$storeReciept$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/host/exp/exponent/CameraActivity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/host/exp/exponent/models/Amount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/host/exp/exponent/models/Expense.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/host/exp/exponent/models/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/host/exp/exponent/utils/ExcecutorKt$sam$java_lang_Runnable$0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/host/exp/exponent/utils/ExcecutorKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/ExpenseCard/ExpenseCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/ExpenseCard/ExpenseCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/api/expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/api/expenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/store/modules/expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/store/modules/expenses.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1888,6 +1848,8 @@
       <find>import android.support</find>
       <find>import android.suppor</find>
       <find>android.spport</find>
+      <find>Expense</find>
+      <find>amount</find>
     </findStrings>
     <replaceStrings>
       <replace>import androidx.annotation.NonNull;</replace>
@@ -1920,14 +1882,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/RecieptCapture/RecieptCaptureFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/data/Repository.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/data/DatabaseHelper.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/data/models/User.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/data/models/Amount.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/data/models/Expense.kt" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/utils/OnReiceptDataDidStoreBus.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/CameraActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/RecieptCapture/ReceiptCaptureFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/NativeCameraModule.kt" />
         <option value="$PROJECT_DIR$/../node_modules/expo-permissions/android/src/main/java/expo/modules/permissions/PermissionsModule.java" />
         <option value="$PROJECT_DIR$/../node_modules/expo/node_modules/expo-file-system/android/src/main/java/expo/modules/filesystem/FileSystemFileProvider.java" />
         <option value="$PROJECT_DIR$/../node_modules/expo-constants/android/src/main/java/expo/modules/constants/ConstantsService.java" />
@@ -1942,6 +1900,10 @@
         <option value="$PROJECT_DIR$/../node_modules/unimodules-image-loader-interface/android/src/main/java/org/unimodules/interfaces/imageloader/ImageLoader.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/RecieptCapture/RecieptCaptureViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/data/models/Expense.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/data/models/Amount.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/data/models/User.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/host/exp/exponent/NativeCameraModule.kt" />
       </list>
     </option>
   </component>
@@ -2261,7 +2223,11 @@
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.7267525" visible="true" weight="0.31847134" />
       <window_info anchor="bottom" id="Find" order="8" sideWeight="0.4987163" weight="0.32771084" />
       <window_info anchor="bottom" id="Android Profiler" order="9" />
+<<<<<<< HEAD
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" visible="true" weight="0.33568677" />
+=======
+      <window_info active="true" anchor="right" id="Device File Explorer" order="0" side_tool="true" visible="true" weight="0.33568677" />
+>>>>>>> feature/use-realm-for-offline-storage
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -2343,6 +2309,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/debug/io/realm/DefaultRealmModuleMediator.java" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-44">
@@ -2360,6 +2327,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> feature/use-realm-for-offline-storage
     <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/generated/BasePackageList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -2390,6 +2359,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/NativeCameraPackage.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -2411,11 +2381,14 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> feature/use-realm-for-offline-storage
     <entry file="file://$PROJECT_DIR$/app/expo.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-514" />
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/data/models/Expense.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -2423,6 +2396,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> feature/use-realm-for-offline-storage
     <entry file="file://$PROJECT_DIR$/../node_modules/@unimodules/react-native-adapter/android/src/main/java/org/unimodules/adapters/react/services/UIManagerModuleWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
@@ -2520,6 +2495,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/NativeCameraModule.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -2527,6 +2503,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> feature/use-realm-for-offline-storage
     <entry file="file://$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/host/exp/exponent/custom/api/ApiService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -2594,6 +2572,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/RecieptCapture/ReceiptCaptureFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1017">
@@ -2614,6 +2593,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> feature/use-realm-for-offline-storage
     <entry file="file://$PROJECT_DIR$/../node_modules/unimodules-image-loader-interface/android/src/main/java/org/unimodules/interfaces/imageloader/ImageLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -2658,6 +2639,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/debug/io/realm/host_exp_exponent_custom_data_models_ExpenseRealmProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2608">
+          <caret line="193" column="60" selection-start-line="193" selection-start-column="60" selection-end-line="193" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/data/models/Amount.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/data/models/User.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/MainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/data/DatabaseHelper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#39#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/NativeCameraPackage.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/RecieptCapture/ReceiptCaptureFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1017">
+          <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
+          <folding>
+            <element signature="e#49#1141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/NativeCameraModule.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/host/exp/exponent/custom/data/models/Expense.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
