@@ -7,7 +7,6 @@ import { ExpenseSchema, UserSchema, AmountSchema } from "./schema.js";
 import i18n from "i18n-js";
 
 const CameraApplication = NativeModules.NativeCameraModule;
-const Realm = require("realm");
 export const initReceiptMenu = async expenseId => {
   try {
     const message = await CameraApplication.initReceiptCapture(expenseId);
@@ -18,7 +17,7 @@ export const initReceiptMenu = async expenseId => {
   }
 };
 
-export const storeDataOffline = expenses => {
+/*export const storeDataOffline = expenses => {
   console.log("biggie", expenses);
 
   expenses.map(expense => {
@@ -37,7 +36,7 @@ export const storeDataOffline = expenses => {
       });
     });
   });
-};
+};*/
 
 export function initLocalization() {
   const currentLocale = useSelector(fromLocale);
@@ -45,3 +44,27 @@ export function initLocalization() {
   i18n.translations = { eng, esp, fra, por };
   i18n.locale = currentLocale;
 }
+
+export const onSearchTermUpdated = (term, expensesState) => {
+  const userFilter = expense => {
+    return Object.values(expense.user)
+      .toString()
+      .toLowerCase()
+      .includes(term.toLowerCase());
+  };
+  const amountFilter = expense => {
+    return Object.values(expense.amount)
+      .toString()
+      .toLowerCase()
+      .includes(term.toLowerCase());
+  };
+  const merchantFilter = expense => {
+    return expense.merchant.toLowerCase().includes(term.toLowerCase());
+  };
+  const filteredResults = expensesState.filter(
+    expense =>
+      merchantFilter(expense) || userFilter(expense) || amountFilter(expense)
+  );
+  return filteredResults;
+  setSearchTerm(term);
+};

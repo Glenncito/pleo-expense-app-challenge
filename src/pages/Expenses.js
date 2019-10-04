@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { FlatList, ScrollView, View, TextInput, Text } from "react-native";
+import React, { useEffect } from "react";
+import { FlatList, ScrollView, View, Text, Picker } from "react-native";
 import ExpenseCard from "components/ExpenseCard/ExpenseCard";
 import { useDispatch, useSelector } from "react-redux";
 import { format } from "date-fns";
-import { SearchInputContainer, SearchInput } from "./styles";
+import { SearchInputContainer, SearchInput, NavBar } from "./styles";
 import Icon from "react-native-vector-icons/Feather";
 
 import {
@@ -11,15 +11,14 @@ import {
   fromExpenses,
   fromModal,
   modal,
-  fromLocale
+  fromLocale,
+  locale
 } from "../store/modules/expenses";
 import {
   initReceiptMenu,
-  getLocalizedDateString,
-  getLocalizedString,
-  initLocalization
+  initLocalization,
+  onSearchTermUpdated
 } from "../lib/helpers";
-import * as Localization from "expo-localization";
 import { eng, esp, fra, por, localeMap } from "lib/constants";
 import { es, en, fr, ptBR } from "date-fns/locale";
 import i18n from "i18n-js";
@@ -40,7 +39,7 @@ function Expenses() {
   }, [dispatch]);
 
   useEffect(() => {
-    setCurrentlyDisplayed(expensesState); //make more
+    setCurrentlyDisplayed(expensesState);
   }, [expensesState]);
 
   const currentLocale = useSelector(fromLocale);
@@ -52,32 +51,34 @@ function Expenses() {
     i18n.locale = localeConstant;
   }, [currentLocale]);
 
-  const onSearchTermUpdated = term => {
-    const userFilter = expense => {
-      return Object.values(expense.user)
-        .toString()
-        .toLowerCase()
-        .includes(term.toLowerCase());
-    };
-    const amountFilter = expense => {
-      return Object.values(expense.amount)
-        .toString()
-        .toLowerCase()
-        .includes(term.toLowerCase());
-    };
-    const merchantFilter = expense => {
-      return expense.merchant.toLowerCase().includes(term.toLowerCase());
-    };
-    const filteredResults = expensesState.filter(
-      expense =>
-        merchantFilter(expense) || userFilter(expense) || amountFilter(expense)
-    );
-    setCurrentlyDisplayed(filteredResults);
+  const searchTermUpdated = term => {
+    const searchResult = onSearchTermUpdated(term, expensesState);
+    setCurrentlyDisplayed(searchResult);
     setSearchTerm(term);
   };
 
+  const changeLocale = localeValue =>
+    dispatch(
+      locale.actions.updateLocale({
+        selectedLocaleConstant: localeValue,
+        selectedDateLocale: `${localeMap[localeValue]}`
+      })
+    );
+
   return (
     <View>
+      <NavBar>
+        <Picker
+          selectedValue={currentLocale.selectedLocaleConstant}
+          style={{ height: 150, width: 150, marginTop: 20 }}
+          onValueChange={(itemValue, itemIndex) => changeLocale(itemValue)}
+        >
+          <Picker.Item label="English" value="eng" />
+          <Picker.Item label="Español" value="esp" />
+          <Picker.Item label="Français" value="fra" />
+          <Picker.Item label="Portugués" value="por" />
+        </Picker>
+      </NavBar>
       <SearchInputContainer>
         <Icon name="search" size={24} color="red" style={{ marginLeft: 15 }} />
         <SearchInput
@@ -85,7 +86,7 @@ function Expenses() {
           placeholder="Search"
           placeholderTextColor="#abbabb"
           value={searchTerm}
-          onChangeText={text => onSearchTermUpdated(text)}
+          onChangeText={text => searchTermUpdated(text)}
         />
       </SearchInputContainer>
       <ScrollView>

@@ -1,27 +1,26 @@
 import { combineReducers } from "redux";
 import { createSlice } from "redux-starter-kit";
 import { fetchExpensesApi, updateComment } from "../../api/expenses";
-import { storeDataOffline, getArrayFromDb } from "../../lib/helpers";
+import { storeDataOffline } from "../../lib/helpers";
 import { es, en, fr, ptBR } from "date-fns/locale";
-import { ExpenseSchema, UserSchema, AmountSchema } from "../../lib/schema.js";
 
 const localeInitialState = {
-  selectedLocaleConstant: "esp",
-  selectedDateLocale: `${es}`
+  selectedLocaleConstant: "eng",
+  selectedDateLocale: en
 };
 
 export const locale = createSlice({
   slice: "locale",
   initialState: {
-    selectedLocaleConstant: "esp",
-    selectedDateLocale: `${es}`
+    selectedLocaleConstant: "eng",
+    selectedDateLocale: `${en}`
   },
   reducers: {
-    updateLocal(state, { payload }) {
-      return {
-        selectedLocaleConstant: payload.selectedLocaleConstant,
-        selectedDateLocale: `${payload.selectedDateLocale}`
-      };
+    updateLocale: (state, { payload }) => {
+      const { selectedLocaleConstant, selectedDateLocale } = payload;
+
+      (state.selectedLocaleConstant = selectedLocaleConstant),
+        (state.selectedDateLocale = `${selectedDateLocale}`);
     }
   }
 });
@@ -40,7 +39,6 @@ export const modal = createSlice({
   reducers: {
     showModal(state, { payload }) {
       return { selectedExpenseId: payload };
-      // state.selectedExpenseId = payload;
     },
     hideModal(state) {
       return modalInitialState;
@@ -68,13 +66,6 @@ export const model = createSlice({
   }
 });
 
-/*
-[
-      ...state.slice(0, payload.index),
-      payload,
-      ...state.slice(payload.index + 1)
-    ]
-*/
 const utils = createSlice({
   slice: "utils",
   initialState: {
