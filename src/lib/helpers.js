@@ -88,7 +88,9 @@ export function getArrayFromDb() {
       const expenses = realm.objects("expense");
       const values = Object.values(expenses);
       if (expenses !== null) {
-        values.map(obj => {});
+        values.map(obj => {
+          setData(data => [...data, obj]);
+        });
         return data;
       }
     }
