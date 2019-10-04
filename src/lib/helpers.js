@@ -27,8 +27,14 @@ export const storeDataOffline = expenses => {
       schema: [ExpenseSchema, AmountSchema, UserSchema]
     }).then(realm => {
       realm.write(() => {
-        const expenseItem = realm.create("expense", expense);
-        console.log("itemmm", expenseItem);
+        const existingExpense = realm.objectForPrimaryKey(
+          "expense",
+          expense.id
+        );
+        if (existingExpense === null) {
+          const expenseItem = realm.create("expense", expense);
+          console.log("itemmm", expenseItem);
+        }
       });
     });
   });
@@ -71,4 +77,21 @@ export function initLocalization() {
   i18n.fallbacks = true;
   i18n.translations = { eng, esp, fra, por };
   i18n.locale = currentLocale;
+}
+
+export function getArrayFromDb() {
+  const [data, setData] = useState([]);
+  const Realm = require("realm");
+  console.log("trying fetchdb");
+  Realm.open({ schema: [ExpenseSchema, UserSchema, AmountSchema] }).then(
+    realm => {
+      const expenses = realm.objects("expense");
+      const values = Object.values(expenses);
+      if (expenses !== null) {
+        values.map(obj => {});
+        return data;
+      }
+    }
+  );
+  return data;
 }

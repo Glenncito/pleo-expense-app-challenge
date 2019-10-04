@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 import { createSlice } from "redux-starter-kit";
 import { fetchExpensesApi, updateComment } from "../../api/expenses";
-import { storeDataOffline } from "../../lib/helpers";
+import { storeDataOffline, getArrayFromDb } from "../../lib/helpers";
 import { es, en, fr, ptBR } from "date-fns/locale";
 import { ExpenseSchema, UserSchema, AmountSchema } from "../../lib/schema";
 
@@ -107,20 +107,13 @@ export const fetchExpenses = () => async dispatch => {
 };
 
 const fetchFromDatabase = () => async dispatch => {
-  const Realm = require("realm");
-
-  console.log("trying fetchdb");
-  Realm.open({ schema: [ExpenseSchema, UserSchema, AmountSchema] }).then(
-    realm => {
-      const expenses = realm.objects("expense");
-      console.log("first object", Object.values(expenses));
-      if (expenses !== null) {
-        dispatch(model.actions.fetchSuccess(Object.values(expenses)));
-      } else {
-        dispatch(model.actions.fetchFaliure());
-      }
-    }
-  );
+  const expenseArray = () => getArrayFromDb();
+  console.log("expenseArray", expenseArray());
+  if (expenseArray !== null) {
+    dispatch(model.actions.fetchSuccess(expenseArray()));
+  } else {
+    dispatch(model.actions.fetchFaliure());
+  }
   dispatch(utils.actions.toggleLoading(false));
 };
 
