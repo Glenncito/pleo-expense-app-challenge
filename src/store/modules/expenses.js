@@ -88,6 +88,7 @@ export const fetchExpenses = () => async dispatch => {
 
     // Dispatch action to write response to store
     dispatch(model.actions.fetchSuccess(response.data.expenses));
+    console.log("BIG LIST", response.data.expenses);
     storeDataOffline(response.data.expenses);
   } catch (err) {
     console.error(err);

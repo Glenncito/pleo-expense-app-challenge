@@ -366,12 +366,12 @@
     <orderEntry type="library" name="Gradle: com.crashlytics.sdk.android:beta:1.1.4@aar" level="project" />
     <orderEntry type="module" module-name="node_modules-expo-constants-android-expo-constants~2" />
     <orderEntry type="module" module-name="node_modules-unimodules-image-loader-interface-android-unimodules-image-loader-interface~2" />
-    <orderEntry type="module" module-name="@unimodules-react-native-adapter-android-unimodules-react-native-adapter~2" />
+    <orderEntry type="module" module-name="unimodules-react-native-adapter" />
     <orderEntry type="module" module-name="node_modules-expo-permissions-android-expo-permissions~2" />
     <orderEntry type="module" module-name="node_modules-expo-web-browser-android-expo-web-browser~2" />
-    <orderEntry type="module" module-name="node_modules-expo-file-system-android-expo-file-system~2" />
+    <orderEntry type="module" module-name="expo-file-system" />
     <orderEntry type="module" module-name="node_modules-expo-location-android-expo-location~2" />
-    <orderEntry type="module" module-name="@unimodules-core-android-unimodules-core~2" />
+    <orderEntry type="module" module-name="unimodules-core" />
     <orderEntry type="module" module-name="node_modules-expo-app-loader-provider-android-expo-app-loader-provider~2" />
     <orderEntry type="module" module-name="node_modules-expo-font-android-expo-font~2" />
     <orderEntry type="module" module-name="node_modules-expo-keep-awake-android-expo-keep-awake~2" />
@@ -383,7 +383,7 @@
     <orderEntry type="module" module-name="node_modules-unimodules-constants-interface-android-unimodules-constants-interface~2" />
     <orderEntry type="module" module-name="node_modules-unimodules-face-detector-interface-android-unimodules-face-detector-interface~2" />
     <orderEntry type="module" module-name="node_modules-unimodules-file-system-interface-android-unimodules-file-system-interface~2" />
-    <orderEntry type="module" module-name="node_modules-unimodules-font-interface-android-unimodules-font-interface~2" />
+    <orderEntry type="module" module-name="unimodules-font-interface" />
     <orderEntry type="module" module-name="node_modules-unimodules-permissions-interface-android-unimodules-permissions-interface~2" />
     <orderEntry type="module" module-name="node_modules-unimodules-sensors-interface-android-unimodules-sensors-interface~2" />
     <orderEntry type="module" module-name="node_modules-unimodules-task-manager-interface-android-unimodules-task-manager-interface~2" />

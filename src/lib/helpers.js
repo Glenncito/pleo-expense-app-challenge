@@ -8,7 +8,7 @@ import { ExpenseSchema, UserSchema, AmountSchema } from "./schema";
 import i18n from "i18n-js";
 
 const CameraApplication = NativeModules.NativeCameraModule;
-
+const Realm = require("realm");
 export const initReceiptMenu = async expenseId => {
   try {
     const message = await CameraApplication.initReceiptCapture(expenseId);
@@ -21,14 +21,13 @@ export const initReceiptMenu = async expenseId => {
 
 export const storeDataOffline = expenses => {
   console.log("biggie", expenses);
-  const Realm = require("realm");
+
   expenses.map(expense => {
     Realm.open({
-      schema: [ExpenseSchema, AmountSchema, UserSchema],
-      inMemory: true
+      schema: [ExpenseSchema, AmountSchema, UserSchema]
     }).then(realm => {
       realm.write(() => {
-        const expenseItem = realm.create("Expense", expense);
+        const expenseItem = realm.create("expense", expense);
         console.log("item", expenseItem);
       });
     });

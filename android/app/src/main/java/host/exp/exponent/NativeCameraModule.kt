@@ -42,7 +42,6 @@ class NativeCameraModule(private val reactContext: ReactApplicationContext) : Re
         Realm.init(reactContext)
         val mRealmConfiguration = RealmConfiguration.Builder()
                 .name("default.realm")
-                .inMemory()
                 .build()
 
         Realm.getInstance(mRealmConfiguration)
