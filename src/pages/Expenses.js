@@ -16,18 +16,20 @@ import {
 import {
   initReceiptMenu,
   getLocalizedDateString,
-  getLocalizedString
+  getLocalizedString,
+  initLocalization
 } from "../lib/helpers";
 import AddCommentModal from "../components/Modals/AddCommentModal";
 import * as Localization from "expo-localization";
-import { eng, esp, fra, por } from "lib/constants";
+import { eng, esp, fra, por, localeMap } from "lib/constants";
 import { es, en, fr, ptBR } from "date-fns/locale";
 import i18n from "i18n-js";
 
 function Expenses() {
+  initLocalization();
   const [searchTerm, setSearchTerm] = React.useState("");
   const [currentlyDisplayed, setCurrentlyDisplayed] = React.useState([]);
-  const [dateLocale, setDateLocale] = React.useState(en);
+  const [localeConstant, setLocaleConstant] = React.useState();
 
   const dispatch = useDispatch();
   const showModal = expenseId => dispatch(modal.actions.showModal(expenseId));
@@ -45,18 +47,10 @@ function Expenses() {
   const currentLocale = useSelector(fromLocale);
   i18n.fallbacks = true;
   i18n.translations = { eng, esp, fra, por };
-  i18n.locale = currentLocale;
+  i18n.locale = localeConstant;
   useEffect(() => {
-    i18n.locale = currentLocale;
-    if (currentLocale === "eng") {
-      setDateLocale(en);
-    } else if (currentLocale === "esp") {
-      setDateLocale(es);
-    } else if (currentLocale === "fra") {
-      setDateLocale(fr);
-    } else if (currentLocale === "por") {
-      setDateLocale(ptBR);
-    }
+    setLocaleConstant(currentLocale.selectedLocaleConstant);
+    i18n.locale = localeConstant;
   }, [currentLocale]);
 
   const onSearchTermUpdated = term => {
@@ -114,13 +108,13 @@ function Expenses() {
               }
               commentExists={item.comment !== "" ? true : false}
               dateDay={format(new Date(item.date), "do", {
-                locale: dateLocale
+                locale: localeMap[`${localeConstant}`]
               })}
               dateMonthYear={format(new Date(item.date), `MMM yy`, {
-                locale: dateLocale
+                locale: localeMap[`${localeConstant}`]
               })}
               dateWeekday={format(new Date(item.date), "iii", {
-                locale: dateLocale
+                locale: localeMap[`${localeConstant}`]
               })}
               category={item.category}
               currency={item.amount.currency}

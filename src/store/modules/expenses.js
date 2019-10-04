@@ -5,15 +5,15 @@ import { storeDataOffline } from "../../lib/helpers";
 import { es, en, fr, ptBR } from "date-fns/locale";
 
 const localeInitialState = {
-  selectedLocaleConstant: "fra",
-  selectedDateLocale: `${fr}`
+  selectedLocaleConstant: "esp",
+  selectedDateLocale: `${es}`
 };
 
 export const locale = createSlice({
   slice: "locale",
   initialState: {
-    selectedLocaleConstant: "fra",
-    selectedDateLocale: `${fr}`
+    selectedLocaleConstant: "esp",
+    selectedDateLocale: `${es}`
   },
   reducers: {
     updateLocal(state, { payload }) {
@@ -25,7 +25,7 @@ export const locale = createSlice({
   }
 });
 
-export const fromLocale = state => state.expenses.locale.selectedLocaleConstant;
+export const fromLocale = state => state.expenses.locale;
 
 const modalInitialState = {
   selectedExpenseId: null

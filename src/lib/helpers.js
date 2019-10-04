@@ -27,8 +27,12 @@ export const storeDataOffline = expenses => {
       schema: [ExpenseSchema, AmountSchema, UserSchema]
     }).then(realm => {
       realm.write(() => {
-        const expenseItem = realm.create("expense", expense);
-        console.log("item", expenseItem);
+        if (
+          realm.objects("expense").filtered(`id ="${expense.id}"`)[0] === null
+        ) {
+          const expenseItem = realm.create("expense", expense);
+          console.log("itemmm", expenseItem);
+        }
       });
     });
   });

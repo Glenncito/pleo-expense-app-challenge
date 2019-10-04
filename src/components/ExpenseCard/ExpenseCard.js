@@ -105,27 +105,26 @@ function ExpenseCard(props) {
         </ExpenseInfo>
       </Body>
       <View>{props.visible ? <AddCommentModal /> : null}</View>
-      <Reciept>
-        <AddReceiptButton onPress={props.receiptMenu}>
-          <Icon
-            name={"plus"}
-            size={22}
-            color="white"
-            style={{ margin: 1, paddingRight: 2 }}
-          />
-          <View
-            style={{
-              alignContent: "center",
-              justifyContent: "center",
-              marginRight: 4
-            }}
-          >
-            <Text style={{ color: "white", fontSize: 14 }}>
-              {i18n.t("addComment")}
-            </Text>
-          </View>
-        </AddReceiptButton>
-      </Reciept>
+
+      <AddReceiptButton onPress={props.receiptMenu}>
+        <Icon
+          name={"plus"}
+          size={22}
+          color="white"
+          style={{ margin: 1, paddingRight: 2 }}
+        />
+        <View
+          style={{
+            alignContent: "center",
+            justifyContent: "center",
+            marginRight: 4
+          }}
+        >
+          <Text style={{ color: "white", fontSize: 14 }}>
+            {i18n.t("addReceipt")}
+          </Text>
+        </View>
+      </AddReceiptButton>
     </Wrapper>
   );
 }
