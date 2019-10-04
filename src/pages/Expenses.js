@@ -19,7 +19,6 @@ import {
   getLocalizedString,
   initLocalization
 } from "../lib/helpers";
-import AddCommentModal from "../components/Modals/AddCommentModal";
 import * as Localization from "expo-localization";
 import { eng, esp, fra, por, localeMap } from "lib/constants";
 import { es, en, fr, ptBR } from "date-fns/locale";

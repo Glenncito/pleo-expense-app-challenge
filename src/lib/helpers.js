@@ -79,7 +79,7 @@ export function initLocalization() {
   i18n.locale = currentLocale;
 }
 
-export function getArrayFromDb() {
+/*export function getArrayFromDb() {
   const [data, setData] = useState([]);
   const Realm = require("realm");
   console.log("trying fetchdb");
@@ -96,4 +96,4 @@ export function getArrayFromDb() {
     }
   );
   return data;
-}
+}*/

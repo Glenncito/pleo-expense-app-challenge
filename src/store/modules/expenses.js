@@ -91,22 +91,19 @@ export const fromExpenses = state => state.expenses.model;
 export const fetchExpenses = () => async dispatch => {
   utils.actions.toggleLoading(true);
   try {
-    // Fetch list of expenses
     const response = await fetchExpensesApi();
-
-    // Dispatch action to write response to store
     dispatch(model.actions.fetchSuccess(response.data.expenses));
     console.log("BIG LIST", response.data.expenses);
-    storeDataOffline(response.data.expenses);
+    //storeDataOffline(response.data.expenses);
   } catch (err) {
     console.log("ERROR", err);
-    dispatch(fetchFromDatabase());
+    // dispatch(fetchFromDatabase());
   } finally {
     dispatch(utils.actions.toggleLoading(false));
   }
 };
 
-const fetchFromDatabase = () => async dispatch => {
+/*const fetchFromDatabase = () => async dispatch => {
   const expenseArray = () => getArrayFromDb();
   console.log("expenseArray", expenseArray());
   if (expenseArray !== null) {
@@ -115,7 +112,7 @@ const fetchFromDatabase = () => async dispatch => {
     dispatch(model.actions.fetchFaliure());
   }
   dispatch(utils.actions.toggleLoading(false));
-};
+};*/
 
 export const addComment = updatedExpense => async dispatch => {
   console.log("add add comment, $updatedExpense");
