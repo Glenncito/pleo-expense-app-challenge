@@ -16,7 +16,8 @@ class DatabaseHelper {
         return expense
     }
 
-    fun insertRecieptDataIntoExpense(expense: Expense, recieptByteArray: ByteArray) {
+    fun insertRecieptDataIntoExpense(expenseId: String, recieptByteArray: ByteArray) {
+        var expense = getExpenseWithId(expenseId)
         realm.executeTransaction {
             expense.receipt = recieptByteArray
         }

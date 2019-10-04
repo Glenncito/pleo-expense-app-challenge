@@ -91,7 +91,7 @@ class ReceiptCaptureFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(RecieptCaptureViewModel::class.java)
-        expenseId?.let { viewModel.setSelectedExpenseWithId(it)}
+        //expenseId?.let { viewModel.setSelectedExpenseWithId(it)}
 
         // TODO: Use the ViewModel
     }

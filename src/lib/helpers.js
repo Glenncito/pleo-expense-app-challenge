@@ -1,9 +1,8 @@
 import { uploadReceipt } from "../api/expenses";
 import { NativeModules } from "react-native";
-import React, { useState, useEffect } from "react";
 import { eng, esp, fra, por } from "./constants";
-import { fromLocale, fromExpenses } from "../store/modules/expenses";
-import { useSelector, useDispatch } from "react-redux";
+import { fromLocale } from "../store/modules/expenses";
+import { useSelector } from "react-redux";
 import { ExpenseSchema, UserSchema, AmountSchema } from "./schema.js";
 import i18n from "i18n-js";
 
@@ -39,38 +38,6 @@ export const storeDataOffline = expenses => {
     });
   });
 };
-/*
-export function getLocalizedString(value) {
-  const currentLocale = useSelector(fromLocale);
-  useEffect(() => {
-    i18n.locale = currentLocale;
-  }, [currentLocale]);
-  return i18n.t(value);
-}
-
-export function changeLocalization(locale) {
-  i18n.locale = locale;
-  const dispatch = useDispatch();
-  dispatch(locale.actions.updateLocal(locale));
-}
-
-export function getLocalizedDateString() {
-  const currentLocale = useSelector(fromLocale);
-  const [dateLocale, setDateLocale] = React.useState(en);
-  useEffect(() => {
-    if (currentLocale === "eng") {
-      setDateLocale(en);
-    } else if (currentLocale === "esp") {
-      setDateLocale(es);
-    } else if (currentLocale === "fra") {
-      setDateLocale(fr);
-    } else if (currentLocale === "por") {
-      setDateLocale(ptBR);
-    }
-  }, [currentLocale]);
-
-  return dateLocale;
-}*/
 
 export function initLocalization() {
   const currentLocale = useSelector(fromLocale);
@@ -78,22 +45,3 @@ export function initLocalization() {
   i18n.translations = { eng, esp, fra, por };
   i18n.locale = currentLocale;
 }
-
-/*export function getArrayFromDb() {
-  const [data, setData] = useState([]);
-  const Realm = require("realm");
-  console.log("trying fetchdb");
-  Realm.open({ schema: [ExpenseSchema, UserSchema, AmountSchema] }).then(
-    realm => {
-      const expenses = realm.objects("expense");
-      const values = Object.values(expenses);
-      if (expenses !== null) {
-        values.map(obj => {
-          setData(data => [...data, obj]);
-        });
-        return data;
-      }
-    }
-  );
-  return data;
-}*/

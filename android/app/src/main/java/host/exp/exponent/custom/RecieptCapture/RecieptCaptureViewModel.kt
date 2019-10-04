@@ -15,11 +15,9 @@ class RecieptCaptureViewModel (application: Application) : AndroidViewModel(appl
 
 
     fun insertRecieptDataIntoExpense(recieptByteArray: ByteArray){
-        repository?.insertRecieptDataIntoExpense (recieptByteArray)
+        repository?.insertRecieptDataIntoExpense ("",recieptByteArray)
     }
 
-    fun setSelectedExpenseWithId(expenseId: String){
-        repository?.setSelectedExpenseWithId(expenseId)
-    }
+
 
 }
