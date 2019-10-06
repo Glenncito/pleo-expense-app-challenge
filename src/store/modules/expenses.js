@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 import { createSlice } from "redux-starter-kit";
 import { fetchExpensesApi, updateComment } from "../../api/expenses";
-import { storeDataOffline } from "../../lib/helpers";
+import { storeDataOffline, getDataFromnDB } from "../../lib/helpers";
 import { es, en, fr, ptBR } from "date-fns/locale";
 
 const localeInitialState = {
@@ -87,9 +87,21 @@ export const fetchExpenses = () => async dispatch => {
     storeDataOffline(response.data.expenses);
   } catch (err) {
     console.log("ERROR", err);
+    dispatch(fetchFromDatabase());
   } finally {
     dispatch(utils.actions.toggleLoading(false));
   }
+};
+
+const fetchFromDatabase = () => async dispatch => {
+  const expenseArray = () => getDataFromnDB();
+  console.log("expenseArray", expenseArray());
+  if (expenseArray !== null) {
+    dispatch(model.actions.fetchSuccess(expenseArray()));
+  } else {
+    dispatch(model.actions.fetchFaliure());
+  }
+  dispatch(utils.actions.toggleLoading(false));
 };
 
 export const addComment = updatedExpense => async dispatch => {

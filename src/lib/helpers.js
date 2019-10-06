@@ -5,6 +5,7 @@ import { fromLocale } from "../store/modules/expenses";
 import { useSelector } from "react-redux";
 import { ExpenseSchema, UserSchema, AmountSchema } from "./schema.js";
 import i18n from "i18n-js";
+import { values } from "ramda";
 
 const CameraApplication = NativeModules.NativeCameraModule;
 export const initReceiptMenu = async expenseId => {
@@ -17,7 +18,7 @@ export const initReceiptMenu = async expenseId => {
   }
 };
 
-/*export const storeDataOffline = expenses => {
+export const storeDataOffline = expenses => {
   console.log("biggie", expenses);
 
   expenses.map(expense => {
@@ -36,7 +37,45 @@ export const initReceiptMenu = async expenseId => {
       });
     });
   });
-};*/
+};
+
+const normaliseData = () => {};
+
+export const getDataFromnDB = async mnodel => {
+  try {
+    const realm = await Realm.open({
+      schema: [ExpenseSchema, UserSchema, AmountSchema]
+    });
+    const data = realm.objects(model);
+
+    if (data) {
+      return values(data);
+    }
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+// const [array, setArray] = useDataFromDB()
+
+export function getArrayFromDb() {
+  const [data, setData] = useState([]);
+  const Realm = require("realm");
+  console.log("trying fetchdb");
+  Realm.open({ schema: [ExpenseSchema, UserSchema, AmountSchema] }).then(
+    realm => {
+      const expenses = realm.objects("expense");
+      const values = Object.values(expenses);
+      if (expenses !== null) {
+        values.map(obj => {
+          setData(data => [...data, obj]);
+        });
+        return data;
+      }
+    }
+  );
+  return data;
+}
 
 export function initLocalization() {
   const currentLocale = useSelector(fromLocale);
