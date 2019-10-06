@@ -87,7 +87,7 @@ export const fetchExpenses = () => async dispatch => {
     storeDataOffline(response.data.expenses);
   } catch (err) {
     console.log("ERROR", err);
-    dispatch(fetchFromDatabase());
+    //dispatch(fetchFromDatabase());
   } finally {
     dispatch(utils.actions.toggleLoading(false));
   }
