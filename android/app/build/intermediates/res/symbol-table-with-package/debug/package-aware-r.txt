@@ -1356,7 +1356,6 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
-id btn_capture
 id button
 id buttonPanel
 id buyButton
@@ -1757,7 +1756,6 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout oauth_webview_activity
-layout reciept_capture_fragment
 layout redbox_item_frame
 layout redbox_item_title
 layout redbox_view

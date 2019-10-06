@@ -97,8 +97,7 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.STORAGE" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- for android -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- for android -->
     <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
     <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
     <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
@@ -113,11 +112,12 @@
     <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
     <application
         android:name="host.exp.exponent.MainApplication"
         android:allowBackup="true"
-        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -126,7 +126,7 @@
         android:testOnly="true"
         android:usesCleartextTraffic="true" >
         <provider
-            android:name="androidx.core.content.FileProvider"
+            android:name="android.support.v4.content.FileProvider"
             android:authorities="host.exp.exponent.fileprovider.camera"
             android:exported="false"
             android:grantUriPermissions="true" >
@@ -352,12 +352,12 @@
         </receiver>
 
         <!--
-    This crashes: https://code.google.com/p/analytics-issues/issues/detail?id=667
-    TODO: turn it back on when it's fixed
-    <service
-      android:name="com.google.android.gms.analytics.CampaignTrackingService"
-      android:enabled="true"
-      android:exported="false" />
+        This crashes: https://code.google.com/p/analytics-issues/issues/detail?id=667
+        TODO: turn it back on when it's fixed
+        <service
+          android:name="com.google.android.gms.analytics.CampaignTrackingService"
+          android:enabled="true"
+          android:exported="false" />
         -->
 
         <receiver
@@ -504,13 +504,7 @@
         <service
             android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
             android:exported="false"
-            android:process=":adnw" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
-        <activity
-            android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent" />
-
+            android:process=":adnw" />
         <service
             android:name="com.google.android.gms.analytics.AnalyticsJobService"
             android:enabled="true"
@@ -533,6 +527,27 @@
             android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
             android:exported="true"
             android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+
+        <activity
+            android:name="net.openid.appauth.AuthorizationManagementActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+            android:exported="false" />
+        <service
+            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+            android:exported="false" />
+        <service
+            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+            android:exported="false" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
         <!--
              FirebaseMessagingService performs security checks at runtime,
              but set to not exported to explicitly avoid allowing another app to call it.
@@ -603,22 +618,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <activity
-            android:name="net.openid.appauth.AuthorizationManagementActivity"
-            android:exported="false"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <service
-            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
-            android:exported="false" />
-        <service
-            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
-            android:exported="false" />
-        <service
-            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
-            android:exported="false" />
         <!--
          The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
          with the application context. This config is merged in with the host app's manifest,
@@ -648,12 +647,6 @@
                 <action android:name="com.android.vending.INSTALL_REFERRER" />
             </intent-filter>
         </receiver>
-
-        <provider
-            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-            android:authorities="com.pleo.expenseapp.lifecycle-process"
-            android:exported="false"
-            android:multiprocess="true" />
     </application>
 
 </manifest>

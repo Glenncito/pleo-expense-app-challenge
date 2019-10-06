@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.facebook.fresco:imagepipeline:1.10.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-imagepipeline-1.10.0.aar/3e0690d344b435dda03d0a57ea77dae9/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7ca9c20a217a946020f25c96aa7217c3/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-imagepipeline-1.10.0.aar/3e0690d344b435dda03d0a57ea77dae9/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-imagepipeline-1.10.0.aar/3e0690d344b435dda03d0a57ea77dae9/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7ca9c20a217a946020f25c96aa7217c3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7ca9c20a217a946020f25c96aa7217c3/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.fresco/imagepipeline/1.10.0/8b1def0ec9be76062b670075c0322c18afd7a4e8/imagepipeline-1.10.0-javadoc.jar!/" />

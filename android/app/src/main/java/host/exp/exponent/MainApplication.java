@@ -1,7 +1,6 @@
 package host.exp.exponent;
 
 import com.facebook.react.ReactPackage;
-
 import org.unimodules.core.interfaces.Package;
 
 import java.util.Arrays;
@@ -26,7 +25,8 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
   public List<ReactPackage> getPackages() {
     return Arrays.<ReactPackage>asList(
             new NativeCameraPackage(),
-             new RealmReactPackage()
+           new RealmReactPackage()
+        // Add your own packages here!
         // TODO: add native modules!
 
         // Needed for `react-native link`

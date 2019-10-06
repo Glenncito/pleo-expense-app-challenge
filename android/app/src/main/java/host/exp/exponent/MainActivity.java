@@ -10,7 +10,7 @@ import java.util.List;
 
 import host.exp.exponent.experience.DetachActivity;
 import host.exp.exponent.generated.DetachBuildConstants;
-import io.realm.react.RealmReactPackage;
+
 public class MainActivity extends DetachActivity {
 
   @Override

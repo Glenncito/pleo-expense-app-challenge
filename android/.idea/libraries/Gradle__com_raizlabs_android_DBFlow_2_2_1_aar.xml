@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.raizlabs.android:DBFlow:2.2.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-DBFlow-2.2.1.aar/4f6c5420cd0393118a460bf4edcfbff4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-DBFlow-2.2.1.aar/4f6c5420cd0393118a460bf4edcfbff4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/DBFlow-2.2.1.aar/63f9c0c35d60aacfb24e95f52b197cfd/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/DBFlow-2.2.1.aar/63f9c0c35d60aacfb24e95f52b197cfd/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

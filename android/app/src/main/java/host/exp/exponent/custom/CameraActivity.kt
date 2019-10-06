@@ -4,7 +4,6 @@ package host.exp.exponent.custom
 
 
 import android.Manifest
-import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
@@ -13,19 +12,13 @@ import android.net.Uri
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
-
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
-import androidx.core.content.FileProvider
+import android.support.v4.app.ActivityCompat
+import android.support.v4.content.ContextCompat
+import android.support.v4.content.FileProvider
+import android.support.v7.app.AppCompatActivity
 
 import host.exp.exponent.R
-import host.exp.exponent.custom.RecieptCapture.ReceiptCaptureFragment
 import host.exp.exponent.custom.data.Repository
-import host.exp.exponent.custom.utils.*
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.schedulers.Schedulers
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.IOException
@@ -116,12 +109,12 @@ class CameraActivity : AppCompatActivity() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == Activity.RESULT_OK) {
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == AppCompatActivity.RESULT_OK) {
             var resultIntent: Intent = Intent()
             resultIntent.putExtra("name", mCurrentPhotoPath)
-            this.setResult(Activity.RESULT_OK, resultIntent)
+            this.setResult(AppCompatActivity.RESULT_OK, resultIntent)
             finish()
-        } else if (resultCode == Activity.RESULT_CANCELED){
+        } else if (resultCode == AppCompatActivity.RESULT_CANCELED){
             finish()
         }
     }

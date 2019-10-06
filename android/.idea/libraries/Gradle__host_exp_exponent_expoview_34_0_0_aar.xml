@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: host.exp.exponent:expoview:34.0.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-expoview-34.0.0.aar/099109f9ea9c599ecd0780f18c5b7ebd/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/expoview-34.0.0.aar/3461a3f40bba9dcd5547e136f2f01593/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-expoview-34.0.0.aar/099109f9ea9c599ecd0780f18c5b7ebd/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-expoview-34.0.0.aar/099109f9ea9c599ecd0780f18c5b7ebd/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/expoview-34.0.0.aar/3461a3f40bba9dcd5547e136f2f01593/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/expoview-34.0.0.aar/3461a3f40bba9dcd5547e136f2f01593/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

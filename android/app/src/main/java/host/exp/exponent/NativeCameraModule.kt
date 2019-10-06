@@ -1,11 +1,11 @@
 package host.exp.exponent
 
+import android.app.Activity
 import com.facebook.react.bridge.*
 import com.facebook.react.uimanager.IllegalViewOperationException
 import android.content.Intent
-import android.app.Activity
+import android.support.v7.app.AppCompatActivity
 import com.facebook.react.bridge.BaseActivityEventListener
-import com.facebook.react.bridge.ReactMethod
 import host.exp.exponent.custom.CameraActivity
 import io.realm.Realm
 import io.realm.RealmConfiguration

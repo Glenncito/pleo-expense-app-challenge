@@ -1,11 +1,11 @@
 include ':app'
-
+include ':realm'
 
 // Import gradle helpers for unimodules.
 apply from: '../node_modules/react-native-unimodules/gradle.groovy'
 
+project(':realm').projectDir = new File(rootProject.projectDir, '../node_modules/realm/android')
+
 // Include unimodules.
 includeUnimodulesProjects(
 )
-include ':realm'
-project(':realm').projectDir = new File(rootProject.projectDir, '../node_modules/realm/android')
