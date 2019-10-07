@@ -17,15 +17,13 @@ import {
   PrimaryText,
   SecondaryText
 } from "./styles";
-import AddCommentModal from "../modals/AddCommentModal";
+import AddComment from "../addComment/AddComment";
 import Icon from "react-native-vector-icons/Feather";
-import { getLocalizedString } from "../../lib/helpers";
 import i18n from "i18n-js";
 
 function ExpenseCard(props) {
   const infoIconSize = 20;
   const infoIconMarginRight = 6;
-
   return (
     <Wrapper>
       <Header>
@@ -104,7 +102,7 @@ function ExpenseCard(props) {
           </View>
         </ExpenseInfo>
       </Body>
-      <View>{props.visible ? <AddCommentModal /> : null}</View>
+      <View>{props.visible ? <AddComment /> : null}</View>
 
       <AddReceiptButton onPress={props.receiptMenu}>
         <Icon

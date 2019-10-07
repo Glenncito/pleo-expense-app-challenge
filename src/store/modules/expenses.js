@@ -2,18 +2,18 @@ import { combineReducers } from "redux";
 import { createSlice } from "redux-starter-kit";
 import { fetchExpensesApi, updateComment } from "../../api/expenses";
 import { storeDataOffline, getDataFromnDB } from "../../lib/helpers";
-import { es, en, fr, ptBR } from "date-fns/locale";
+import { es, enGB, fr, ptBR } from "date-fns/locale";
 
 const localeInitialState = {
   selectedLocaleConstant: "eng",
-  selectedDateLocale: en
+  selectedDateLocale: `${enGB}`
 };
 
 export const locale = createSlice({
   slice: "locale",
   initialState: {
     selectedLocaleConstant: "eng",
-    selectedDateLocale: `${en}`
+    selectedDateLocale: `${enGB}`
   },
   reducers: {
     updateLocale: (state, { payload }) => {

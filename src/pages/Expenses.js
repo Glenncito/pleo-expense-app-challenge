@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { FlatList, ScrollView, View, Text, Picker } from "react-native";
-import ExpenseCard from "components/ExpenseCard/ExpenseCard";
+import ExpenseCard from "../components/expenseCard/ExpenseCard";
 import { useDispatch, useSelector } from "react-redux";
 import { format } from "date-fns";
 import { SearchInputContainer, SearchInput, NavBar } from "./styles";
@@ -20,14 +20,14 @@ import {
   onSearchTermUpdated
 } from "../lib/helpers";
 import { eng, esp, fra, por, localeMap } from "lib/constants";
-import { es, en, fr, ptBR } from "date-fns/locale";
+import { es, enGB, fr, ptBR } from "date-fns/locale";
 import i18n from "i18n-js";
 
 function Expenses() {
   initLocalization();
   const [searchTerm, setSearchTerm] = React.useState("");
   const [currentlyDisplayed, setCurrentlyDisplayed] = React.useState([]);
-  const [localeConstant, setLocaleConstant] = React.useState();
+  const [localeConstant, setLocaleConstant] = React.useState("eng");
 
   const dispatch = useDispatch();
   const showModal = expenseId => dispatch(modal.actions.showModal(expenseId));
