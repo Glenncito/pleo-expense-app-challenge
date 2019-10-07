@@ -19,8 +19,6 @@ export const initReceiptMenu = async expenseId => {
 };
 
 export const storeDataOffline = expenses => {
-  console.log("biggie", expenses);
-
   expenses.map(expense => {
     Realm.open({
       schema: [ExpenseSchema, AmountSchema, UserSchema]

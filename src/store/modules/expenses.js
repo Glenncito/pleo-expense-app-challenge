@@ -69,22 +69,23 @@ export const model = createSlice({
 const utils = createSlice({
   slice: "utils",
   initialState: {
-    loading: false,
-    hasFetched: false
+    loading: false
   },
   reducers: {
-    toggleLoading: (state, { payload }) => (state.loading = payload)
+    toggleLoading(state, { payload }) {
+      return { loading: payload };
+    }
   }
 });
-
+export const fromUtils = state => state.expenses.utils.loading;
 export const fromExpenses = state => state.expenses.model;
 
 export const fetchExpenses = () => async dispatch => {
-  utils.actions.toggleLoading(true);
+  dispatch(utils.actions.toggleLoading(true));
   try {
     const response = await fetchExpensesApi();
     dispatch(model.actions.fetchSuccess(response.data.expenses));
-    storeDataOffline(response.data.expenses);
+    //storeDataOffline(response.data.expenses);
   } catch (err) {
     console.log("ERROR", err);
     //dispatch(fetchFromDatabase());
