@@ -7,7 +7,9 @@ export const eng = {
   search: "Search",
   add: "Add",
   cancel: "Cancel",
-  noCommentAdded: "No Comment Added"
+  noCommentAdded: "No Comment Added",
+  successfulUpdate: "Successfully Updated",
+  unableToFetch: "Unable to Fetch Data From The API"
 };
 export const esp = {
   addComment: "Agrega Comentario",
@@ -15,7 +17,9 @@ export const esp = {
   search: "Búsqueda",
   add: "Agrega",
   cancel: "Cancela",
-  noCommentAdded: "Ningun Comentario Agregado"
+  noCommentAdded: "Ningun Comentario Agregado",
+  successfulUpdate: "Actualizado con Exito",
+  unableToFetch: "No se Puede sacar datos del API"
 };
 
 export const fra = {
@@ -24,7 +28,9 @@ export const fra = {
   search: "Rechercher",
   add: "Ajouter",
   cancel: "Annuler",
-  noCommentAdded: "Aucun Commentaire Ajouté"
+  noCommentAdded: "Aucun Commentaire Ajouté",
+  successfulUpdate: "Mise à Jour Réussie",
+  unableToFetch: "Impossible de Récupérer Les Données du API."
 };
 
 export const por = {
@@ -33,7 +39,9 @@ export const por = {
   search: "Pesquisa",
   add: "Adiciona",
   cancel: "Cancelar",
-  noCommentAdded: "Nenhum comentário adicionado"
+  noCommentAdded: "Nenhum comentário adicionado",
+  successfulUpdate: "Atualizado com Sucesso",
+  unableToFetch: "Não Foi Possível Buscar Dados do API."
 };
 
 export const localeMap = {

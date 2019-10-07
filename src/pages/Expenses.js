@@ -15,6 +15,7 @@ import Icon from "react-native-vector-icons/Feather";
 
 import {
   initialExpensesFetch,
+  fetchExpensesFromApi,
   fromExpenses,
   fromModal,
   modal,
@@ -22,15 +23,13 @@ import {
   fromUtils,
   locale
 } from "../store/modules/expenses";
-import {
-  initReceiptMenu,
-  initLocalization,
-  onSearchTermUpdated
-} from "../lib/helpers";
+import { initReceiptMenu, onSearchTermUpdated } from "../lib/helpers";
 import { eng, esp, fra, por, localeMap } from "lib/constants";
 import i18n from "i18n-js";
+import { fetchExpensesApi } from "../api/expenses";
 
 function Expenses() {
+  //initLocalization();
   const [searchTerm, setSearchTerm] = React.useState("");
   const [currentlyDisplayed, setCurrentlyDisplayed] = React.useState([]);
   const [localeConstant, setLocaleConstant] = React.useState("eng");
@@ -42,7 +41,7 @@ function Expenses() {
   const loadingState = useSelector(fromUtils);
 
   useEffect(() => {
-    dispatch(initialExpensesFetch());
+    dispatch(fetchExpensesFromApi());
   }, [dispatch]);
 
   useEffect(() => {
@@ -56,6 +55,10 @@ function Expenses() {
   useEffect(() => {
     setLocaleConstant(currentLocale.selectedLocaleConstant);
     i18n.locale = localeConstant;
+    console.log(
+      "LOCALE CONSTANT IS",
+      currentLocale.selectedLocaleConstant + localeConstant
+    );
   }, [currentLocale]);
 
   const searchTermUpdated = term => {

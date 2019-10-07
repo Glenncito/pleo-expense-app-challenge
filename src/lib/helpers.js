@@ -2,19 +2,21 @@ import { uploadReceipt } from "../api/expenses";
 import { NativeModules } from "react-native";
 import { ExpenseSchema, UserSchema, AmountSchema } from "./schema";
 import { values } from "ramda";
+import { ToastAndroid } from "react-native";
+import { useSelector } from "react-redux";
 
 const CameraApplication = NativeModules.NativeCameraModule;
-const Realm = require("realm");
+//const Realm = require("realm");
 export const initReceiptMenu = async expenseId => {
   try {
     const message = await CameraApplication.initReceiptCapture(expenseId);
     uploadReceipt(expenseId, message);
+    //ToastAndroid.show(i18n.t("successfulUpdate"), ToastAndroid.SHORT);
   } catch (error) {
     console.error(error);
   }
 };
-
-export const storeDataToDb = async expenses => {
+/*export const storeDataToDb = async expenses => {
   expenses.map(async expense => {
     const realm = await Realm.open({
       schema: [ExpenseSchema, AmountSchema, UserSchema]
@@ -50,7 +52,7 @@ export const updateCommentToDb = async expense => {
   } catch (err) {
     console.log(err);
   }
-};
+};*/
 
 export const onSearchTermUpdated = (term, expensesState) => {
   const userFilter = expense => {

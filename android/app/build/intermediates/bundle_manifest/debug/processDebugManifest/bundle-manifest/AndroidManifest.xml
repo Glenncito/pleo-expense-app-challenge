@@ -170,7 +170,7 @@
         <activity
             android:name="host.exp.exponent.custom.CameraActivity"
             android:configChanges="orientation"
-            android:label="Camera Activity"
+            android:label="Pleo Mobile Challenge"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" >
         </activity>

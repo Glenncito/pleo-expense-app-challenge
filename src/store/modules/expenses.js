@@ -24,11 +24,15 @@ export const locale = createSlice({
     selectedDateLocale: `${enGB}`
   },
   reducers: {
-    updateLocale: (state, { payload }) => {
+    updateLocale(state, { payload }) {
       const { selectedLocaleConstant, selectedDateLocale } = payload;
-
+      return {
+        selectedLocaleConstant: payload.selectedLocaleConstant,
+        selectedDateLocale: `${payload.electedDateLocale}`
+      };
+      /* const { selectedLocaleConstant, selectedDateLocale } = payload;
       (state.selectedLocaleConstant = selectedLocaleConstant),
-        (state.selectedDateLocale = `${selectedDateLocale}`);
+        (state.selectedDateLocale = `${selectedDateLocale}`);*/
     }
   }
 });
@@ -96,7 +100,7 @@ export const fetchExpensesFromApi = () => async dispatch => {
   try {
     const response = await fetchExpensesApi();
     dispatch(model.actions.fetchSuccess(response.data.expenses));
-    storeDataToDb(response.data.expenses);
+    //storeDataToDb(response.data.expenses);
   } catch (err) {
     console.log("ERROR", err);
   } finally {
@@ -104,7 +108,7 @@ export const fetchExpensesFromApi = () => async dispatch => {
   }
 };
 
-export const initialExpensesFetch = () => async dispatch => {
+/*export const initialExpensesFetch = () => async dispatch => {
   try {
     const expenseArray = await getDataFromDB("expense");
     if (expenseArray.length > 0) {
@@ -118,12 +122,12 @@ export const initialExpensesFetch = () => async dispatch => {
     console.log("ERROR", err);
     dispatch(model.actions.fetchFaliure());
   }
-};
+}*/
 
 export const addComment = updatedExpense => async dispatch => {
   try {
     await updateCommentApi(updatedExpense);
-    updateCommentToDb(updatedExpense);
+    //updateCommentToDb(updatedExpense);
     dispatch(model.actions.updateExpense(updatedExpense));
   } catch (err) {
     console.error(err);
