@@ -29,10 +29,9 @@ import i18n from "i18n-js";
 import { fetchExpensesApi } from "../api/expenses";
 
 function Expenses() {
-  //initLocalization();
   const [searchTerm, setSearchTerm] = React.useState("");
   const [currentlyDisplayed, setCurrentlyDisplayed] = React.useState([]);
-  const [localeConstant, setLocaleConstant] = React.useState("eng");
+  const [localeConstant, setLocaleConstant] = React.useState("por");
 
   const dispatch = useDispatch();
   const showModal = expenseId => dispatch(modal.actions.showModal(expenseId));
@@ -49,16 +48,13 @@ function Expenses() {
   }, [expensesState]);
 
   const currentLocale = useSelector(fromLocale);
+
   i18n.fallbacks = true;
   i18n.translations = { eng, esp, fra, por };
   i18n.locale = localeConstant;
   useEffect(() => {
-    setLocaleConstant(currentLocale.selectedLocaleConstant);
+    setLocaleConstant(currentLocale);
     i18n.locale = localeConstant;
-    console.log(
-      "LOCALE CONSTANT IS",
-      currentLocale.selectedLocaleConstant + localeConstant
-    );
   }, [currentLocale]);
 
   const searchTermUpdated = term => {
@@ -68,18 +64,14 @@ function Expenses() {
   };
 
   const changeLocale = localeValue =>
-    dispatch(
-      locale.actions.updateLocale({
-        selectedLocaleConstant: localeValue,
-        selectedDateLocale: `${localeMap[localeValue]}`
-      })
-    );
+    dispatch(locale.actions.updateLocale(localeValue));
 
   return (
     <View>
       <NavBar>
+        <Text style={{ marginTop: 20 }}>{i18n.t("selectedLanguage")}</Text>
         <Picker
-          selectedValue={currentLocale.selectedLocaleConstant}
+          selectedValue={localeConstant}
           style={{ height: 150, width: 150, marginTop: 20 }}
           onValueChange={(itemValue, itemIndex) => changeLocale(itemValue)}
         >
@@ -93,7 +85,7 @@ function Expenses() {
         <Icon name="search" size={24} color="red" style={{ marginLeft: 15 }} />
         <SearchInput
           multiline={false}
-          placeholder="Search"
+          placeholder={i18n.t("search")}
           placeholderTextColor="#abbabb"
           value={searchTerm}
           onChangeText={text => searchTermUpdated(text)}
@@ -105,7 +97,7 @@ function Expenses() {
         ) : (
           <FlatList
             data={currentlyDisplayed}
-            extraData={modalState.selectedExpenseId}
+            extraData={[modalState.selectedExpenseId, localeConstant]}
             showsVerticalScrollIndicator={false}
             renderItem={({ item }) => (
               <ExpenseCard

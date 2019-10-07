@@ -9,7 +9,9 @@ export const eng = {
   cancel: "Cancel",
   noCommentAdded: "No Comment Added",
   successfulUpdate: "Successfully Updated",
-  unableToFetch: "Unable to Fetch Data From The API"
+  unsuccessfulUpdate: "Usuccessfully Updated",
+  unableToFetch: "Unable to Fetch Data From The API",
+  selectedLanguage: "Selected Language:"
 };
 export const esp = {
   addComment: "Agrega Comentario",
@@ -19,7 +21,9 @@ export const esp = {
   cancel: "Cancela",
   noCommentAdded: "Ningun Comentario Agregado",
   successfulUpdate: "Actualizado con Exito",
-  unableToFetch: "No se Puede sacar datos del API"
+  unsuccessfulUpdate: "Actualizado sin Exito",
+  unableToFetch: "No se Puede sacar datos del API",
+  selectedLanguage: "Idioma Selecionada: "
 };
 
 export const fra = {
@@ -30,7 +34,9 @@ export const fra = {
   cancel: "Annuler",
   noCommentAdded: "Aucun Commentaire Ajouté",
   successfulUpdate: "Mise à Jour Réussie",
-  unableToFetch: "Impossible de Récupérer Les Données du API."
+  unsuccessfulUpdate: "Mise à Jour Sans Succès",
+  unableToFetch: "Impossible de Récupérer Les Données du API",
+  selectedLanguage: "Langue Choisie: "
 };
 
 export const por = {
@@ -41,7 +47,9 @@ export const por = {
   cancel: "Cancelar",
   noCommentAdded: "Nenhum comentário adicionado",
   successfulUpdate: "Atualizado com Sucesso",
-  unableToFetch: "Não Foi Possível Buscar Dados do API."
+  unsuccessfulUpdate: "Atualizado sem Sucesso",
+  unableToFetch: "Não Foi Possível Buscar Dados do API",
+  selectedLanguage: "Idioma Selecionado"
 };
 
 export const localeMap = {

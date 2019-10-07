@@ -11,33 +11,27 @@ import {
   storeDataToDb,
   updateCommentToDb
 } from "../../lib/helpers";
+import { eng, esp, fra, por, localeMap } from "lib/constants";
 
 const localeInitialState = {
-  selectedLocaleConstant: "eng",
-  selectedDateLocale: `${enGB}`
+  selectedLocaleConstant: "esp"
 };
 
 export const locale = createSlice({
   slice: "locale",
   initialState: {
-    selectedLocaleConstant: "eng",
-    selectedDateLocale: `${enGB}`
+    selectedLocaleConstant: "esp"
   },
   reducers: {
     updateLocale(state, { payload }) {
-      const { selectedLocaleConstant, selectedDateLocale } = payload;
       return {
-        selectedLocaleConstant: payload.selectedLocaleConstant,
-        selectedDateLocale: `${payload.electedDateLocale}`
+        selectedLocaleConstant: payload
       };
-      /* const { selectedLocaleConstant, selectedDateLocale } = payload;
-      (state.selectedLocaleConstant = selectedLocaleConstant),
-        (state.selectedDateLocale = `${selectedDateLocale}`);*/
     }
   }
 });
 
-export const fromLocale = state => state.expenses.locale;
+export const fromLocale = state => state.expenses.locale.selectedLocaleConstant;
 
 const modalInitialState = {
   selectedExpenseId: null
@@ -100,7 +94,7 @@ export const fetchExpensesFromApi = () => async dispatch => {
   try {
     const response = await fetchExpensesApi();
     dispatch(model.actions.fetchSuccess(response.data.expenses));
-    //storeDataToDb(response.data.expenses);
+    storeDataToDb(response.data.expenses);
   } catch (err) {
     console.log("ERROR", err);
   } finally {
@@ -108,7 +102,7 @@ export const fetchExpensesFromApi = () => async dispatch => {
   }
 };
 
-/*export const initialExpensesFetch = () => async dispatch => {
+export const initialExpensesFetch = () => async dispatch => {
   try {
     const expenseArray = await getDataFromDB("expense");
     if (expenseArray.length > 0) {
@@ -122,7 +116,7 @@ export const fetchExpensesFromApi = () => async dispatch => {
     console.log("ERROR", err);
     dispatch(model.actions.fetchFaliure());
   }
-}*/
+};
 
 export const addComment = updatedExpense => async dispatch => {
   try {
