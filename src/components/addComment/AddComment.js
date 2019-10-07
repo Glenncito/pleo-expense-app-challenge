@@ -32,8 +32,8 @@ export function AddComment() {
     state.expenses.model.find(expense => expense.id === expenseId)
   );
   const hideModal = () => dispatch(modal.actions.hideModal());
+
   const updateExpense = comment => {
-    console.log("updateExpense");
     const updatedExpense = {
       ...expense,
       comment: comment
@@ -41,7 +41,6 @@ export function AddComment() {
     dispatch(addComment(updatedExpense));
     hideModal();
   };
-  //const showModal = (expenseId) => dispatch(modal.actions.showModal(expenseId))
 
   return (
     <CommentInputContainer>
@@ -62,7 +61,6 @@ export function AddComment() {
     </CommentInputContainer>
   );
 }
-
 export default AddComment;
 
 export const Wrapper = styled.View`

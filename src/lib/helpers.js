@@ -15,13 +15,6 @@ export const initReceiptMenu = async expenseId => {
   }
 };
 
-export function initLocalization() {
-  const currentLocale = useSelector(fromLocale);
-  i18n.fallbacks = true;
-  i18n.translations = { eng, esp, fra, por };
-  i18n.locale = currentLocale;
-}
-
 export const onSearchTermUpdated = (term, expensesState) => {
   const userFilter = expense => {
     return Object.values(expense.user)
