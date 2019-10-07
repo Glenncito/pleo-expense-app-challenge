@@ -28,11 +28,9 @@ import {
   onSearchTermUpdated
 } from "../lib/helpers";
 import { eng, esp, fra, por, localeMap } from "lib/constants";
-import { es, enGB, fr, ptBR } from "date-fns/locale";
 import i18n from "i18n-js";
 
 function Expenses() {
-  initLocalization();
   const [searchTerm, setSearchTerm] = React.useState("");
   const [currentlyDisplayed, setCurrentlyDisplayed] = React.useState([]);
   const [localeConstant, setLocaleConstant] = React.useState("eng");
@@ -148,4 +146,3 @@ function Expenses() {
   );
 }
 export default Expenses;
-//{loadingState ?  <ActivityIndicator size="large" color="#0000ff" /> :
