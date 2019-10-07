@@ -101,7 +101,7 @@
         </activity>
         <activity
             android:name=".custom.CameraActivity"
-            android:label="Camera Activity"
+            android:label="Pleo Mobile Challenge"
             android:theme="@style/AppTheme"
             android:configChanges="orientation"
             android:screenOrientation="portrait">

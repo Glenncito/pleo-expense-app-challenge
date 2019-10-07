@@ -14,7 +14,7 @@ import { SearchInputContainer, SearchInput, NavBar } from "./styles";
 import Icon from "react-native-vector-icons/Feather";
 
 import {
-  fetchExpenses,
+  initialExpensesFetch,
   fromExpenses,
   fromModal,
   modal,
@@ -42,7 +42,7 @@ function Expenses() {
   const loadingState = useSelector(fromUtils);
 
   useEffect(() => {
-    dispatch(fetchExpenses());
+    dispatch(initialExpensesFetch());
   }, [dispatch]);
 
   useEffect(() => {

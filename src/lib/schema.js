@@ -8,6 +8,7 @@ export const AmountSchema = {
 
 export const UserSchema = {
   name: "user",
+  primaryKey: "email",
   properties: {
     first: "string",
     last: "string",

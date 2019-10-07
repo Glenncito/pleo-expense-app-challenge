@@ -7,6 +7,7 @@ export const SearchInputContainer = styled.View`
   margin-right: 20;
   margin-left: 20;
   margin-top: 10;
+  margin-bottom: 8;
   flex-direction: row;
   align-items: center;
 `;

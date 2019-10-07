@@ -3,9 +3,14 @@ import { BASE_URL } from "../lib/constants";
 
 export const fetchExpensesApi = async () => {
   const response = await axios(
-    `http://${BASE_URL}:3000/expenses?limit=1000&offset=0`
+    `http://${BASE_URL}:3000/expenses?limit=20&offset=0`
   );
 
+  return response;
+};
+
+export const fetchSingleExpense = async expenseId => {
+  const response = await axios(`http://${BASE_URL}:3000/expenses/${expenseId}`);
   return response;
 };
 
@@ -28,8 +33,7 @@ export const uploadReceipt = async (expenseId, imageData) => {
   );
 };
 
-export const updateComment = async updatedExpense => {
-  console.log("updateCOmmentApi");
+export const updateCommentApi = async updatedExpense => {
   axios
     .post(`http://${BASE_URL}:3000/expenses/${updatedExpense.id}`, {
       comment: updatedExpense.comment

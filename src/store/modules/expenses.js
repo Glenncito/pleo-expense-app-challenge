@@ -1,7 +1,16 @@
 import { combineReducers } from "redux";
 import { createSlice } from "redux-starter-kit";
-import { fetchExpensesApi, updateComment } from "../../api/expenses";
+import {
+  fetchExpensesApi,
+  updateCommentApi,
+  fetchSingleExpense
+} from "../../api/expenses";
 import { enGB } from "date-fns/locale";
+import {
+  getDataFromDB,
+  storeDataToDb,
+  updateCommentToDb
+} from "../../lib/helpers";
 
 const localeInitialState = {
   selectedLocaleConstant: "eng",
@@ -76,14 +85,18 @@ const utils = createSlice({
     }
   }
 });
+
 export const fromUtils = state => state.expenses.utils.loading;
+
 export const fromExpenses = state => state.expenses.model;
 
-export const fetchExpenses = () => async dispatch => {
+export const fetchExpensesFromApi = () => async dispatch => {
+  console.log("Fetching expenses");
   dispatch(utils.actions.toggleLoading(true));
   try {
     const response = await fetchExpensesApi();
     dispatch(model.actions.fetchSuccess(response.data.expenses));
+    storeDataToDb(response.data.expenses);
   } catch (err) {
     console.log("ERROR", err);
   } finally {
@@ -91,9 +104,26 @@ export const fetchExpenses = () => async dispatch => {
   }
 };
 
+export const initialExpensesFetch = () => async dispatch => {
+  try {
+    const expenseArray = await getDataFromDB("expense");
+    if (expenseArray.length > 0) {
+      dispatch(model.actions.fetchSuccess(expenseArray));
+    } else {
+      dispatch(model.actions.fetchFaliure());
+    }
+    dispatch(utils.actions.toggleLoading(false));
+    dispatch(fetchExpenses());
+  } catch (err) {
+    console.log("ERROR", err);
+    dispatch(model.actions.fetchFaliure());
+  }
+};
+
 export const addComment = updatedExpense => async dispatch => {
   try {
-    updateComment(updatedExpense);
+    await updateCommentApi(updatedExpense);
+    updateCommentToDb(updatedExpense);
     dispatch(model.actions.updateExpense(updatedExpense));
   } catch (err) {
     console.error(err);

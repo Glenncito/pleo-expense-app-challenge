@@ -1,9 +1,11 @@
 package host.exp.exponent
 
+import android.Manifest
 import android.app.Activity
 import com.facebook.react.bridge.*
 import com.facebook.react.uimanager.IllegalViewOperationException
 import android.content.Intent
+import android.support.v4.app.ActivityCompat
 import android.support.v7.app.AppCompatActivity
 import com.facebook.react.bridge.BaseActivityEventListener
 import host.exp.exponent.custom.CameraActivity
@@ -15,27 +17,21 @@ import io.realm.RealmConfiguration
 
 
 private val EXPENSE_ID = "EXPENSE_ID"
-
+private val PERMISSION_REQUEST_CODE: Int = 101
 
 class NativeCameraModule(private val reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
 
     var mPromise: Promise? = null
 
     private val mActivityEventListener = object : BaseActivityEventListener() {
-
         override fun onActivityResult(activity: Activity?, requestCode: Int, resultCode: Int, intent: Intent?) {
-
             success(intent!!.getStringExtra("name"))
-
         }
     }
 
     init {
         reactContext.addActivityEventListener(mActivityEventListener)
-
         initRealm()
-
-
     }
 
     private fun initRealm() {
@@ -47,8 +43,6 @@ class NativeCameraModule(private val reactContext: ReactApplicationContext) : Re
         Realm.getInstance(mRealmConfiguration)
         mRealmConfiguration.shouldDeleteRealmIfMigrationNeeded()
         Realm.setDefaultConfiguration(mRealmConfiguration)
-
-// Get a Realm instance for this thread
 
     }
 
