@@ -15,7 +15,6 @@ import Icon from "react-native-vector-icons/Feather";
 
 import {
   initialExpensesFetch,
-  fetchExpensesFromApi,
   fromExpenses,
   fromModal,
   modal,
@@ -26,12 +25,11 @@ import {
 import { initReceiptMenu, onSearchTermUpdated } from "../lib/helpers";
 import { eng, esp, fra, por, localeMap } from "lib/constants";
 import i18n from "i18n-js";
-import { fetchExpensesApi } from "../api/expenses";
 
 function Expenses() {
   const [searchTerm, setSearchTerm] = React.useState("");
   const [currentlyDisplayed, setCurrentlyDisplayed] = React.useState([]);
-  const [localeConstant, setLocaleConstant] = React.useState("por");
+  const [localeConstant, setLocaleConstant] = React.useState();
 
   const dispatch = useDispatch();
   const showModal = expenseId => dispatch(modal.actions.showModal(expenseId));
@@ -40,7 +38,7 @@ function Expenses() {
   const loadingState = useSelector(fromUtils);
 
   useEffect(() => {
-    dispatch(fetchExpensesFromApi());
+    dispatch(initialExpensesFetch());
   }, [dispatch]);
 
   useEffect(() => {
@@ -69,10 +67,12 @@ function Expenses() {
   return (
     <View>
       <NavBar>
-        <Text style={{ marginTop: 20 }}>{i18n.t("selectedLanguage")}</Text>
+        <Text style={{ marginTop: 20, color: "white" }}>
+          {i18n.t("selectedLanguage")}
+        </Text>
         <Picker
           selectedValue={localeConstant}
-          style={{ height: 150, width: 150, marginTop: 20 }}
+          style={{ height: 150, width: 150, marginTop: 20, color: "white" }}
           onValueChange={(itemValue, itemIndex) => changeLocale(itemValue)}
         >
           <Picker.Item label="English" value="eng" />
@@ -96,6 +96,7 @@ function Expenses() {
           <ActivityIndicator size="large" color="#0000ff" />
         ) : (
           <FlatList
+            contentContainerStyle={{ paddingBottom: 160 }}
             data={currentlyDisplayed}
             extraData={[modalState.selectedExpenseId, localeConstant]}
             showsVerticalScrollIndicator={false}

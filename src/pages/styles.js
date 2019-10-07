@@ -20,5 +20,5 @@ export const NavBar = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #fe99b3;
+  background-color: #fd3366;
 `;

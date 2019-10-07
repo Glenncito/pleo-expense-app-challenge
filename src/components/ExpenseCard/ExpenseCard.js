@@ -10,7 +10,6 @@ import {
   InfoText,
   Category,
   ExpenseInfo,
-  Reciept,
   BreakRow,
   AddCommentButton,
   AddReceiptButton,

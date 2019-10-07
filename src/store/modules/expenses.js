@@ -1,26 +1,18 @@
 import { combineReducers } from "redux";
 import { createSlice } from "redux-starter-kit";
-import {
-  fetchExpensesApi,
-  updateCommentApi,
-  fetchSingleExpense
-} from "../../api/expenses";
-import { enGB } from "date-fns/locale";
+import { fetchExpensesApi, updateCommentApi } from "../../api/expenses";
 import {
   getDataFromDB,
   storeDataToDb,
   updateCommentToDb
 } from "../../lib/helpers";
-import { eng, esp, fra, por, localeMap } from "lib/constants";
-
-const localeInitialState = {
-  selectedLocaleConstant: "esp"
-};
+import { ToastAndroid } from "react-native";
+import i18n from "i18n-js";
 
 export const locale = createSlice({
   slice: "locale",
   initialState: {
-    selectedLocaleConstant: "esp"
+    selectedLocaleConstant: "eng"
   },
   reducers: {
     updateLocale(state, { payload }) {
@@ -30,8 +22,6 @@ export const locale = createSlice({
     }
   }
 });
-
-export const fromLocale = state => state.expenses.locale.selectedLocaleConstant;
 
 const modalInitialState = {
   selectedExpenseId: null
@@ -51,10 +41,6 @@ export const modal = createSlice({
     }
   }
 });
-
-export const fromModal = state => state.expenses.modal;
-
-const modelInitialState = [];
 
 export const model = createSlice({
   slice: "model",
@@ -84,9 +70,10 @@ const utils = createSlice({
   }
 });
 
+export const fromModal = state => state.expenses.modal;
 export const fromUtils = state => state.expenses.utils.loading;
-
 export const fromExpenses = state => state.expenses.model;
+export const fromLocale = state => state.expenses.locale.selectedLocaleConstant;
 
 export const fetchExpensesFromApi = () => async dispatch => {
   console.log("Fetching expenses");
@@ -95,8 +82,10 @@ export const fetchExpensesFromApi = () => async dispatch => {
     const response = await fetchExpensesApi();
     dispatch(model.actions.fetchSuccess(response.data.expenses));
     storeDataToDb(response.data.expenses);
+    ToastAndroid.show(i18n.t("successfulUpdate"), ToastAndroid.SHORT);
   } catch (err) {
     console.log("ERROR", err);
+    ToastAndroid.show(i18n.t("unableToFetch"), ToastAndroid.SHORT);
   } finally {
     dispatch(utils.actions.toggleLoading(false));
   }
@@ -111,9 +100,9 @@ export const initialExpensesFetch = () => async dispatch => {
       dispatch(model.actions.fetchFaliure());
     }
     dispatch(utils.actions.toggleLoading(false));
-    dispatch(fetchExpenses());
+    dispatch(fetchExpensesFromApi());
   } catch (err) {
-    console.log("ERROR", err);
+    console.log(err);
     dispatch(model.actions.fetchFaliure());
   }
 };
@@ -121,11 +110,11 @@ export const initialExpensesFetch = () => async dispatch => {
 export const addComment = updatedExpense => async dispatch => {
   try {
     await updateCommentApi(updatedExpense);
-    //updateCommentToDb(updatedExpense);
+    updateCommentToDb(updatedExpense);
     dispatch(model.actions.updateExpense(updatedExpense));
   } catch (err) {
+    ToastAndroid.show(i18n.t("unsuccessfulUpdate"), ToastAndroid.SHORT);
     console.error(err);
-  } finally {
   }
 };
 
