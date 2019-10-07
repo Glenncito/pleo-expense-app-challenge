@@ -82,7 +82,7 @@ I ultimately decided that I would include it, accompanied by this disclaimer, fo
 
 Given the chance, I would redo it with Redux-Persist.
 
-## ## How long everything took
+## How long everything took
 
 By the time I started working on this I had only just started learning React and my knowledge didn’t extend much beyond the default React Native components, State and Props management. I had never worked with Realm, Redux or Native Module integration. This meant that almost every aspect of this project was new to me and proved to be quite a steep learning curve from the start.
 
