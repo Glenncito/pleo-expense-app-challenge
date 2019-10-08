@@ -48,6 +48,14 @@ Underneath the hood, upon starting, the app does the following:
     	    is also updated to the local storage via
     	    lib/helpers:updateCommentToDb.
 
+## Getting Started
+
+1. Update Yarn: In Terminal or CMD, navigate to the root and enter "`Yarn Install`"
+2. Start the API: In Terminal or Comand Prompt, navigate to the file named `API` and type "`Node Start`"
+3. Point the React Native code to the local server IP: find `src/libs/constants.js` and change `BASE_URL` to your local IP address. To discover your local IP address:
+   Windows: Type in `ipconfig` into command prompt.
+   OSx: Type in `ifconfig` into terminal.
+
 ## Known Issues
 
 There are a few issues that I picked up during development and testing that I never managed to come back to solving due to time constraints.
@@ -115,23 +123,24 @@ In terms of struggles, as mentioned everything was a steep learning curve. But 2
 
 ## If I had more time:
 
-    -   Add iOS native module (Swift)
-    -   Implement Redux-Persist-Realm
-    -   Offline queuing functionality for receipts and comments
-    -   More advanced filtering:
+    - Add iOS native module (Swift)
+    - Implement Redux-Persist-Realm
+    - Offline queuing functionality for receipts and comments
+    - Add TypeScript,
+    - More advanced filtering:
     	- Filter by Date
         - Between 2 dates
         - Before a date
         - After a date
-    -   Filter by User
-    -   Filter by Merchant
-    -   Relative Currency Display
-    -   Allow the user to view all currencies relative
-        to one given currency, using the conversion rate of
-        the expenses date using exchangeratesapi.org
-    -   This would also allow to display the total amount.
-    -   Store photos taken offline in ByteArray format and
-        allow for viewing submitted Receipts.
+    -  Filter by User
+    -  Filter by Merchant
+    -  Relative Currency Display
+    -  Allow the user to view all currencies relative
+       to one given currency, using the conversion rate of
+       the expenses date using exchangeratesapi.org
+    -  This would also allow to display the total amount.
+    -  Store photos taken offline in ByteArray format and
+       allow for viewing submitted Receipts.
 
 ## What I struggled with
 
