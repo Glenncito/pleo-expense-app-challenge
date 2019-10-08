@@ -60,15 +60,24 @@ It is immediately noticeable when the FlatList is displaying a large data set, e
 **Likely Solution:**
 My research pointed me to using pagination with Redux. It seems likely that this would be an effective solution.
 
----
-
 ### Back-navigation in camera mode
 
 **Description**:
 When pressing the device back button in camera mode, the app restarts in its entirety.
 
-**Likely Solution:**
+**Likel`enter code here`y Solution:**
 I would start by using a combination of React-Navigation and exploring the solutions discussed [here](https://stackoverflow.com/questions/45031085/react-native-device-back-button-handling) and [here](https://medium.com/building-with-react-native/android-back-button-handling-in-react-native-apps-1x08-e3acb0990011).
+
+## Notable Libraries Used:
+
+**Redux-Starter-Kit**
+An opinionated and simplified take on Redux. It was recomended to me by my mentor when I was just starting out with learning React.
+
+**Date-fns**
+A small and well supported library that makes managing date and time really easy. It also allows for date localisation which was another big motivator for using it.
+
+**Axios**
+I ended up choosing this library because of it's popularity and how it simplifies API requests. Most of the tutorials I looked at online used Axios so I just defaulted to using it.
 
 ## What I'm unsatisfied with:
 
@@ -130,3 +139,9 @@ In terms of struggles, as mentioned everything was a steep learning curve. But 2
 at a point early on in this project I moved files around to arrange my package structure more efficiently, at which point existing classes (mainApplication, generated files) were either seen as duplicated or missing. Nothing I tried fixed it until I arbitrarily covered them to kotlin classes, but then other dependency issues and missing file issues occured.
   
 None of the proposed solutions worked, there were lots of minor changes that all amount to lots of compiling, downloading new libraries and waiting. Eventually I started my android project over and copied the code across which I could have done sooner and saved more time on, but I never like to leave a problem like that solved without knowing what the actual problem and solution was.
+
+**Adding comment via the `AddComment.js` component and Redux**
+Although I imagine this to be a relatively straight forward task for a seasoned React-Native developer, this proved a steep learning curve for me as it was the first time I was having to really tap into the magic of Redux by having multiple components speak to each other as well as having one component show and hide another based on a redux state. I could have gone about this feature in a simpler manner but I chose to aproach it in this way since I believed that its technical requirements to be neccessary and valuable for my learning journey.
+
+**Linking date localisation to the localisation redux store**
+This one took quite a bit of playing around to get right. The problem is that while `Date-fns` wonderfully allows for localisation, it has its own set of constant values that determine what locale is used and assigning the relevant locale required me to escape the reference in a way that set it as the reference to the constant and not to the values of the constant. The solution involved using a localeMap and rereferencing the values like `` localeMap[`${localeConstant}`] ``, which I believe to be a bit messy.
