@@ -65,7 +65,7 @@ My research pointed me to using pagination with Redux. It seems likely that this
 **Description**:
 When pressing the device back button in camera mode, the app restarts in its entirety.
 
-**Likel`enter code here`y Solution:**
+**Likely Solution:**
 I would start by using a combination of React-Navigation and exploring the solutions discussed [here](https://stackoverflow.com/questions/45031085/react-native-device-back-button-handling) and [here](https://medium.com/building-with-react-native/android-back-button-handling-in-react-native-apps-1x08-e3acb0990011).
 
 ## Notable Libraries Used:
